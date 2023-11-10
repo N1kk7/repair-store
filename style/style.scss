@@ -375,7 +375,7 @@
                   width: 258px;
                   border-radius: 8.019px;
                   border: 0.969px solid #E6E6E6;
-                  padding: 10px 8px 10px 0;
+                  padding: 10px 8px;
                   background: #FFF;
                   .time{
                     width: 100%;
@@ -403,16 +403,19 @@
                       font-style: normal;
                       font-weight: 400;
                       line-height: normal;
-                      padding: 12px 10px;
-                      display: inline-block;
+                      padding: 12px;
+                      display: flex;
+                      align-items: center;
+                      justify-content: center;
                       white-space: nowrap;
+                      width: 100%;
 
                     }
                     input:checked + span{
                       border: 1px solid #E6E6E6;
 
                       background: #F60;
-//                       color: #FFF;
+                      color: #FFF;
 
 // font-family: Open Sans;
 // font-size: 13px;
