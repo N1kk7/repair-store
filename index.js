@@ -7,7 +7,7 @@ let activePrimary = false;
 
 const mapHtml = '<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d5873.503522773722!2d-122.40700885535698!3d37.75875723485357!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sua!4v1699547569699!5m2!1sen!2sua"  height="450" style="border:0; width:100%;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>';
 
-const listHtml = `<div class="row align-items-center row-cols-lg-4 g-lg-4">
+const listHtml = `<div class="row align-items-center row-cols-lg-3 g-lg-4 row-cols-md-2 row-cols-sm-1 g-md-4 g-sm-3 g-2">
 <div class="col ">
     <div class="item-card border rounded d-flex justify-content-lg-start align-items-center flex-column overflow-hidden">
        <div class="store-img">
