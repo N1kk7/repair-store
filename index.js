@@ -5,7 +5,7 @@ const typeWrapper = document.querySelectorAll('.typeWrapper');
 let activePrimary = false;
 // console.log(typeWrapper);
 
-const mapHtml = '<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d5873.503522773722!2d-122.40700885535698!3d37.75875723485357!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sua!4v1699547569699!5m2!1sen!2sua" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>';
+const mapHtml = '<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d5873.503522773722!2d-122.40700885535698!3d37.75875723485357!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sua!4v1699547569699!5m2!1sen!2sua"  height="450" style="border:0; width:100%;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>';
 
 const listHtml = `<div class="row align-items-center row-cols-lg-4 g-lg-4">
 <div class="col ">
@@ -177,6 +177,8 @@ $('.btn').on('click', function(event){
     if (activePrimary || !event.target.id == 'send-btn') {
 
         steps.forEach((element, index) => {
+
+            // console.log(element.id);
             if (element.classList.contains('step-active')) {
                 element.classList.replace('step-active', 'completed');
                 // element.addClass('completed');
@@ -185,9 +187,10 @@ $('.btn').on('click', function(event){
         
             }
         })
+        console.log(id);
         $(`#${id}`).addClass('step-active');
         typeWrapper.forEach(element => {
-            if(Number(element.id) == id){
+            if(Number(element.dataset.id) == id){
                 element.classList.remove('type-wrapper-hidden');
             } else {
                 element.classList.add('type-wrapper-hidden');

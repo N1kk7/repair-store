@@ -42,7 +42,7 @@
                         <div class="step-name">Recieve quote</div>
                       </div>
                 </div>
-                <div class="typeWrapper " id="1">
+                <div class="typeWrapper " data-id="1">
                     <div class="container  text-center ">
                         <div class="row align-items-center row-cols-lg-3 g-lg-4">
                           <div class="col ">
@@ -108,7 +108,7 @@
                           <div class="col">
                             <div class="item-card p-2 px-3 border rounded d-flex justify-content-lg-start align-items-center">
                                 <div class="col-img">
-                                    <img src="./assets/images/device/apple-watch.png" a">
+                                    <img src="./assets/images/device/apple-watch.png" alt="apple-watch">
                                 </div>
                                 <div class="col-name">
                                     <span>
@@ -131,7 +131,7 @@
                     </div>
                    
                 </div>
-                <div class="typeWrapper type-wrapper-hidden" id="2">
+                <div class="typeWrapper type-wrapper-hidden" data-id="2">
                     <div class="container  text-center ">
                         <div class="row align-items-center row-cols-lg-3 g-lg-4">
                           <div class="col ">
@@ -249,7 +249,7 @@
                     </div>
                    
                 </div>
-                <div class="typeWrapper type-wrapper-hidden" id="3">
+                <div class="typeWrapper type-wrapper-hidden" data-id="3">
                     <div class="container  text-center ">
                         <div class="row align-items-center row-cols-lg-3 g-lg-4">
                           <div class="col ">
@@ -412,7 +412,7 @@
                     </div>
                    
                 </div>
-                <div class="typeWrapper type-wrapper-hidden" id="4">
+                <div class="typeWrapper type-wrapper-hidden" data-id="4">
                     <div class="container  text-center ">
                         <div class="row align-items-center row-cols-lg-2 g-lg-4">
                           <div class="col ">
@@ -628,7 +628,7 @@
                     </div>
                    
                 </div>
-                <div class="typeWrapper type-wrapper-hidden" id="5">
+                <div class="typeWrapper type-wrapper-hidden" data-id="5">
                     <div class="container  text-center ">
                         <div class="row align-items-center row-cols-lg-1 g-lg-4">
                             <div class="col ">
@@ -649,7 +649,7 @@
                               <div class="col ">
                                 <div class="list-map item-card p-2 px-3 border rounded  d-flex justify-content-lg-between align-items-center">
                                     
-                                    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d5873.503522773722!2d-122.40700885535698!3d37.75875723485357!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sua!4v1699547569699!5m2!1sen!2sua" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                                    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d5873.503522773722!2d-122.40700885535698!3d37.75875723485357!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sua!4v1699547569699!5m2!1sen!2sua" height="450" style="border:0; width:100%;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                                     <!-- mapHtml listHtml from js -->
                                    </div>
                               </div>
@@ -675,13 +675,13 @@
                     </div>
                    
                 </div>
-                <div class="typeWrapper type-wrapper-hidden" id="6">
+                <div class="typeWrapper type-wrapper-hidden" data-id="6">
                     <div class="container  text-justify ">
                         <div class="row align-items-center row-cols-lg-1 g-lg-4">
                             <div class="col ">
                                 <div class="item-card p-2 px-3 border rounded ">
                                    <div class="quote-delivery-title">
-                                        <h6>How do you want your quote delivered?</h5>
+                                        <h6>How do you want your quote delivered?</h6>
                                    </div>
                                    <div class="radio-button-wrapper">
                                         <div class="radio d-inline-block">
@@ -690,11 +690,11 @@
                                             <!-- <span></span> -->
                                         </div>
                                         <div class="radio d-inline-block"> 
-                                            <input type="radio" name="contact" id="email" value="email" autocomplete="true">
+                                            <input type="radio" name="contact" id="email" value="email" >
                                             <label for="email">Email (Instant)</label>
                                         </div>
                                         <div class="radio d-inline-block">
-                                            <input type="radio" name="contact" id="phone" value="phone" autocomplete="true">
+                                            <input type="radio" name="contact" id="phone" value="phone" >
                                             <label for="phone">Phone Call</label>
                                         </div>
                                         
@@ -715,13 +715,13 @@
                                         <div class="row mb-3">
                                             <label for="input-connect" class="col-sm-3 col-form-label col-form-label-sm">Contact</label>
                                             <div class="col-sm-9">
-                                            <input type="contact" class="form-control form-control-sm" id="input-connect" placeholder="Contact">
+                                            <input type="number" class="form-control form-control-sm" id="input-connect" placeholder="number">
                                             </div>
                                         </div>
                                         <div class="row mb-3">
                                             <label for="input-message" class="col-sm-3 col-form-label col-form-label-sm">Message (Optional)</label>
                                             <div class="col-sm-9">
-                                            <input type="email" class="form-control message-form form-control-sm" id="input-message" placeholder="col-form-label-sm">
+                                            <input type="message" class="form-control message-form form-control-sm" id="input-message" placeholder="col-form-label-sm">
                                             </div>
                                         </div>
                                    </div>
@@ -894,12 +894,6 @@
 
 
                     </div>
-
-
-
-
-
-
 
                 </div>
             </div>
