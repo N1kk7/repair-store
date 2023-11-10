@@ -2,7 +2,6 @@ const steps = document.querySelectorAll('.stepper-item');
 const typeWrapper = document.querySelectorAll('.typeWrapper');
 // const nextBtn = document.querySelector('.nextBtn');
 // const prevBtn = document.querySelector('.prevBtn');
-
 let activePrimary = false;
 // console.log(typeWrapper);
 
@@ -197,7 +196,7 @@ $('.btn').on('click', function(event){
         })
     
     } else {
-        console.log('no');
+        // console.log('no');
     }
 
 })
@@ -253,3 +252,18 @@ $(function () {
     $(event.target).addClass('click-day');
     console.log(event.target);
 });
+
+
+$('.no-btn').on('click', function(){
+    $('.book-appointment').addClass('appointment-hidden');
+    $('#block-without-appointmennt').removeClass('success-hidden')
+    console.log('click no');
+})
+
+
+
+$('.appointment-btn').on('click', function(){
+    $('.book-appointment').addClass('appointment-hidden');
+    $('#block-with-appointmennt').removeClass('success-hidden')
+    console.log('click book');
+})

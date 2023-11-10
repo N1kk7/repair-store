@@ -12,9 +12,9 @@
 <body>
     <div class="widget">
         <!-- <h1>main widget</h1> -->
-        <!--  -->
+        <!--stepper-hidden  -->
         <div class="widget-wrapper">
-            <div class="widget-stepper stepper-hidden">
+            <div class="widget-stepper ">
 
                 <div class="title-wrapper">
                     <div class="stepper-item step-active" id="1">
@@ -904,7 +904,7 @@
                 </div>
             </div>
             <!-- appointment-hidden -->
-            <div class="book-appointment ">
+            <div class="book-appointment appointment-hidden">
                 <div class="title-wrapper">
                     <div class="tittle">
                         <h2>Would you like to book an appointment</h2>
@@ -916,8 +916,7 @@
                     </div>
                     <div class="appointment-details d-flex justify-content-lg-between">
                         <div class="appointment-store">
-                            <div class="selected-store ">
-                                <div class="">
+                            <div class="selected-store text-center">
                                    <div class="store-img">
                                        <img src="./assets/images/stores/store1.png" alt="store1">
                                    </div>
@@ -928,9 +927,8 @@
                                        <p>8961 North Blackburn Ave.Milton, MA 02186</p>
                                    </div>
                                    <div class="btn">
-                                       <button type="button" class=" btn btn-primary px-4 py-2">View</button>
+                                       <button type="button" class=" btn btn-primary px-4 py-2">Change</button>
                                    </div>
-                                </div>
                             </div>
 
                         </div>
@@ -1105,14 +1103,67 @@
 
                     </div>
                 </div>
+                <div class="book-appointment-btn d-flex justify-content-end">
+                    <div class="no-btn">
+                        <button class="btn ">No</button>
+                    </div>
+                    <div class="appointment-btn">
+                        <button class="btn ">Book Appointment</button>
+                    </div>
+                </div>
 
                 
 
             </div>
-            <div class="default-succes">
+            <div class="success-block d-flex justify-content-center align-items-center success-hidden" id="block-without-appointmennt">
+                <div class="success-block-wrapper flex-wrap flex-column align-items-center">
+                    <div class="main-img">
+                        <img src="./assets/images/success.png" alt="success">
+                    </div>
+                    <div class="success-title">
+                        <h1>Success</h1>
+                    </div>
+                    <div class="message">
+                        <p> Your Quote is successfully send to your email address </p>
+                    </div>
+                </div>
+
 
             </div>
-            <div class="appointment-succes">
+            <div class="success-block d-flex justify-content-center align-items-center success-hidden" id="block-with-appointmennt">
+                <div class="success-block-wrapper flex-wrap flex-column align-items-center">
+                    <div class="main-img">
+                        <img src="./assets/images/success.png" alt="success">
+                    </div>
+                    <div class="success-title">
+                        <h1>Success</h1>
+                    </div>
+                    <div class="message">
+                        <p> Your Quote is successfully send to your email address </p>
+                    </div>
+                    <div class="appointment-details">
+                        <h4>Appointment Date and Time</h4>
+    
+                    </div>
+                    <div class="date">
+                        <h3>30-May, 2023 </h3>
+                        <h3>10:30 AM - 11:00 AM</h3>
+                    </div>
+                    <div class="store-detail text-center">
+                        <div class="loc">
+                            <h5>Store Location</h5>
+                        </div>
+                        <div class="store-img">
+                            <img src="./assets/images/stores/store1.png" alt="store">
+                        </div>
+                        <div class="store-name">
+                            <h4>Store Name</h4>
+                        </div>
+                        <div class="store-zip">
+                            <p>8961 North Blackburn Ave.Milton, MA 02186</p>
+                        </div>
+                    </div>
+                </div>
 
             </div>
         

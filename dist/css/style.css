@@ -168,6 +168,9 @@
   width: 147px;
   font-size: 12px;
 }
+.widget-wrapper .typeWrapper .container .row .item-card .details .store .store-wrapper .store-details .btn {
+  margin-bottom: 21px;
+}
 .widget-wrapper .typeWrapper .container .row .item-card .problem-type img {
   width: 50px;
 }
@@ -227,6 +230,40 @@
   width: 189px;
   height: 235px;
   background: #FFF;
+}
+.widget-wrapper .book-appointment .typeWrapper .appointment-details .appointment-store .selected-store .store-name {
+  padding-top: 10px;
+  color: #000;
+  font-family: Open Sans;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+.widget-wrapper .book-appointment .typeWrapper .appointment-details .appointment-store .selected-store .store-zip {
+  padding-top: 5px;
+  color: #000;
+  text-align: center;
+  font-family: Open Sans;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.widget-wrapper .book-appointment .typeWrapper .appointment-details .appointment-store .selected-store .store-zip p {
+  margin-bottom: auto;
+}
+.widget-wrapper .book-appointment .typeWrapper .appointment-details .appointment-store .selected-store .btn button {
+  display: flex;
+  width: 153px;
+  height: 47px;
+  padding: 12px 28px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 3px;
+  border: 1px solid #F60;
+  background: #F60;
+  box-shadow: 0px 8px 11px 0px rgba(255, 102, 0, 0.26);
 }
 .widget-wrapper .book-appointment .typeWrapper .appointment-details .appointment-date {
   width: 628px;
@@ -343,11 +380,117 @@
   background: #F60;
   color: #FFF;
 }
+.widget-wrapper .book-appointment .book-appointment-btn {
+  padding: 0 28px 43px;
+}
+.widget-wrapper .book-appointment .book-appointment-btn .no-btn {
+  margin: 0 21px;
+  padding: 5px 28px;
+  border-radius: 3px;
+  background: #F5F5F7;
+}
+.widget-wrapper .book-appointment .book-appointment-btn .appointment-btn {
+  border-radius: 3px;
+  background: #F60;
+  box-shadow: 0px 8px 11px 0px rgba(255, 102, 0, 0.26);
+}
+.widget-wrapper .book-appointment .book-appointment-btn .appointment-btn button {
+  width: 100%;
+  height: 100%;
+  color: #FFF;
+  font-family: Open Sans;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+.widget-wrapper .success-block {
+  width: 100vw;
+  height: 100vh;
+}
+.widget-wrapper .success-block .success-block-wrapper {
+  width: 707px;
+  display: inherit;
+  padding: 56px 0 40px;
+  border-radius: 15px;
+  background: #FFF;
+  margin: 0 auto;
+  box-shadow: 0px 1px 11px 0px rgba(0, 0, 0, 0.07);
+}
+.widget-wrapper .success-block .success-block-wrapper .success-title h1 {
+  padding-top: 22px;
+  color: #000;
+  text-align: center;
+  font-family: Open Sans;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+.widget-wrapper .success-block .success-block-wrapper .message {
+  width: 285px;
+  color: #000;
+  text-align: center;
+  font-family: Open Sans;
+  font-size: 17px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.widget-wrapper .success-block .success-block-wrapper .appointment-details h4 {
+  color: #000;
+  font-family: Open Sans;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+.widget-wrapper .success-block .success-block-wrapper .date h3 {
+  color: #000;
+  text-align: center;
+  font-family: Open Sans;
+  font-size: 22.04px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+.widget-wrapper .success-block .success-block-wrapper .store-detail .loc {
+  color: #000;
+  font-family: Open Sans;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+.widget-wrapper .success-block .success-block-wrapper .store-detail .store-img img {
+  width: 112px;
+}
+.widget-wrapper .success-block .success-block-wrapper .store-detail .store-name h4 {
+  color: #000;
+  font-family: Open Sans;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+.widget-wrapper .success-block .success-block-wrapper .store-detail .store-zip p {
+  width: 176px;
+  color: #000;
+  text-align: center;
+  font-family: Open Sans;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
 .widget-wrapper .type-wrapper-hidden {
   display: none;
 }
 .widget-wrapper .appointment-hidden {
   display: none;
+}
+.widget-wrapper .success-hidden {
+  display: none !important;
 }
 
 /*# sourceMappingURL=style.css.map */
