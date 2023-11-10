@@ -1,0 +1,439 @@
+.title-wrapper {
+    margin-top: auto;
+    display: flex;
+    justify-content: space-between;
+    // margin-bottom: 20px;
+  }
+  .stepper-item {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex: 1;
+  
+    @media (max-width: 768px) {
+      font-size: 12px;
+    }
+  }
+  
+  .stepper-item::before {
+    position: absolute;
+    content: "";
+    border-bottom: 9px solid #D9D9D9;
+    width: 100%;
+    top: 15px;
+    left: -50%;
+    z-index: 2;
+  }
+  
+  .stepper-item::after {
+    position: absolute;
+    content: "";
+    border-bottom: 2px solid #D9D9D9;
+    width: 100%;
+    top: 20px;
+    left: 50%;
+    z-index: 2;
+  }
+  
+  .stepper-item .step-counter {
+    position: relative;
+    z-index: 5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 37px;
+    height: 37px;
+    border-radius: 50%;
+    background: #D9D9D9;
+    margin-bottom: 6px;
+  }
+  
+  .stepper-item.active {
+    font-weight: bold;
+  }
+  
+  .stepper-item.completed .step-counter {
+    background-color: #229427;
+  }
+  
+  .stepper-item.completed::after {
+    position: absolute;
+    content: "";
+    border-bottom: 9px solid #229427;
+    width: 100%;
+    height: 9px;
+    top: 17px;
+    left: 50%;
+    z-index: 3;
+  }
+
+  .stepper-item{
+    .step-counter{
+      color: #FFFFFF;
+      font-size: 14px;
+    }
+    .step-name{
+      font-family: 'Open Sans';
+      position: relative;
+      top: 15px;
+    letter-spacing: 1px;
+      font-weight: 400;
+      font-size: 14px;
+      color: #757575;
+      line-height: normal;
+      text-transform: capitalize;
+    }
+  }
+  .step-active{
+    .step-counter{
+      background-color: #229427;
+    }
+    .step-name{
+      color: #229427;
+      font-family: 'Open Sans';
+      font-weight: 700;
+      font-size: 14px;
+    }
+  }
+  
+  .stepper-item:first-child::before {
+    content: none;
+  }
+  .stepper-item:last-child::after {
+    content: none;
+  }
+
+
+
+  .widget-wrapper{
+    // display: flex;
+    // justify-content: center;
+    .widget-stepper{
+      margin: 0 auto;
+      width: 947px;
+      // height: 643px;
+      position: relative;
+      top: 10vh;
+      border: 1px solid #E8E8ED;
+      border-radius: 1.3vw;
+      
+    }
+    .stepper-hidden{
+      display: none;
+    }
+    
+      .title-wrapper{
+        // height: 37vh;
+        border-bottom: 1px solid #E8E8ED;
+        display: flex;
+        align-items: center;
+        padding: 65px 60px 53px;
+      }
+      .typeWrapper{
+        padding: 82px 60px 20px;
+        .container{
+          .row{
+            
+            .item-card{
+              border: 1px solid #E8E8ED !important;
+              box-shadow: 0px 1px 11px 0px rgba(0, 0, 0, 0.07);
+              cursor: pointer;
+            
+
+              .form-quote{
+                .row{
+                  .message-form{
+                    height: 166px;
+                  }
+                  .message-form::placeholder{
+                    height: inherit;
+                    position: absolute;
+                    top: 10px;
+                  }
+                }
+              }
+              .details{
+                padding: 28px 43px 35px;
+                .device-img {
+                  img{
+                    width: 147px;
+                  }
+                }
+                .device-name{
+                  width: 160px;
+                  color: #000;
+                  font-family: Open Sans;
+                  font-size: 20px;
+                  font-style: normal;
+                  font-weight: 400;
+                  line-height: normal;
+                }
+                
+                .store{
+                  width: 45%;
+                  .store-wrapper{
+                    width: 310px;
+                    border: 1px solid #E8E8ED;
+                    border-radius: 5px;
+                    padding: 14px 29px;
+                    box-shadow: 0px 1px 11px 0px rgba(0, 0, 0, 0.07);
+                    .store-img{
+                      img{
+                        width: 119px;
+                      }
+                    }
+                    .store-details{
+                      .store-zip{
+                        width: 147px;
+                        font-size: 12px;
+                      }
+                    }
+
+                  }
+                  
+
+                }
+                
+
+              }
+              .problem-type{
+                img{
+                  width: 50px;
+                }
+                span{
+                  color: #000;
+                  text-align: center;
+                  font-family: Open Sans;
+                  font-size: 16px;
+                  font-style: normal;
+                  font-weight: 700;
+                  line-height: normal;
+                }
+              }
+              .option{
+                h5{
+                  color: #000;
+                  font-family: Open Sans;
+                  font-size: 16px;
+                  font-style: normal;
+                  font-weight: 700;
+                  line-height: normal;
+                }
+                span{
+                  color: #000;
+                  font-family: Open Sans;
+                  font-size: 16px;
+                  font-style: normal;
+                  font-weight: 400;
+                  line-height: normal;
+                }
+              }
+
+             
+            }
+            .item-card-active{
+              border: 1px solid #F60 !important;
+            }
+            .button{
+              margin: 40px 0 50px;
+              .btn{
+                background-color: #D9D9D9;
+                border: unset;
+              }
+              .active-btn{
+                background-color: #F60;
+
+
+              }
+
+            }
+          }
+        }
+      }
+      .book-appointment{
+        margin: 0 auto;
+        width: 947px;
+        position: relative;
+        top: 10vh;
+        border: 1px solid #E8E8ED;
+        border-radius: 1.3vw;
+        .typeWrapper{
+          padding: 16px 26px 20px;
+          .appointment-details{
+          
+
+
+            .appointment-store{
+              border-radius: 5px;
+              overflow: hidden;
+  
+              border: 1px solid #E8E8ED;
+              width: 189px;
+              height: 235px;
+              background: #FFF;
+              .selected-store{
+                // border-radius: 5px;
+                // border: 1px solid #E8E8ED;
+                // width: 189px;
+                // height: 235px;
+                // flex-shrink: 0;
+                // background: #FFF;
+              }
+    
+            }
+            .appointment-date{
+              width: 628px;
+              border-radius: 8.019px;
+              border: 0.969px solid #E6E6E6;
+              background: #FFF;
+              padding: 20px;
+              .calendar{
+                .zabuto-calendar{
+                  width: 300px;
+                  height: 300px;
+                  .left-btn, .right-btn{
+                    border-radius: 3.875px;
+                    border: 0.969px solid #E8E8ED;
+                    // width: 20px;
+                    // height: 20px;
+                    // width: 10.295px;
+                    // height: 6.446px;
+                    flex-shrink: 0;
+                    padding: 9px 12px;
+                  }
+                  .zabuto-calendar__navigation__item--header__title{
+                    color: #222B45;
+                    font-family: Open Sans;
+                    font-size: 16.038px;
+                    font-style: normal;
+                    font-weight: 700;
+                    line-height: normal;
+                  }
+                  .zabuto-calendar__days-of-week__item{
+                    padding-top: 22px;
+                    padding-bottom: 22px;
+                    color: #000;
+                    font-family: Open Sans;
+                    font-size: 14.53px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: 12.83px; /* 88.302% */
+                  }
+                  .zabuto-calendar__day{
+                    width: 35px;
+                    height: 35px;
+                    color: #ABABAB;
+                    text-align: center;
+                    font-family: Open Sans;
+                    font-size: 14.53px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: 16.038px; /* 110.377% */
+                  }
+                  .zabuto-calendar__day--today{
+                    span{
+                      background-color: unset!important;
+                      color: #000;
+                      text-align: center;
+                      font-family: Open Sans;
+                      font-size: 14.53px;
+                      font-style: normal;
+                      font-weight: 400;
+                      line-height: 16.038px; /* 110.377% */
+                    }
+                  }
+                  .click-day{
+                    width: 35px;
+                    height: 35px;
+                    border-radius: 4px;
+                    color: #F60;
+                    font-size: 14.53px;
+                    font-style: normal;
+                    font-weight: 700;
+                    background: #FFE7D7;
+                  }
+              
+                }
+              }
+              .time-of-appointment{
+                .title{
+                  h6{
+                    color: #222B45;
+                    text-align: center;
+                    font-family: Open Sans;
+                    font-size: 16.038px;
+                    font-style: normal;
+                    font-weight: 700;
+                    line-height: normal;
+                    text-transform: capitalize;
+                    padding-bottom: 25px;
+                  }
+                }
+                
+                .time-wrapper{
+                  width: 258px;
+                  border-radius: 8.019px;
+                  border: 0.969px solid #E6E6E6;
+                  padding: 10px 8px 10px 0;
+                  background: #FFF;
+                  .time{
+                    width: 100%;
+                    // display: flex;
+                      // padding: 12px 28px;
+                      font-size: 13px;
+              
+    
+    
+                    // justify-content: center;
+                    // text-align: center;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    // align-items: center;
+                    input{
+                      display: none;
+                    }
+                    span{
+                      color: #ABABAB;
+                      border-radius: 3px;
+                      border: 1px solid #E6E6E6;
+                      font-family: Open Sans;
+                      font-size: 13px;
+                      font-style: normal;
+                      font-weight: 400;
+                      line-height: normal;
+                      padding: 12px 10px;
+                      display: inline-block;
+                      white-space: nowrap;
+
+                    }
+                    input:checked + span{
+                      border: 1px solid #E6E6E6;
+
+                      background: #F60;
+//                       color: #FFF;
+
+// font-family: Open Sans;
+// font-size: 13px;
+// font-style: normal;
+// font-weight: 400;
+// line-height: normal;
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+        
+        
+      }
+      .type-wrapper-hidden{
+        display: none;
+      }
+
+      .appointment-hidden{
+        display: none;
+      }
+  }

@@ -1,0 +1,21 @@
+{
+  "name": "repairstore",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon index.js",
+  
+    "scss": "sass --watch ./style/style.scss ./dist/css/style.css"
+
+  },
+  "author": "Nick Sliyusar",
+  "license": "ISC",
+  "dependencies": {
+    "jquery": "^3.7.1",
+    "sass": "^1.69.5",
+    "scss": "^0.2.4"
+  }
+}
+
