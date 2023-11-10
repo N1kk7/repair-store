@@ -152,7 +152,7 @@
   border-radius: 1.3vw;
 }
 .widget-wrapper .stepper-hidden {
-  display: none;
+  display: none !important;
 }
 .widget-wrapper .title-wrapper {
   border-bottom: 1px solid #E8E8ED;

@@ -224,9 +224,15 @@ $('.list-map-btn').on('click', function(){
 
 
 $('#send-btn').on('click', function() {
+    
+    typeWrapper.forEach(element => {
+
+        element.dataset.id === 'appointment-wrapper' ? element.classList.remove('type-wrapper-hidden') : element.classList.add('type-wrapper-hidden');
+    })
+
+
     $('.widget-stepper').addClass('stepper-hidden');
     $('.book-appointment').removeClass('appointment-hidden');
-    $('.typeWrapper').removeClass('type-wrapper-hidden');
     console.log('click');
 })
 
