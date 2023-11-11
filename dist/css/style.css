@@ -20,6 +20,33 @@
   .widget-stepper .widget-stepper-wrapper .button button {
     padding: 8px 24px !important;
   }
+  .book-appointment {
+    width: 95vw !important;
+  }
+  .book-appointment .title-wrapper {
+    padding: 4vh 2vw !important;
+  }
+  .book-appointment .title-wrapper .tittle h2 {
+    font-size: 1.7vw !important;
+  }
+  .book-appointment .type-appointment {
+    padding: 3vh 2vw !important;
+  }
+  .book-appointment .type-appointment .appointment-date {
+    width: 60vw !important;
+    justify-content: space-evenly;
+    padding: 2vh 0;
+  }
+  .book-appointment .type-appointment .appointment-date .calendar .zabuto-calendar {
+    width: 25vw !important;
+    height: 40vh !important;
+  }
+  .book-appointment .type-appointment .time-of-appointment .time-wrapper {
+    width: 25vw !important;
+  }
+  .book-appointment .book-appointment-btn .no-btn {
+    padding: 0 2vw !important;
+  }
 }
 @media screen and (max-width: 768px) {
   .typeWrapper {
@@ -143,11 +170,10 @@
   width: 100vw;
 }
 .widget-wrapper .widget-stepper .widget-stepper-wrapper {
-  margin: 0 auto;
+  margin: 10vh auto 5vh;
   width: 947px;
   height: fit-content;
   position: relative;
-  margin-top: 10vh;
   border: 1px solid #E8E8ED;
   border-radius: 1.3vw;
 }
@@ -188,7 +214,7 @@
   top: 10px;
 }
 .widget-wrapper .typeWrapper .container .row .item-card .details {
-  padding: 28px 43px 35px;
+  padding: 28px 25px 35px;
 }
 .widget-wrapper .typeWrapper .container .row .item-card .details .device-img img {
   width: 147px;
@@ -220,12 +246,21 @@
   font-size: 12px;
 }
 .widget-wrapper .typeWrapper .container .row .item-card .details .store .store-wrapper .store-details .btn {
-  margin-bottom: 21px;
+  border-radius: 3px;
+  background: #F60;
+  padding: 12px 35px;
+  justify-content: center;
+  color: #FFF;
+  align-items: center;
+  box-shadow: 0px 8px 11px 0px rgba(255, 102, 0, 0.26);
 }
-.widget-wrapper .typeWrapper .container .row .item-card .problem-type img {
+.widget-wrapper .typeWrapper .container .row .item-card .problem .problem-card {
+  width: 16vw;
+}
+.widget-wrapper .typeWrapper .container .row .item-card .problem .problem-card .problem-type img {
   width: 50px;
 }
-.widget-wrapper .typeWrapper .container .row .item-card .problem-type span {
+.widget-wrapper .typeWrapper .container .row .item-card .problem .problem-card .problem-type span {
   color: #000;
   text-align: center;
   font-family: Open Sans;
@@ -250,11 +285,42 @@
   font-weight: 400;
   line-height: normal;
 }
+.widget-wrapper .typeWrapper .container .row .item-card .quote-delivery-title {
+  padding: 20px 0 15px;
+}
+.widget-wrapper .typeWrapper .container .row .item-card .quote-delivery-title h6 {
+  color: #000;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+.widget-wrapper .typeWrapper .container .row .item-card .radio {
+  padding: 0 29px 15px;
+  color: #000;
+  font-family: Open Sans;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 130%; /* 18.2px */
+}
+.widget-wrapper .typeWrapper .container .row .item-card .form-quote label {
+  color: #000;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.widget-wrapper .typeWrapper .container .row .item-card .form-quote .form-control::placeholder {
+  color: #D1D3DD;
+  font-family: Open Sans;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 130%; /* 18.2px */
+}
 .widget-wrapper .typeWrapper .container .row .item-card-active {
   border: 1px solid #F60 !important;
-}
-.widget-wrapper .typeWrapper .container .row .button {
-  margin: 40px 0 50px;
 }
 .widget-wrapper .typeWrapper .container .row .button .btn {
   background-color: #D9D9D9;
@@ -278,6 +344,29 @@
 .widget-wrapper .typeWrapper .container .row .button .active-btn {
   background-color: #F60;
   color: #FFF;
+}
+.widget-wrapper .typeWrapper .container .row .button-map {
+  margin: 15px 0 25px;
+}
+.widget-wrapper .typeWrapper .container .quote-information {
+  padding: 36px 0 27px;
+}
+.widget-wrapper .typeWrapper .container .quote-information h3 {
+  color: #000;
+  font-family: Open Sans;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+.widget-wrapper .type-problem {
+  padding: 45px 47px 0px;
+}
+.widget-wrapper .type-map {
+  padding: 30px 47px 10px;
+}
+.widget-wrapper .type-form {
+  padding: 55px 47px 35px;
 }
 .widget-wrapper .book-appointment {
   margin: 0 auto;

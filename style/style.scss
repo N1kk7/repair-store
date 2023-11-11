@@ -117,12 +117,11 @@
       width: 100vw;
       .widget-stepper-wrapper{
 
-        margin: 0 auto;
+        margin: 10vh auto 5vh;
         width: 947px;
         height: fit-content;
         // height: 643px;
         position: relative;
-        margin-top: 10vh;
         border: 1px solid #E8E8ED;
         border-radius: 1.3vw;
         
@@ -174,7 +173,7 @@
                 }
               }
               .details{
-                padding: 28px 43px 35px;
+                padding: 28px 25px 35px;
                 .device-img {
                   img{
                     width: 147px;
@@ -210,8 +209,19 @@
                         
                       }
                       .btn{
-                        margin-bottom: 21px;
+                        border-radius: 3px;
+                          background: #F60;
+                          padding: 12px 35px;
+                          justify-content: center;
+                          color: #FFF;
+                          align-items: center;
+                          box-shadow: 0px 8px 11px 0px rgba(255, 102, 0, 0.26);
                       }
+                      // .button{
+                      //   .btn{
+                          
+                      //   }
+                      // }
                     }
 
                   }
@@ -221,18 +231,23 @@
                 
 
               }
-              .problem-type{
-                img{
-                  width: 50px;
-                }
-                span{
-                  color: #000;
-                  text-align: center;
-                  font-family: Open Sans;
-                  font-size: 16px;
-                  font-style: normal;
-                  font-weight: 700;
-                  line-height: normal;
+              .problem{
+                .problem-card{
+                  width: 16vw;
+                  .problem-type{
+                    img{
+                      width: 50px;
+                    }
+                    span{
+                      color: #000;
+                      text-align: center;
+                      font-family: Open Sans;
+                      font-size: 16px;
+                      font-style: normal;
+                      font-weight: 700;
+                      line-height: normal;
+                    }
+                  }
                 }
               }
               .option{
@@ -254,13 +269,53 @@
                 }
               }
 
+              //5
+              .quote-delivery-title{
+                padding: 20px 0 15px;
+                h6{
+                  color: #000;
+                  // font-family: Open Sans;
+                  font-size: 18px;
+                  font-style: normal;
+                  font-weight: 700;
+                  line-height: normal;
+                }
+              }
+              .radio{
+                padding: 0 29px 15px;
+                color: #000;
+                font-family: Open Sans;
+                font-size: 14px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 130%; /* 18.2px */
+              }
+              .form-quote{
+                label{
+                  color: #000;
+                  // font-family: Open Sans;
+                  font-size: 14px;
+                  font-style: normal;
+                  font-weight: 400;
+                  line-height: normal;
+                }
+                .form-control::placeholder{
+                  color: #D1D3DD;
+                  font-family: Open Sans;
+                  font-size: 14px;
+                  font-style: normal;
+                  font-weight: 400;
+                  line-height: 130%; /* 18.2px */
+                }
+              }
+
              
             }
             .item-card-active{
               border: 1px solid #F60 !important;
             }
             .button{
-              margin: 40px 0 50px;
+              // margin: 40px 0 50px;
               .btn{
 
 
@@ -294,8 +349,33 @@
               }
 
             }
+            .button-map{
+              margin: 15px 0 25px;
+            }
+          }
+          .quote-information{
+            padding: 36px 0 27px;
+            h3{
+              color: #000;
+              font-family: Open Sans;
+              font-size: 18px;
+              font-style: normal;
+              font-weight: 700;
+              line-height: normal;
+            }
           }
         }
+      }
+      .type-problem{
+        padding: 45px 47px 0px;
+      }
+      .type-map{
+        padding: 30px 47px 10px;
+
+      }
+      .type-form{
+        padding: 55px 47px 35px;
+
       }
       .book-appointment{
         margin: 0 auto;

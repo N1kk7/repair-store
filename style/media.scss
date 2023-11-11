@@ -24,6 +24,44 @@
             }
         }
     }
+    .book-appointment{
+        width: 95vw !important;
+        .title-wrapper{
+            padding: 4vh 2vw !important;
+            .tittle{
+                h2{
+                    font-size: 1.7vw !important;
+
+                }
+            }
+        }
+        .type-appointment{
+            padding: 3vh 2vw !important;
+            .appointment-date{
+                width: 60vw !important;
+                justify-content: space-evenly;
+                padding: 2vh 0;
+                .calendar{
+                    .zabuto-calendar{
+                        width: 25vw !important;
+                        height: 40vh !important;
+                    }
+                }
+            }
+            .time-of-appointment{
+                .time-wrapper{
+                    width: 25vw !important;
+                }
+            }
+            
+        }
+        .book-appointment-btn{
+            .no-btn{
+                padding: 0 2vw !important;
+            }
+        }
+        
+    }
   }
   @media screen and (max-width: 768px) {
     .typeWrapper{
