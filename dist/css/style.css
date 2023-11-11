@@ -1,153 +1,3 @@
-@media screen and (max-width: 1024px) {
-  .widget-stepper .widget-stepper-wrapper {
-    max-width: 85vw;
-    margin-top: 7vh !important;
-    margin-bottom: 5vh !important;
-  }
-  .widget-stepper .widget-stepper-wrapper .title-wrapper {
-    padding: 5vh 0 !important;
-  }
-  .widget-stepper .widget-stepper-wrapper .title-wrapper .step-name {
-    white-space: nowrap;
-    font-size: 1.5vw;
-  }
-  .widget-stepper .widget-stepper-wrapper .typeWrapper {
-    padding: 3vh 2vw !important;
-  }
-  .widget-stepper .widget-stepper-wrapper .typeWrapper .list-map-btn img {
-    width: 2vw;
-  }
-  .widget-stepper .widget-stepper-wrapper .typeWrapper .item-card .details .device-img img {
-    width: 15vw !important;
-  }
-  .widget-stepper .widget-stepper-wrapper .typeWrapper .item-card .details .device-name {
-    width: 10vw !important;
-    font-size: 2vw !important;
-    padding-right: 2vw;
-  }
-  .widget-stepper .widget-stepper-wrapper .typeWrapper .item-card .details .store .store-img img {
-    width: 15vw !important;
-  }
-  .widget-stepper .widget-stepper-wrapper .button {
-    margin: 2vh 0 4vh !important;
-  }
-  .widget-stepper .widget-stepper-wrapper .button button {
-    padding: 8px 24px !important;
-  }
-  .book-appointment {
-    width: 95vw !important;
-  }
-  .book-appointment .title-wrapper {
-    padding: 4vh 2vw !important;
-  }
-  .book-appointment .title-wrapper .tittle h2 {
-    font-size: 1.7vw !important;
-  }
-  .book-appointment .type-appointment {
-    padding: 3vh 2vw !important;
-  }
-  .book-appointment .type-appointment .appointment-date {
-    width: 60vw !important;
-    justify-content: space-evenly;
-    padding: 2vh 0;
-  }
-  .book-appointment .type-appointment .appointment-date .calendar .zabuto-calendar {
-    width: 25vw !important;
-    height: 40vh !important;
-  }
-  .book-appointment .type-appointment .time-of-appointment .time-wrapper {
-    width: 25vw !important;
-  }
-  .book-appointment .book-appointment-btn .no-btn {
-    padding: 0 2vw !important;
-  }
-}
-@media screen and (max-width: 768px) {
-  .typeWrapper {
-    padding: 2vh 2vw !important;
-  }
-  .typeWrapper .container .item-card .zip-code {
-    display: flex;
-    flex-direction: column;
-    align-items: start;
-  }
-  .typeWrapper .container .item-card .zip-code .input-zip-code {
-    padding: 2vh 0;
-    padding-left: 0vw !important;
-  }
-  .typeWrapper .container .item-card .details {
-    flex-direction: column-reverse;
-  }
-  .typeWrapper .container .item-card .details .device {
-    padding: 3vh 0;
-  }
-  .typeWrapper .container .item-card .details .device .device-wrapper {
-    justify-content: center;
-  }
-  .typeWrapper .container .item-card .details .store {
-    width: unset !important;
-  }
-  .typeWrapper .container .item-card .details .store .store-wrapper {
-    justify-content: space-around;
-    width: unset !important;
-  }
-  .typeWrapper .container .item-card .problem .problem-wrapper {
-    flex-direction: column;
-  }
-  .typeWrapper .container .item-card .problem .problem-wrapper .problem-card {
-    width: unset !important;
-  }
-  .typeWrapper .container .item-card .problem .problem-wrapper .problem-card .item-card {
-    flex-direction: unset !important;
-    justify-content: center !important;
-  }
-  .typeWrapper .container .item-card .problem .problem-wrapper .problem-card .item-card .problem-type .col-img {
-    display: inline-block;
-  }
-  .typeWrapper .container .item-card .problem .problem-wrapper .problem-card .item-card .problem-type .col-img img {
-    width: 10vw;
-  }
-  .typeWrapper .container .item-card .problem .problem-wrapper .problem-card .item-card .problem-type .col-name {
-    display: inline-block;
-    padding-left: 1vw !important;
-  }
-  .typeWrapper .container .item-card .problem .problem-wrapper .problem-card .item-card .problem-type .col-name span {
-    font-size: 2vw;
-    white-space: nowrap;
-  }
-  .typeWrapper .container .item-card .problem .problem-wrapper .problem-card .item-card .option {
-    text-align: center;
-  }
-  .typeWrapper .container .item-card .problem .problem-wrapper .problem-card .item-card .option h5 {
-    font-size: 1.8vw;
-    display: block !important;
-  }
-  .typeWrapper .container .item-card .problem .problem-wrapper .problem-card .item-card .option span {
-    display: block !important;
-    font-size: 1.8vw;
-  }
-  .typeWrapper .container .item-card .radio {
-    padding: 0 2vw 10px !important;
-  }
-  .typeWrapper .container .item-card .radio .radio-btn {
-    width: 30px !important;
-  }
-}
-@media screen and (max-width: 425px) {
-  .widget-stepper .widget-stepper-wrapper {
-    max-width: 95vw;
-    margin-top: 4vh !important;
-  }
-  .widget-stepper .widget-stepper-wrapper .title-wrapper .step-name {
-    font-size: 1.8vw;
-  }
-  .widget-stepper .widget-stepper-wrapper .typeWrapper {
-    padding: 3vh 2vw !important;
-  }
-  .widget-stepper .widget-stepper-wrapper .typeWrapper .col-name span {
-    font-size: 4vw;
-  }
-}
 .title-wrapper {
   margin-top: auto;
   display: flex;
@@ -582,6 +432,19 @@
 .widget-wrapper .book-appointment .typeWrapper .appointment-details .appointment-store .selected-store .store-zip p {
   margin-bottom: auto;
 }
+.widget-wrapper .book-appointment .typeWrapper .appointment-details .appointment-store .selected-store .btn button {
+  display: flex;
+  width: 153px;
+  height: 47px;
+  padding: 12px 28px;
+  justify-content: center;
+  align-items: center;
+  color: #FFF;
+  border-radius: 3px;
+  border: 1px solid #F60;
+  background: #F60;
+  box-shadow: 0px 8px 11px 0px rgba(255, 102, 0, 0.26);
+}
 .widget-wrapper .book-appointment .typeWrapper .appointment-details .appointment-date {
   width: 628px;
   border-radius: 8.019px;
@@ -808,6 +671,161 @@
 }
 .widget-wrapper .success-hidden {
   display: none !important;
+}
+
+@media screen and (max-width: 1024px) {
+  .widget-stepper .widget-stepper-wrapper {
+    max-width: 85vw;
+    margin-top: 7vh;
+    margin-bottom: 5vh;
+  }
+  .widget-stepper .widget-stepper-wrapper .title-wrapper {
+    padding: 5vh 0;
+  }
+  .widget-stepper .widget-stepper-wrapper .title-wrapper .step-name {
+    white-space: nowrap;
+    font-size: 1.5vw;
+  }
+  .widget-stepper .widget-stepper-wrapper .typeWrapper {
+    padding: 3vh 2vw;
+  }
+  .widget-stepper .widget-stepper-wrapper .typeWrapper .list-map-btn img {
+    width: 2vw;
+  }
+  .widget-stepper .widget-stepper-wrapper .typeWrapper .item-card .details .device-img img {
+    width: 15vw;
+  }
+  .widget-stepper .widget-stepper-wrapper .typeWrapper .item-card .details .device-name {
+    width: 10vw;
+    font-size: 2vw;
+    padding-right: 2vw;
+  }
+  .widget-stepper .widget-stepper-wrapper .typeWrapper .item-card .details .store .store-img img {
+    width: 15vw;
+  }
+  .widget-stepper .widget-stepper-wrapper .button {
+    margin: 2vh 0 4vh;
+  }
+  .widget-stepper .widget-stepper-wrapper .button button {
+    padding: 8px 24px;
+  }
+  .book-appointment {
+    width: 95vw;
+  }
+  .book-appointment .title-wrapper {
+    padding: 4vh 2vw;
+  }
+  .book-appointment .title-wrapper .tittle h2 {
+    font-size: 1.7vw;
+  }
+  .book-appointment .type-appointment {
+    padding: 3vh 2vw;
+  }
+  .book-appointment .type-appointment .appointment-date {
+    width: 60vw;
+    justify-content: space-evenly;
+    padding: 2vh 0;
+  }
+  .book-appointment .type-appointment .appointment-date .calendar .zabuto-calendar {
+    width: 25vw;
+    height: 40vh;
+  }
+  .book-appointment .type-appointment .time-of-appointment .time-wrapper {
+    width: 25vw;
+  }
+  .book-appointment .book-appointment-btn .no-btn {
+    padding: 0 2vw;
+  }
+}
+@media screen and (max-width: 768px) {
+  .typeWrapper {
+    padding: 2vh 2vw;
+  }
+  .typeWrapper .container .item-card .zip-code {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+  }
+  .typeWrapper .container .item-card .zip-code .input-zip-code {
+    padding: 2vh 0;
+    padding-left: 0vw;
+  }
+  .typeWrapper .container .item-card .details {
+    flex-direction: column-reverse;
+  }
+  .typeWrapper .container .item-card .details .device {
+    padding: 3vh 0;
+  }
+  .typeWrapper .container .item-card .details .device .device-wrapper {
+    justify-content: center;
+  }
+  .typeWrapper .container .item-card .details .store {
+    width: unset !important;
+  }
+  .typeWrapper .container .item-card .details .store .store-wrapper {
+    justify-content: space-around;
+    width: unset !important;
+  }
+  .typeWrapper .container .item-card .problem .problem-wrapper {
+    flex-direction: column;
+  }
+  .typeWrapper .container .item-card .problem .problem-wrapper .problem-card {
+    width: unset !important;
+  }
+  .typeWrapper .container .item-card .problem .problem-wrapper .problem-card .item-card {
+    flex-direction: unset !important;
+    justify-content: center;
+  }
+  .typeWrapper .container .item-card .problem .problem-wrapper .problem-card .item-card .problem-type .col-img {
+    display: inline-block;
+  }
+  .typeWrapper .container .item-card .problem .problem-wrapper .problem-card .item-card .problem-type .col-img img {
+    width: 10vw;
+  }
+  .typeWrapper .container .item-card .problem .problem-wrapper .problem-card .item-card .problem-type .col-name {
+    display: inline-block;
+    padding-left: 1vw;
+  }
+  .typeWrapper .container .item-card .problem .problem-wrapper .problem-card .item-card .problem-type .col-name span {
+    font-size: 2vw;
+    white-space: nowrap;
+  }
+  .typeWrapper .container .item-card .problem .problem-wrapper .problem-card .item-card .option {
+    text-align: center;
+  }
+  .typeWrapper .container .item-card .problem .problem-wrapper .problem-card .item-card .option h5 {
+    font-size: 1.8vw;
+    display: block;
+  }
+  .typeWrapper .container .item-card .problem .problem-wrapper .problem-card .item-card .option span {
+    display: block;
+    font-size: 1.8vw;
+  }
+  .typeWrapper .container .item-card .radio {
+    padding: 0 2vw 10px !important;
+  }
+  .typeWrapper .container .item-card .radio .radio-btn {
+    width: 30px;
+  }
+}
+@media screen and (max-width: 425px) {
+  .widget-stepper .widget-stepper-wrapper {
+    max-width: 95vw;
+    margin-top: 4vh;
+  }
+  .widget-stepper .widget-stepper-wrapper .title-wrapper .step-name {
+    font-size: 1.8vw;
+  }
+  .widget-stepper .widget-stepper-wrapper .typeWrapper {
+    padding: 3vh 2vw;
+  }
+  .widget-stepper .widget-stepper-wrapper .typeWrapper .col-name span {
+    font-size: 5vw;
+  }
+  .appointment .appointment-details {
+    flex-direction: column-reverse;
+    align-items: center;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
