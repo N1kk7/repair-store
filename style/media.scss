@@ -52,12 +52,13 @@
         }
     }
     .book-appointment{
-        width: 95vw ;
+        width: 95vw !important;
+        margin: 0 auto 20vh !important;
         .title-wrapper{
             padding: 4vh 2vw ;
             .tittle{
                 h2{
-                    font-size: 1.7vw ;
+                    font-size: 3vw ;
 
                 }
             }
@@ -90,6 +91,32 @@
         
     }
   }
+
+@media screen and (max-width: 955px) {
+    .appointment-details{
+        flex-direction: column-reverse;
+        .appointment-date{
+            width: 85vw !important;
+        }
+        .appointment-store{
+            margin: 3vh 0;
+            width: auto !important;
+            height: unset !important;
+            .selected-store{
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                height: inherit;
+                .store-zip{
+                    p{
+                        width: 20vw;
+                    }
+                }
+            }
+        }
+    }
+}
+
   @media screen and (max-width: 768px) {
     .typeWrapper{
         padding: 2vh 2vw ;
@@ -177,9 +204,62 @@
         }
         
     }
+    .book-appointment{
+        top: 5vh !important;
+        .appointment-details{
+            flex-direction: column-reverse;
+            align-items: center;
+            .appointment-date{
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                .zabuto-calendar{
+                    width: 65vw !important;
+                }
+                .time-wrapper{
+                    width: 65vw !important;
+                }
+                h6{
+                    padding-top: 3vh;
+                }
+            }
+            .appointment-store{
+                margin: 3vh 0;
+                width: unset !important;
+                height: unset !important;
+                .selected-store{
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+                    height: inherit;
+                    .store-zip{
+                        p{
+                            width: 20vw;
+                        }
+                    }
+                }
+            }
+        }
+    }
     
     
   }
+
+  @media screen and (max-width: 688px) {
+
+
+    .appointment-store{
+        display: flex;
+        width: 30vw !important;
+        justify-content: center;
+        .selected-store{
+            flex-direction: column;
+        }
+    }
+  }
+
+
+
   @media screen and (max-width: 425px) {
     .widget-stepper{
         // margin-top: 4vh ;
@@ -218,6 +298,7 @@
             align-items: center;
         }
     }
+    
   }
   @media screen and (max-width: 375px) {
     article {

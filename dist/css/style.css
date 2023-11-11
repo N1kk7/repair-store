@@ -402,6 +402,14 @@
 .widget-wrapper .book-appointment .typeWrapper {
   padding: 16px 26px 20px;
 }
+.widget-wrapper .book-appointment .typeWrapper .selected-store-tittle h4 {
+  color: #000;
+  font-family: Open Sans;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
 .widget-wrapper .book-appointment .typeWrapper .appointment-details .appointment-store {
   border-radius: 5px;
   overflow: hidden;
@@ -710,13 +718,14 @@
     padding: 8px 24px;
   }
   .book-appointment {
-    width: 95vw;
+    width: 95vw !important;
+    margin: 0 auto 20vh !important;
   }
   .book-appointment .title-wrapper {
     padding: 4vh 2vw;
   }
   .book-appointment .title-wrapper .tittle h2 {
-    font-size: 1.7vw;
+    font-size: 3vw;
   }
   .book-appointment .type-appointment {
     padding: 3vh 2vw;
@@ -735,6 +744,28 @@
   }
   .book-appointment .book-appointment-btn .no-btn {
     padding: 0 2vw;
+  }
+}
+@media screen and (max-width: 955px) {
+  .appointment-details {
+    flex-direction: column-reverse;
+  }
+  .appointment-details .appointment-date {
+    width: 85vw !important;
+  }
+  .appointment-details .appointment-store {
+    margin: 3vh 0;
+    width: auto !important;
+    height: unset !important;
+  }
+  .appointment-details .appointment-store .selected-store {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: inherit;
+  }
+  .appointment-details .appointment-store .selected-store .store-zip p {
+    width: 20vw;
   }
 }
 @media screen and (max-width: 768px) {
@@ -806,6 +837,51 @@
   }
   .typeWrapper .container .item-card .radio .radio-btn {
     width: 30px;
+  }
+  .book-appointment {
+    top: 5vh !important;
+  }
+  .book-appointment .appointment-details {
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+  .book-appointment .appointment-details .appointment-date {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .book-appointment .appointment-details .appointment-date .zabuto-calendar {
+    width: 65vw !important;
+  }
+  .book-appointment .appointment-details .appointment-date .time-wrapper {
+    width: 65vw !important;
+  }
+  .book-appointment .appointment-details .appointment-date h6 {
+    padding-top: 3vh;
+  }
+  .book-appointment .appointment-details .appointment-store {
+    margin: 3vh 0;
+    width: unset !important;
+    height: unset !important;
+  }
+  .book-appointment .appointment-details .appointment-store .selected-store {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: inherit;
+  }
+  .book-appointment .appointment-details .appointment-store .selected-store .store-zip p {
+    width: 20vw;
+  }
+}
+@media screen and (max-width: 688px) {
+  .appointment-store {
+    display: flex;
+    width: 30vw !important;
+    justify-content: center;
+  }
+  .appointment-store .selected-store {
+    flex-direction: column;
   }
 }
 @media screen and (max-width: 425px) {
