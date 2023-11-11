@@ -330,7 +330,13 @@
                 // padding: 5vh 0 ;
                 .step-name{
                     // white-space: nowrap;
-                    font-size: 1.8vw;
+                    white-space: unset;
+                    font-size: 2.5vw;
+                    display: flex;
+                    justify-content: center;
+                    position: absolute;
+                    top: 45px;
+                    text-align: center;
                 }
             }
             .typeWrapper{

@@ -344,18 +344,23 @@
                 }
               }
               .checkbox{
+                display: flex;
+                align-items: center;
+                width: -webkit-fill-available;
+                padding: 1vw;
+                cursor: pointer;
                 input{
                   display: none;
 
                 }
-                span{
+                .checkmark{
                   display: inline-block;
                   border-radius: 3px;
                   border: 1px solid #E2E2E2;
                   width: 20px;
                   height: 20px;
                 }
-                input:checked + span{
+                input:checked + .checkmark{
                   background-color: #F60;
                   background-image: url(../../assets/images/checkmark.svg);
                   background-size: 10px 10px;
