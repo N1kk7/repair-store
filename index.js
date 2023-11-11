@@ -1,9 +1,7 @@
 const steps = document.querySelectorAll('.stepper-item');
 const typeWrapper = document.querySelectorAll('.typeWrapper');
-// const nextBtn = document.querySelector('.nextBtn');
-// const prevBtn = document.querySelector('.prevBtn');
 let activePrimary = false;
-// console.log(typeWrapper);
+let checkId = true;
 
 const mapHtml = '<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d5873.503522773722!2d-122.40700885535698!3d37.75875723485357!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sua!4v1699547569699!5m2!1sen!2sua"  height="450" style="border:0; width:100%;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>';
 
@@ -141,37 +139,59 @@ const listHtml = `<div class="row align-items-center row-cols-lg-3 g-lg-4 row-co
 let togleMap = true;
 
 
-$(window).on('click', function(event) {
-    console.log();
-    let clickElem = event.target.closest('.item-card');
-    const itemCard = document.querySelectorAll('.item-card');
-    itemCard.forEach(element => {
-        element.classList.remove('item-card-active');
+const toggleState = (param) => {
+    console.log(param);
 
-        if (!event.target.id == 'send-btn' || activePrimary) {
+    switch (param) {
+        case 'enable':
+            $('.btn').addClass('active-btn');
+            activePrimary = true;
+            // checkId = true;
+            
+            break;
+        case 'disable':
             $('.btn').removeClass('active-btn');
 
             activePrimary = false;
-        }
-
-    })
-//    console.log(clickElem);
-    if(clickElem){
-       clickElem.classList.add('item-card-active');
-       $('.btn').addClass('active-btn');
-       activePrimary = true;
-    //    console.log(activePrimary);
-
+            // checkId = false;
+            break;
 
     }
-    // element.classList.remove('item-card-active');
-    // console.log(activePrimary);
+}
+
+
+$(window).on('click', function(event) {
+    // console.log(event.target);
+    let clickElem = event.target.closest('.item-card');
+    const itemCard = document.querySelectorAll('.item-card');
+    if (checkId) {
+        itemCard.forEach(element => {
+            element.classList.remove('item-card-active');
+    
+            if (!event.target.id == 'send-btn' || activePrimary) {
+    
+                toggleState('disable');
+                
+            }
+    
+        })
+    //    console.log(clickElem.id);
+        if(clickElem) {
+           clickElem.classList.add('item-card-active');
+           toggleState('enable');
+           
+        //    console.log(activePrimary);
+    
+    
+        }
+    }
+  
     return
 
 })
 
 $('.btn').on('click', function(event){
-    // console.log(event.target.id);
+
     let id;
 
     if (activePrimary || !event.target.id == 'send-btn') {
@@ -197,6 +217,18 @@ $('.btn').on('click', function(event){
             }
             // console.log(element.id);
         })
+        if (id <= 3) {
+            checkId = true
+            toggleState('enable');
+        } else {
+            checkId = false
+            toggleState('enable')
+        }
+
+        
+        $("html, body").animate({ scrollTop: 0 }, 5);
+
+        // animate({ scrollTop: 0 }, 500);
     
     } else {
         // console.log('no');
