@@ -1,6 +1,5 @@
 @media screen and (max-width: 1024px) {
     .widget-stepper{
-        // top: 7vh ;
         .widget-stepper-wrapper{
             max-width: 85vw;
             margin-top: 7vh ;
@@ -11,7 +10,6 @@
                     white-space: nowrap;
                     font-size: 1.5vw;
                 }
-                
             }
             .typeWrapper{
                 padding: 3vh 2vw ;
@@ -81,20 +79,16 @@
                     width: 25vw ;
                 }
             }
-            
         }
         .book-appointment-btn{
             .no-btn{
                 padding: 0 2vw ;
             }
-        }
-        
+        } 
     }
     .success-block{
         .success-block-wrapper{
             width: 85vw !important;
-           
-
         }
     }
   }
@@ -131,14 +125,14 @@
         .typeWrapper{
             padding: 2vh 2vw ;
             .container{
-                // min-width: 600px;
-                .row{
-                    
-                }
                 .item-card{
+                    .col-name{
+                        padding: 0 8vw;
+                    }
                     position: relative;
-                    
-    
+                    .checkbox{
+                        padding: 1vh 4vw !important;
+                    }
                     .zip-code{
                         display: flex;
                         flex-direction: column;
@@ -148,7 +142,6 @@
                             padding-left: 0vw ;
                             input{
                                 width: 27vw !important;
-    
                             }
                         }
                     }
@@ -182,7 +175,6 @@
                                            img{
                                             width: 10vw;
                                            }
-                                            // width: 15vw;
     
                                         }
                                         .col-name{
@@ -203,8 +195,6 @@
                                         span{
                                             display: block ;
                                             font-size: 1.8vw;
-    
-    
                                         }
                                     }
                                 }
@@ -223,15 +213,10 @@
                         position: absolute;
                         bottom: 2vh;
                         right: 0;
-                    }
-                    
+                    } 
                 }
-               
-    
-            }
-            
-        }
-        
+            }  
+        }  
     }
     .book-appointment{
         top: 5vh !important;
@@ -269,14 +254,10 @@
                 }
             }
         }
-    }
-    
-    
+    } 
   }
 
   @media screen and (max-width: 688px) {
-
-
     .appointment-store{
         display: flex;
         width: 30vw !important;
@@ -285,7 +266,6 @@
             flex-direction: column;
         }
     }
-    
   }
 
   @media screen and (max-width: 562px) {
@@ -313,11 +293,13 @@
         .store-name{
             padding: 0 2vw;
         }
-        
+        .store-zip{
+            p{
+                margin: 0;
+            }
+        }
     }
-
   }
-
 
   @media screen and (max-width: 425px) {
     .widget-stepper{
@@ -325,11 +307,8 @@
         .widget-stepper-wrapper{
             max-width: 95vw;
             margin-top: 4vh !important;
-            // margin-bottom: 5vh ;
             .title-wrapper{
-                // padding: 5vh 0 ;
                 .step-name{
-                    // white-space: nowrap;
                     white-space: unset;
                     font-size: 2.5vw;
                     display: flex;
@@ -348,13 +327,6 @@
                     }
                 }
             }
-            // .button{
-            //     margin: 2vh 0 4vh ;
-
-            //     button{
-            //         padding: 8px 24px ;
-            //     }
-            // }
         }
     }
     .appointment{
@@ -371,7 +343,6 @@
                     width: 50vw !important;
 
                 }
-
             }
             .message{
                 width: 60vw !important;
@@ -381,18 +352,17 @@
                     font-size: 5vw !important;
                 }
             }
-
         }
     }
     
   }
-  @media screen and (max-width: 375px) {
-    article {
+//   @media screen and (max-width: 375px) {
+//     article {
 
-    }
-  }
-  @media screen and (max-width: 320px) {
-    article {
+//     }
+//   }
+//   @media screen and (max-width: 320px) {
+//     article {
 
-    }
-  }
+//     }
+//   }

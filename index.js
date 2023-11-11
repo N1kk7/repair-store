@@ -1,6 +1,7 @@
 const steps = document.querySelectorAll('.stepper-item');
 const typeWrapper = document.querySelectorAll('.typeWrapper');
 let activePrimary = false;
+let togleMap = true;
 let checkId = true;
 
 const mapHtml = '<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d5873.503522773722!2d-122.40700885535698!3d37.75875723485357!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sua!4v1699547569699!5m2!1sen!2sua"  height="450" style="border:0; width:100%;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>';
@@ -136,78 +137,60 @@ const listHtml = `<div class="row align-items-center row-cols-lg-3 g-lg-4 row-co
                     </div>
                     </div>`
 
-let togleMap = true;
 
-
+// func for check firs 4 page and activate primmary button
 const toggleState = (param) => {
-    console.log(param);
 
     switch (param) {
         case 'enable':
             $('.btn').addClass('active-btn');
             activePrimary = true;
-            // checkId = true;
-            
             break;
         case 'disable':
             $('.btn').removeClass('active-btn');
-
             activePrimary = false;
-            // checkId = false;
             break;
 
     }
 }
 
-
+// function for check window click and mark selected card
 $(window).on('click', function(event) {
-    // console.log(event.target);
     let clickElem = event.target.closest('.item-card');
     const itemCard = document.querySelectorAll('.item-card');
     if (checkId) {
         itemCard.forEach(element => {
             element.classList.remove('item-card-active');
-    
             if (!event.target.id == 'send-btn' || activePrimary) {
-    
-                toggleState('disable');
-                
+                toggleState('disable'); 
             }
-    
         })
-    //    console.log(clickElem.id);
         if(clickElem) {
            clickElem.classList.add('item-card-active');
            toggleState('enable');
-           
-        //    console.log(activePrimary);
-    
     
         }
     }
-  
     return
-
 })
 
+
+// function for check primmary button click and toggle top steps and blocks
 $('.btn').on('click', function(event){
 
     let id;
 
     if (activePrimary || !event.target.id == 'send-btn') {
 
-        steps.forEach((element, index) => {
+        steps.forEach((element) => {
 
-            // console.log(element.id);
             if (element.classList.contains('step-active')) {
                 element.classList.replace('step-active', 'completed');
-                // element.addClass('completed');
     
                 id = Number(element.id) + 1;
         
             }
         })
-        console.log(id);
         $(`#${id}`).addClass('step-active');
         typeWrapper.forEach(element => {
             if(Number(element.dataset.id) == id){
@@ -215,29 +198,26 @@ $('.btn').on('click', function(event){
             } else {
                 element.classList.add('type-wrapper-hidden');
             }
-            // console.log(element.id);
-        })
+        });
+
         if (id <= 3) {
             checkId = true
             toggleState('enable');
         } else {
             checkId = false
-            toggleState('enable')
-        }
+            toggleState('enable');
+        };
 
         
         $("html, body").animate({ scrollTop: 0 }, 5);
 
-        // animate({ scrollTop: 0 }, 500);
     
-    } else {
-        // console.log('no');
-    }
+    };
 
-})
+});
 
+// function for 5 blocks toggle map and list
 $('.list-map-btn').on('click', function(){
-
 
     if (!togleMap) {
         $('.list-map').empty();
@@ -259,11 +239,10 @@ $('.list-map-btn').on('click', function(){
         togleMap = false;
 
     }
-    // $('.list-map').append(listHtml || mapHtml);
-    // console.log('click btn');
+
 })
 
-
+// function for send form and link to appointment
 $('#send-btn').on('click', function() {
     
     typeWrapper.forEach(element => {
@@ -271,12 +250,12 @@ $('#send-btn').on('click', function() {
         element.dataset.id === 'appointment-wrapper' ? element.classList.remove('type-wrapper-hidden') : element.classList.add('type-wrapper-hidden');
     })
 
-
     $('.widget-stepper').addClass('stepper-hidden');
     $('.book-appointment').removeClass('appointment-hidden');
     console.log('click');
 })
 
+// function from libriary for calendar
 $(function () {
     $("#demo-calendar-apppearance").zabuto_calendar({
       header_format: '[year], [month]',
@@ -293,21 +272,14 @@ $(function () {
   $('#demo-calendar-apppearance').on('zabuto:calendar:day', function (event) {
 
     const dayOfMonts = $('.zabuto-calendar__day').removeClass('click-day')
-
-
-
-
-
-
     $(event.target).addClass('click-day');
-    console.log(event.target);
 });
 
+// FUNCTIONS for confirm or decline book appointment
 
 $('.no-btn').on('click', function(){
     $('.book-appointment').addClass('appointment-hidden');
     $('#block-without-appointmennt').removeClass('success-hidden')
-    console.log('click no');
 })
 
 
@@ -315,5 +287,4 @@ $('.no-btn').on('click', function(){
 $('.appointment-btn').on('click', function(){
     $('.book-appointment').addClass('appointment-hidden');
     $('#block-with-appointmennt').removeClass('success-hidden')
-    console.log('click book');
 })

@@ -849,6 +849,12 @@
   .widget-stepper-wrapper .typeWrapper .container .item-card {
     position: relative;
   }
+  .widget-stepper-wrapper .typeWrapper .container .item-card .col-name {
+    padding: 0 8vw;
+  }
+  .widget-stepper-wrapper .typeWrapper .container .item-card .checkbox {
+    padding: 1vh 4vw !important;
+  }
   .widget-stepper-wrapper .typeWrapper .container .item-card .zip-code {
     display: flex;
     flex-direction: column;
@@ -995,6 +1001,9 @@
   }
   .list-map .store-name {
     padding: 0 2vw;
+  }
+  .list-map .store-zip p {
+    margin: 0;
   }
 }
 @media screen and (max-width: 425px) {
