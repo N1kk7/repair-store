@@ -149,7 +149,9 @@
               cursor: pointer;
             
                 .col-name{
-                  padding-left: 15px;
+                  padding-left: 10px;
+                  white-space: nowrap;
+
                   .span{
                     color: #000;
                     font-family: Open Sans;
@@ -217,11 +219,7 @@
                           align-items: center;
                           box-shadow: 0px 8px 11px 0px rgba(255, 102, 0, 0.26);
                       }
-                      // .button{
-                      //   .btn{
-                          
-                      //   }
-                      // }
+        
                     }
 
                   }
@@ -233,10 +231,10 @@
               }
               .problem{
                 .problem-card{
-                  width: 16vw;
+                  width: 30%;
                   .problem-type{
                     img{
-                      width: 50px;
+                      width: 3.5vw;
                     }
                     span{
                       color: #000;
@@ -248,13 +246,16 @@
                       line-height: normal;
                     }
                   }
+                  .col-name{
+                    font-size: 1.2vw;
+                  }
                 }
               }
               .option{
                 h5{
                   color: #000;
                   font-family: Open Sans;
-                  font-size: 16px;
+                  font-size: 1.1vw;
                   font-style: normal;
                   font-weight: 700;
                   line-height: normal;
@@ -262,7 +263,7 @@
                 span{
                   color: #000;
                   font-family: Open Sans;
-                  font-size: 16px;
+                  font-size: 1.1vw;
                   font-style: normal;
                   font-weight: 400;
                   line-height: normal;
@@ -289,6 +290,41 @@
                 font-style: normal;
                 font-weight: 400;
                 line-height: 130%; /* 18.2px */
+                input{
+                  display: none;
+                }
+                label{
+                  display: flex;
+                }
+                .radio-btn{
+                  display: flex;
+                  justify-content: center;
+                  border: 1px solid #E2E2E2;
+
+                  align-items: center;
+                  margin-right: 20px;
+                  width: 20px;
+                  height: 20px;
+                  border-radius: 50%;
+                  span{
+                    display: inline-block;
+                    border-radius: 50%;
+                    padding: 6px;
+
+                  }
+                }
+                input:checked + .radio-btn{
+                  border: 1px solid #F60;
+                  
+                  
+                  span{
+                    background-color: #F60;
+                    
+                    
+                  }
+                  
+                 
+                }
               }
               .form-quote{
                 label{
@@ -308,8 +344,62 @@
                   line-height: 130%; /* 18.2px */
                 }
               }
+              .checkbox{
+                input{
+                  display: none;
+
+                }
+                span{
+                  display: inline-block;
+                  border-radius: 3px;
+                  border: 1px solid #E2E2E2;
+                  width: 20px;
+                  height: 20px;
+                }
+                input:checked + span{
+                  background-color: #F60;
+                  background-image: url(../../assets/images/checkmark.svg);
+                  background-size: 10px 10px;
+                  background-position: 50% 50%;
+                  background-repeat: no-repeat;
+                }
+              }
+              .map-title{
+                span{
+                  color: #000;
+                  font-family: Open Sans;
+                  font-size: 14px;
+                  font-style: normal;
+                  font-weight: 400;
+                  line-height: normal;
+                }
+              }
+              .input-zip-code{
+                padding-left: 3vw;
+                input{
+                  width: 14vw;
+                  padding: 14.5px 14.5px 17px;
+                  align-items: center;
+                  border-radius: 4px;
+                  border: 1px solid #E2E2E2;
+                  color: #F60;
+                  font-family: Open Sans;
+                  font-size: 14px;
+                  font-style: normal;
+                  font-weight: 400;
+                  line-height: 130%; /* 18.2px */
+                }
+                input:placeholder{
+                  color: #D1D3DD;
+                  
+                }
+              }
 
              
+            }
+            .input-list-wrapper{
+              box-shadow: unset;
+              border: none !important;
             }
             .item-card-active{
               border: 1px solid #F60 !important;
@@ -363,6 +453,19 @@
               font-weight: 700;
               line-height: normal;
             }
+          }
+        }
+        .list-map-btn{
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          width: 40px;
+          height: 41px;
+          padding: 5px 2px;
+          border-radius: 4px;
+          border: 1px solid #E2E2E2;
+          img{
+
           }
         }
       }
