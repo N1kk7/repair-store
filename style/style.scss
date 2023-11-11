@@ -388,10 +388,23 @@
                   font-weight: 400;
                   line-height: 130%; /* 18.2px */
                 }
+                
                 input:placeholder{
                   color: #D1D3DD;
                   
                 }
+              }
+              .change-list-map{
+                span{
+                  color: #000;
+                  font-family: Open Sans;
+                  font-size: 14px;
+                  font-style: normal;
+                  font-weight: 400;
+                  line-height: normal;
+                  white-space: nowrap;
+                }
+                
               }
 
              
@@ -441,6 +454,22 @@
             .button-map{
               margin: 15px 0 25px;
             }
+            .store-list-btn{
+              margin-bottom: 2vh;
+              button{
+                display: flex;
+                    width: 153px;
+                    height: 47px;
+                    padding: 12px 28px;
+                    justify-content: center;
+                    align-items: center;
+                    color: #FFF;
+                    border-radius: 3px;
+                    border: 1px solid #F60;
+                    background: #F60;
+
+              }
+            }
           }
           .quote-information{
             padding: 36px 0 27px;
@@ -452,6 +481,35 @@
               font-weight: 700;
               line-height: normal;
             }
+          }
+        }
+        .list-map{
+          padding: 3vh !important;
+          .store-img{
+            width: -webkit-fill-available;
+            img{
+              width: inherit;
+            }
+          }
+          .store-name{
+            padding-top: 2vh;
+            h5{
+              color: #000;
+              font-family: Open Sans;
+              font-size: 15px;
+              font-style: normal;
+              font-weight: 700;
+              line-height: normal;
+            }
+          }
+          .store-zip{
+            color: #000;
+            text-align: center;
+            font-family: Open Sans;
+            font-size: 12px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
           }
         }
         .list-map-btn{
@@ -837,6 +895,9 @@
         display: none;
       }
       .success-hidden{
+        display: none !important;
+      }
+      .hidden{
         display: none !important;
       }
   }

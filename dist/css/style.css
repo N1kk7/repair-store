@@ -331,6 +331,15 @@
 .widget-wrapper .typeWrapper .container .row .item-card .input-zip-code input:placeholder {
   color: #D1D3DD;
 }
+.widget-wrapper .typeWrapper .container .row .item-card .change-list-map span {
+  color: #000;
+  font-family: Open Sans;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  white-space: nowrap;
+}
 .widget-wrapper .typeWrapper .container .row .input-list-wrapper {
   box-shadow: unset;
   border: none !important;
@@ -364,6 +373,21 @@
 .widget-wrapper .typeWrapper .container .row .button-map {
   margin: 15px 0 25px;
 }
+.widget-wrapper .typeWrapper .container .row .store-list-btn {
+  margin-bottom: 2vh;
+}
+.widget-wrapper .typeWrapper .container .row .store-list-btn button {
+  display: flex;
+  width: 153px;
+  height: 47px;
+  padding: 12px 28px;
+  justify-content: center;
+  align-items: center;
+  color: #FFF;
+  border-radius: 3px;
+  border: 1px solid #F60;
+  background: #F60;
+}
 .widget-wrapper .typeWrapper .container .quote-information {
   padding: 36px 0 27px;
 }
@@ -373,6 +397,35 @@
   font-size: 18px;
   font-style: normal;
   font-weight: 700;
+  line-height: normal;
+}
+.widget-wrapper .typeWrapper .list-map {
+  padding: 3vh !important;
+}
+.widget-wrapper .typeWrapper .list-map .store-img {
+  width: -webkit-fill-available;
+}
+.widget-wrapper .typeWrapper .list-map .store-img img {
+  width: inherit;
+}
+.widget-wrapper .typeWrapper .list-map .store-name {
+  padding-top: 2vh;
+}
+.widget-wrapper .typeWrapper .list-map .store-name h5 {
+  color: #000;
+  font-family: Open Sans;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+.widget-wrapper .typeWrapper .list-map .store-zip {
+  color: #000;
+  text-align: center;
+  font-family: Open Sans;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
   line-height: normal;
 }
 .widget-wrapper .typeWrapper .list-map-btn {
@@ -683,6 +736,9 @@
 .widget-wrapper .success-hidden {
   display: none !important;
 }
+.widget-wrapper .hidden {
+  display: none !important;
+}
 
 @media screen and (max-width: 1024px) {
   .widget-stepper .widget-stepper-wrapper {
@@ -775,108 +831,124 @@
   }
 }
 @media screen and (max-width: 768px) {
-  .typeWrapper {
+  .widget-stepper-wrapper {
+    width: 90vw !important;
+    max-width: unset !important;
+  }
+  .widget-stepper-wrapper .typeWrapper {
     padding: 2vh 2vw;
   }
-  .typeWrapper .container .item-card .zip-code {
+  .widget-stepper-wrapper .typeWrapper .container .item-card {
+    position: relative;
+  }
+  .widget-stepper-wrapper .typeWrapper .container .item-card .zip-code {
     display: flex;
     flex-direction: column;
     align-items: start;
   }
-  .typeWrapper .container .item-card .zip-code .input-zip-code {
+  .widget-stepper-wrapper .typeWrapper .container .item-card .zip-code .input-zip-code {
     padding: 2vh 0;
     padding-left: 0vw;
   }
-  .typeWrapper .container .item-card .details {
+  .widget-stepper-wrapper .typeWrapper .container .item-card .zip-code .input-zip-code input {
+    width: 25vw !important;
+  }
+  .widget-stepper-wrapper .typeWrapper .container .item-card .details {
     flex-direction: column-reverse;
   }
-  .typeWrapper .container .item-card .details .device {
+  .widget-stepper-wrapper .typeWrapper .container .item-card .details .device {
     padding: 3vh 0;
   }
-  .typeWrapper .container .item-card .details .device .device-wrapper {
+  .widget-stepper-wrapper .typeWrapper .container .item-card .details .device .device-wrapper {
     justify-content: center;
   }
-  .typeWrapper .container .item-card .details .store {
+  .widget-stepper-wrapper .typeWrapper .container .item-card .details .store {
     width: unset !important;
   }
-  .typeWrapper .container .item-card .details .store .store-wrapper {
+  .widget-stepper-wrapper .typeWrapper .container .item-card .details .store .store-wrapper {
     justify-content: space-around;
     width: unset !important;
   }
-  .typeWrapper .container .item-card .problem .problem-wrapper {
+  .widget-stepper-wrapper .typeWrapper .container .item-card .problem .problem-wrapper {
     flex-direction: column;
   }
-  .typeWrapper .container .item-card .problem .problem-wrapper .problem-card {
+  .widget-stepper-wrapper .typeWrapper .container .item-card .problem .problem-wrapper .problem-card {
     width: unset !important;
   }
-  .typeWrapper .container .item-card .problem .problem-wrapper .problem-card .item-card {
+  .widget-stepper-wrapper .typeWrapper .container .item-card .problem .problem-wrapper .problem-card .item-card {
     flex-direction: unset !important;
     justify-content: center;
   }
-  .typeWrapper .container .item-card .problem .problem-wrapper .problem-card .item-card .problem-type .col-img {
+  .widget-stepper-wrapper .typeWrapper .container .item-card .problem .problem-wrapper .problem-card .item-card .problem-type .col-img {
     display: inline-block;
   }
-  .typeWrapper .container .item-card .problem .problem-wrapper .problem-card .item-card .problem-type .col-img img {
+  .widget-stepper-wrapper .typeWrapper .container .item-card .problem .problem-wrapper .problem-card .item-card .problem-type .col-img img {
     width: 10vw;
   }
-  .typeWrapper .container .item-card .problem .problem-wrapper .problem-card .item-card .problem-type .col-name {
+  .widget-stepper-wrapper .typeWrapper .container .item-card .problem .problem-wrapper .problem-card .item-card .problem-type .col-name {
     display: inline-block;
     padding-left: 1vw;
   }
-  .typeWrapper .container .item-card .problem .problem-wrapper .problem-card .item-card .problem-type .col-name span {
+  .widget-stepper-wrapper .typeWrapper .container .item-card .problem .problem-wrapper .problem-card .item-card .problem-type .col-name span {
     font-size: 2vw;
     white-space: nowrap;
   }
-  .typeWrapper .container .item-card .problem .problem-wrapper .problem-card .item-card .option {
+  .widget-stepper-wrapper .typeWrapper .container .item-card .problem .problem-wrapper .problem-card .item-card .option {
     text-align: center;
   }
-  .typeWrapper .container .item-card .problem .problem-wrapper .problem-card .item-card .option h5 {
+  .widget-stepper-wrapper .typeWrapper .container .item-card .problem .problem-wrapper .problem-card .item-card .option h5 {
     font-size: 1.8vw;
     display: block;
   }
-  .typeWrapper .container .item-card .problem .problem-wrapper .problem-card .item-card .option span {
+  .widget-stepper-wrapper .typeWrapper .container .item-card .problem .problem-wrapper .problem-card .item-card .option span {
     display: block;
     font-size: 1.8vw;
   }
-  .typeWrapper .container .item-card .radio {
+  .widget-stepper-wrapper .typeWrapper .container .item-card .radio {
     padding: 0 2vw 10px !important;
   }
-  .typeWrapper .container .item-card .radio .radio-btn {
+  .widget-stepper-wrapper .typeWrapper .container .item-card .radio .radio-btn {
     width: 30px;
   }
-  .book-appointment {
+  .widget-stepper-wrapper .typeWrapper .container .item-card .change-list-map {
+    flex-direction: column-reverse;
+    position: absolute;
+    bottom: 2vh;
+    right: 0;
+  }
+  .widget-stepper-wrapper .book-appointment {
     top: 5vh !important;
   }
-  .book-appointment .appointment-details {
+  .widget-stepper-wrapper .book-appointment .appointment-details {
     flex-direction: column-reverse;
     align-items: center;
   }
-  .book-appointment .appointment-details .appointment-date {
+  .widget-stepper-wrapper .book-appointment .appointment-details .appointment-date {
     flex-direction: column;
     justify-content: center;
     align-items: center;
   }
-  .book-appointment .appointment-details .appointment-date .zabuto-calendar {
+  .widget-stepper-wrapper .book-appointment .appointment-details .appointment-date .zabuto-calendar {
     width: 65vw !important;
   }
-  .book-appointment .appointment-details .appointment-date .time-wrapper {
+  .widget-stepper-wrapper .book-appointment .appointment-details .appointment-date .time-wrapper {
     width: 65vw !important;
   }
-  .book-appointment .appointment-details .appointment-date h6 {
+  .widget-stepper-wrapper .book-appointment .appointment-details .appointment-date h6 {
     padding-top: 3vh;
   }
-  .book-appointment .appointment-details .appointment-store {
+  .widget-stepper-wrapper .book-appointment .appointment-details .appointment-store {
     margin: 3vh 0;
     width: unset !important;
     height: unset !important;
   }
-  .book-appointment .appointment-details .appointment-store .selected-store {
+  .widget-stepper-wrapper .book-appointment .appointment-details .appointment-store .selected-store {
     display: flex;
     align-items: center;
     justify-content: space-between;
     height: inherit;
   }
-  .book-appointment .appointment-details .appointment-store .selected-store .store-zip p {
+  .widget-stepper-wrapper .book-appointment .appointment-details .appointment-store .selected-store .store-zip p {
     width: 20vw;
   }
 }
@@ -890,10 +962,37 @@
     flex-direction: column;
   }
 }
+@media screen and (max-width: 562px) {
+  .list-map {
+    padding: 1vh !important;
+  }
+  .list-map .row {
+    width: -webkit-fill-available !important;
+  }
+  .list-map .item-card {
+    overflow: visible !important;
+    flex-direction: unset !important;
+  }
+  .list-map .item-card .btn {
+    position: absolute;
+    margin: 0;
+    bottom: -2vh;
+  }
+  .list-map .item-card .btn button {
+    width: 25vw !important;
+    height: 5vh !important;
+  }
+  .list-map .item-card .store-img {
+    width: 30vw !important;
+  }
+  .list-map .store-name {
+    padding: 0 2vw;
+  }
+}
 @media screen and (max-width: 425px) {
   .widget-stepper .widget-stepper-wrapper {
     max-width: 95vw;
-    margin-top: 4vh;
+    margin-top: 4vh !important;
   }
   .widget-stepper .widget-stepper-wrapper .title-wrapper .step-name {
     font-size: 1.8vw;
