@@ -74,6 +74,7 @@
   font-size: 14px;
 }
 .stepper-item .step-name {
+  font-family: "Open Sans";
   position: relative;
   top: 15px;
   font-weight: 400;
@@ -88,6 +89,7 @@
 }
 .step-active .step-name {
   color: #229427;
+  font-family: "Open Sans";
   font-weight: 700;
   font-size: 14px;
 }
@@ -271,6 +273,7 @@
 }
 .widget-wrapper .typeWrapper .container .row .item-card .form-quote label {
   color: #000;
+  font-family: Open Sans;
   font-size: 14px;
   font-style: normal;
   font-weight: 400;
@@ -745,6 +748,9 @@
   .book-appointment .book-appointment-btn .no-btn {
     padding: 0 2vw;
   }
+  .success-block .success-block-wrapper {
+    width: 85vw !important;
+  }
 }
 @media screen and (max-width: 955px) {
   .appointment-details {
@@ -901,6 +907,18 @@
   .appointment .appointment-details {
     flex-direction: column-reverse;
     align-items: center;
+  }
+  .success-block .success-block-wrapper {
+    padding: 5vh 0 2vh !important;
+  }
+  .success-block .success-block-wrapper .main-img img {
+    width: 50vw !important;
+  }
+  .success-block .success-block-wrapper .message {
+    width: 60vw !important;
+  }
+  .success-block .success-block-wrapper .date h3 {
+    font-size: 5vw !important;
   }
 }
 

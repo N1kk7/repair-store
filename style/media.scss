@@ -90,6 +90,13 @@
         }
         
     }
+    .success-block{
+        .success-block-wrapper{
+            width: 85vw !important;
+           
+
+        }
+    }
   }
 
 @media screen and (max-width: 955px) {
@@ -296,6 +303,27 @@
         .appointment-details{
             flex-direction: column-reverse;
             align-items: center;
+        }
+    }
+    .success-block{
+        .success-block-wrapper{
+            padding: 5vh 0 2vh !important;
+            .main-img{
+                img{
+                    width: 50vw !important;
+
+                }
+
+            }
+            .message{
+                width: 60vw !important;
+            }
+            .date{
+                h3{
+                    font-size: 5vw !important;
+                }
+            }
+
         }
     }
     
