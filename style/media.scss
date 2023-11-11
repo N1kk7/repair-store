@@ -231,38 +231,39 @@
             }
             
         }
-        .book-appointment{
-            top: 5vh !important;
-            .appointment-details{
-                flex-direction: column-reverse;
+        
+    }
+    .book-appointment{
+        top: 5vh !important;
+        .appointment-details{
+            flex-direction: column-reverse;
+            align-items: center;
+            .appointment-date{
+                flex-direction: column;
+                justify-content: center;
                 align-items: center;
-                .appointment-date{
-                    flex-direction: column;
-                    justify-content: center;
-                    align-items: center;
-                    .zabuto-calendar{
-                        width: 65vw !important;
-                    }
-                    .time-wrapper{
-                        width: 65vw !important;
-                    }
-                    h6{
-                        padding-top: 3vh;
-                    }
+                .zabuto-calendar{
+                    width: 65vw !important;
                 }
-                .appointment-store{
-                    margin: 3vh 0;
-                    width: unset !important;
-                    height: unset !important;
-                    .selected-store{
-                        display: flex;
-                        align-items: center;
-                        justify-content: space-between;
-                        height: inherit;
-                        .store-zip{
-                            p{
-                                width: 20vw;
-                            }
+                .time-wrapper{
+                    width: 65vw !important;
+                }
+                h6{
+                    padding-top: 3vh;
+                }
+            }
+            .appointment-store{
+                margin: 3vh 0;
+                width: unset !important;
+                height: unset !important;
+                .selected-store{
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+                    height: inherit;
+                    .store-zip{
+                        p{
+                            width: 20vw;
                         }
                     }
                 }

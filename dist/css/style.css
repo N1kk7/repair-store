@@ -515,6 +515,7 @@
   border: 0.969px solid #E6E6E6;
   background: #FFF;
   padding: 20px;
+  margin: 0 auto;
 }
 .widget-wrapper .book-appointment .typeWrapper .appointment-details .appointment-date .calendar .zabuto-calendar {
   width: 300px;
@@ -916,39 +917,39 @@
     bottom: 2vh;
     right: 0;
   }
-  .widget-stepper-wrapper .book-appointment {
+  .book-appointment {
     top: 5vh !important;
   }
-  .widget-stepper-wrapper .book-appointment .appointment-details {
+  .book-appointment .appointment-details {
     flex-direction: column-reverse;
     align-items: center;
   }
-  .widget-stepper-wrapper .book-appointment .appointment-details .appointment-date {
+  .book-appointment .appointment-details .appointment-date {
     flex-direction: column;
     justify-content: center;
     align-items: center;
   }
-  .widget-stepper-wrapper .book-appointment .appointment-details .appointment-date .zabuto-calendar {
+  .book-appointment .appointment-details .appointment-date .zabuto-calendar {
     width: 65vw !important;
   }
-  .widget-stepper-wrapper .book-appointment .appointment-details .appointment-date .time-wrapper {
+  .book-appointment .appointment-details .appointment-date .time-wrapper {
     width: 65vw !important;
   }
-  .widget-stepper-wrapper .book-appointment .appointment-details .appointment-date h6 {
+  .book-appointment .appointment-details .appointment-date h6 {
     padding-top: 3vh;
   }
-  .widget-stepper-wrapper .book-appointment .appointment-details .appointment-store {
+  .book-appointment .appointment-details .appointment-store {
     margin: 3vh 0;
     width: unset !important;
     height: unset !important;
   }
-  .widget-stepper-wrapper .book-appointment .appointment-details .appointment-store .selected-store {
+  .book-appointment .appointment-details .appointment-store .selected-store {
     display: flex;
     align-items: center;
     justify-content: space-between;
     height: inherit;
   }
-  .widget-stepper-wrapper .book-appointment .appointment-details .appointment-store .selected-store .store-zip p {
+  .book-appointment .appointment-details .appointment-store .selected-store .store-zip p {
     width: 20vw;
   }
 }
