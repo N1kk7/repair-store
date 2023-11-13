@@ -982,6 +982,9 @@
   .widget-stepper-wrapper .typeWrapper .container .item-card .form-control {
     margin-bottom: 1vh !important;
   }
+  .widget-stepper-wrapper .typeWrapper .container .row .button .btn {
+    margin-bottom: 2vh;
+  }
   .widget-stepper-wrapper .button {
     margin: 2vh 0 !important;
   }
