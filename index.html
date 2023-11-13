@@ -45,9 +45,9 @@
                             <div class="step-name">Recieve quote</div>
                           </div>
                     </div>
-                    <div class="typeWrapper " data-id="1">
-                        <div class="container  text-center ">
-                            <div class="row align-items-center row-cols-lg-3 g-lg-4 row-cols-md-2 row-cols-1 g-md-4 g-sm-3 g-2">
+                    <div class="typeWrapper type-wrapper-hidden" data-id="1">
+                        <div class="container  text-center  ">
+                            <div class="row hidden-row align-items-center row-cols-lg-3 g-lg-4 row-cols-md-2 row-cols-1 g-md-4 g-sm-3 g-2">
                               <div class="col ">
                                 <div class="item-card p-2 px-3 border col-wrapper rounded  d-flex justify-content-lg-start align-items-center">
                                     <div class="col-img">
@@ -135,8 +135,8 @@
                        
                     </div>
                     <div class="typeWrapper type-wrapper-hidden" data-id="2">
-                        <div class="container  text-center ">
-                            <div class="row align-items-center row-cols-lg-3 g-lg-4 row-cols-md-2 row-cols-1 g-md-4 g-sm-3 g-2">
+                        <div class="container  text-center animated-block">
+                            <div class="row hidden-row align-items-center row-cols-lg-3 g-lg-4 row-cols-md-2 row-cols-1 g-md-4 g-sm-3 g-2">
                               <div class="col ">
                                 <div class="item-card p-2 px-3 border col-wrapper rounded  d-flex justify-content-lg-start align-items-center">
                                     <div class="col-img">
@@ -245,8 +245,8 @@
                         </div> 
                     </div>
                     <div class="typeWrapper type-wrapper-hidden" data-id="3">
-                        <div class="container  text-center ">
-                            <div class="row align-items-center row-cols-lg-3 g-lg-4 row-cols-md-2 row-cols-sm-1 g-md-4 g-sm-3 g-2">
+                        <div class="container  text-center animated-block">
+                            <div class="row hidden-row align-items-center row-cols-lg-3 g-lg-4 row-cols-md-2 row-cols-sm-1 g-md-4 g-sm-3 g-2">
                               <div class="col ">
                                 <div class="item-card p-2 px-3 border col-wrapper rounded  d-flex justify-content-lg-start align-items-center">
                                     <div class="col-img">
@@ -404,8 +404,8 @@
                         </div>
                     </div>
                     <div class="typeWrapper type-problem  type-wrapper-hidden" data-id="4">
-                        <div class="container  text-center ">
-                            <div class="row align-items-center row-cols-lg-3 g-lg-4 row-cols-md-2 row-cols-sm-1 g-md-4 g-sm-3 g-2">
+                        <div class="container  text-center animated-block">
+                            <div class="row hidden-row align-items-center row-cols-lg-3 g-lg-4 row-cols-md-2 row-cols-sm-1 g-md-4 g-sm-3 g-2">
                               <div class="col ">
                                 <div class="item-card border rounded  d-flex justify-content-lg-start align-items-center">
                                     <label class="checkbox">
@@ -610,7 +610,7 @@
                         </div>
                     </div>
                     <div class="typeWrapper type-map type-wrapper-hidden" data-id="5">
-                        <div class="container  text-center ">
+                        <div class="container  text-center animated-block">
                             <div class="row align-items-center flex-column row-cols-1   g-2">
                                 <div class="col ">
                                     <div class="item-card input-list-wrapper p-2 px-3  rounded  d-flex justify-content-between align-items-center">
@@ -656,8 +656,8 @@
                         </div>
                        
                     </div>
-                    <div class="typeWrapper type-form type-wrapper-hidden" data-id="6">
-                        <div class="container  text-justify ">
+                    <div class="typeWrapper type-form " data-id="6">
+                        <div class="container  text-justify animated-block">
                             <div class="row align-items-center row-cols-lg-1 g-lg-4">
                                 <div class="col ">
                                     <div class="item-card p-2 px-3 border rounded ">
@@ -666,26 +666,37 @@
                                        </div>
                                        <div class="radio-button-wrapper d-flex">
                                             <div class="radio d-flex">
-                                                <input type="radio" name="contact" id="sms" value="sms" checked>
-                                                <div class="radio-btn">
-                                                    <span></span>
-                                                </div>
-                                                <label for="sms">SMS text (Instant)</label>
+                                                <label for="sms">
+                                                    <input type="radio" name="contact" id="sms" value="sms" checked>
+                                                    <div class="radio-btn">
+                                                        <span></span>
+                                                    </div>
+                                                    SMS text (Instant)
+                                                </label>
                                                 <!-- <span></span> -->
                                             </div>
                                             <div class="radio d-flex"> 
-                                                <input type="radio" name="contact" id="email" value="email" >
-                                                <div class="radio-btn">
-                                                    <span></span>
-                                                </div>
-                                                <label for="email">Email (Instant)</label>
+                                                
+                                                <label for="email">
+                                                    <input type="radio" name="contact" id="email" value="email" >
+                                                    <div class="radio-btn">
+                                                        <span></span>
+                                                    </div>
+                                                    
+                                                    Email (Instant)
+                                                
+                                                </label>
                                             </div>
                                             <div class="radio d-flex">
-                                                <input type="radio" name="contact" id="phone" value="phone" >
-                                                <div class="radio-btn">
-                                                    <span></span>
-                                                </div>
-                                                <label for="phone">Phone Call</label>
+                                                
+                                                <label for="phone">
+                                                    <input type="radio" name="contact" id="phone" value="phone" >
+                                                    <div class="radio-btn">
+                                                        <span></span>
+                                                    </div>
+                                                    Phone Call
+
+                                                </label>
                                             </div>
                                             
                                        </div>
