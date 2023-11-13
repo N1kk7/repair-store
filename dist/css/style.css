@@ -893,7 +893,7 @@
     padding: 2vh 2vw;
   }
   .widget-stepper-wrapper .typeWrapper .hidden-row {
-    max-height: 55vh !important;
+    max-height: 60vh !important;
   }
   .widget-stepper-wrapper .typeWrapper .container .item-card {
     position: relative;
@@ -982,8 +982,14 @@
   .widget-stepper-wrapper .typeWrapper .container .item-card .form-control {
     margin-bottom: 1vh !important;
   }
+  .widget-stepper-wrapper .typeWrapper .container .row .button {
+    margin-bottom: 0 !important;
+    padding-top: 2vh;
+  }
   .widget-stepper-wrapper .typeWrapper .container .row .button .btn {
     margin-bottom: 2vh;
+    padding: 1vh 4vw;
+    top: unset;
   }
   .widget-stepper-wrapper .button {
     margin: 2vh 0 !important;
@@ -1069,6 +1075,9 @@
     max-width: 95vw;
     margin-top: 4vh !important;
   }
+  .widget-stepper .widget-stepper-wrapper .title-wrapper {
+    padding: 2vh 0 5vh;
+  }
   .widget-stepper .widget-stepper-wrapper .title-wrapper .step-name {
     white-space: unset;
     font-size: 2.5vw;
@@ -1082,7 +1091,7 @@
     padding: 3vh 2vw;
   }
   .widget-stepper .widget-stepper-wrapper .typeWrapper .col-name span {
-    font-size: 5vw;
+    font-size: 4vw;
   }
   .widget-stepper .widget-stepper-wrapper .typeWrapper .item-card .quote-delivery-title {
     padding: 1vh 0 !important;

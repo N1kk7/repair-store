@@ -129,7 +129,7 @@
         .typeWrapper{
             
             .hidden-row{
-                max-height: 55vh !important;
+                max-height: 60vh !important;
             }
             padding: 2vh 2vw ;
             .container{
@@ -230,8 +230,12 @@
                 }
                 .row{
                     .button{
+                        margin-bottom: 0 !important;
+                        padding-top: 2vh;
                         .btn{
                             margin-bottom: 2vh;
+                            padding: 1vh 4vw;
+                            top: unset;
                         }
                     }
                 }
@@ -332,6 +336,7 @@
             max-width: 95vw;
             margin-top: 4vh !important;
             .title-wrapper{
+                padding: 2vh 0 5vh;
                 .step-name{
                     white-space: unset;
                     font-size: 2.5vw;
@@ -346,7 +351,7 @@
                 padding: 3vh 2vw ;
                 .col-name{
                     span{
-                        font-size: 5vw;
+                        font-size: 4vw;
 
                     }
                 }
