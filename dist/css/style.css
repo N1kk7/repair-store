@@ -28,7 +28,6 @@
 }
 
 .stepper-item::after {
-  transition: all ease 1s;
   position: absolute;
   content: "";
   border-bottom: 9px solid #D9D9D9;

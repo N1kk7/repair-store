@@ -4,6 +4,9 @@ const typeWrapper = document.querySelectorAll('.typeWrapper');
 let activePrimary = false;
 let togleMap = true;
 let checkId = true;
+let stepperFlag = false;
+let stepActiveId = 1;
+
 
 const mapHtml = '<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d5873.503522773722!2d-122.40700885535698!3d37.75875723485357!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sua!4v1699547569699!5m2!1sen!2sua"  height="450" style="border:0; width:100%;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>';
 
@@ -138,13 +141,153 @@ const toggleState = (param) => {
 
     }
 }
+// $('.stepper-item').on('click', function(event) {
+//     const stepperItem = event.target.closest('.stepper-item');
+//     // console.log(stepperItem.id);
 
+//     if (stepperItem) {
+//         console.log(stepperFlag);
+
+
+//         steps.forEach((stepElement) => {
+//             // console.log();
+//             console.log(stepperItem.id, stepElement.id);
+            
+//             // console.log('return');
+//             // if(stepperItem.id >= stepElement.id) {
+//             //     // console.log('bigger');
+//                 // stepperFlag = true
+//             //     // return false;
+//             // }
+//             // if(stepElement.id < stepperItem.id && !stepperFlag) {
+//             //     stepElement.classList.add('completed');
+//             // } 
+            
+//             // // else if(stepElement.id >= stepperItem.id ) {
+//             // //     stepElement.classList.remove('completed');
+//             // //     stepElement.classList.remove('step-active')
+//             // // } 
+//             // if (stepperItem.id === stepElement.id && !stepperFlag) {
+//             //     $(`#${stepperItem.id}`).addClass('step-active');
+//             //     typeWrapper.forEach(element => {
+//             //         if(Number(element.dataset.id) == Number(stepperItem.id)){
+//             //             element.classList.remove('type-wrapper-hidden');
+//             //         } else {
+//             //             element.classList.add('type-wrapper-hidden');
+//             //         }
+//             //     });
+//             // console.log(stepperItem.id, stepElement.id);
+//             // } 
+            
+//             if (stepperItem.id <= stepActiveId) {
+//                 stepActiveId = +stepperItem.id;
+
+//                 // if (stepElement.id > stepActiveId) {
+//                     stepElement.classList.remove('completed');
+//                     stepElement.classList.remove('step-active');
+
+//                 // }
+//                 // stepElement.classList.remove('completed');
+//                 // stepElement.classList.remove('step-active');
+
+
+//             }
+//             // if(  stepElement.id == stepperItem.id) {
+//             //     stepperFlag = true;
+//             //     console.log(stepperFlag)
+//             //     stepElement.classList.remove('completed');
+//             //     if (stepperFlag) {
+
+//             //         stepElement.classList.add('step-active');
+                    
+
+
+//             //     }
+
+//             //     // $(`#${stepperItem.id}`).addClass('step-active');
+//             //     // typeWrapper.forEach(element => {
+//             //     //     if(Number(element.dataset.id) >= Number(stepperItem.id)){
+//             //     //         element.classList.add('type-wrapper-hidden');
+//             //     //     } 
+//             //     //     else if (Number(element.dataset.id) < Number(stepperItem.id)){
+//             //     //         element.classList.add('type-wrapper-hidden');
+//             //     //     }
+//             //     // });
+//             //     //     // console.log('bigger');
+//             //     //     stepperFlag = true
+//             //     //     // return false;
+//             // }
+            
+//             // } else if (stepperItem.id === stepElement.id) {
+//             //     stepElement.classList.remove('completed');
+//             //     stepElement.classList.add('step-active')
+
+
+
+//             // } else if (stepperItem.id > stepElement.id) {
+//             //     stepElement.classList.remove('completed');
+//             //     stepElement.classList.remove('step-active')
+//             //     stepperFlag = true
+//             //     return
+//             // }
+//             // if (stepperItem.id > stepElement.id) {
+//             //     stepperFlag = true;
+//             //     console.log(stepperItem.id === stepElement.id);
+//                 // stepElement.classList.add('step-active')
+
+//             // }
+            
+//         })
+        
+//         stepperFlag = false;
+//         console.log(stepperFlag);
+
+
+
+//     }
+
+
+// });
+$('.stepper-item').on('click', function(event) {
+    const stepperItem = event.target.closest('.stepper-item');
+    if (stepperItem) {
+        if (stepperItem.id < stepActiveId) {
+            stepActiveId = +stepperItem.id;
+            steps.forEach((stepElement) => {
+                if (stepElement.id == stepActiveId) {
+                    stepElement.classList.remove('completed');
+                    stepElement.classList.add('step-active');
+                    typeWrapper.forEach(element => {
+                        if(Number(element.dataset.id) == stepActiveId){
+                            element.classList.remove('type-wrapper-hidden');
+                        } else {
+                            element.classList.add('type-wrapper-hidden');
+                        }
+                    });
+                    if (stepActiveId <= 3) {
+                        checkId = true
+                        toggleState('enable');
+                    } else {
+                        checkId = false
+                        toggleState('enable');
+                    };
+                }
+                if (stepElement.id > stepActiveId) {
+                    stepElement.classList.remove('completed');
+                    stepElement.classList.remove('step-active');
+                }
+            })
+        }
+        stepperFlag = false;
+
+    }
+});
 // function for check window click and mark selected card
 $(window).on('click', function(event) {
 
     let clickElem = event.target.closest('.item-card');
     const itemCard = document.querySelectorAll('.item-card');
-    const stepperItem = event.target.closest('.stepper-item')
+    // const stepperItem = event.target.closest('.stepper-item')
     if (checkId) {
         itemCard.forEach(element => {
             element.classList.remove('item-card-active');
@@ -158,27 +301,7 @@ $(window).on('click', function(event) {
     
         }
     }
-    if (stepperItem) {
-        steps.forEach((stepElement) => {
-
-            if(stepElement.id < stepperItem.id ) {
-                stepElement.classList.add('completed');
-            } else if(stepElement.id >= stepperItem.id ) {
-                stepElement.classList.remove('completed');
-                stepElement.classList.remove('step-active')
-            } 
-            if (stepperItem.id === stepElement.id){
-                $(`#${stepperItem.id}`).addClass('step-active');
-                typeWrapper.forEach(element => {
-                    if(Number(element.dataset.id) == Number(stepperItem.id)){
-                        element.classList.remove('type-wrapper-hidden');
-                    } else {
-                        element.classList.add('type-wrapper-hidden');
-                    }
-                });
-            } 
-        })
-    }
+    
     return
 })
 
@@ -201,6 +324,7 @@ $('.btn').on('click', function(event){
             }
         })
         $(`#${id}`).addClass('step-active');
+        stepActiveId = id;
         typeWrapper.forEach(element => {
             if(Number(element.dataset.id) == id){
                 element.classList.remove('type-wrapper-hidden');
@@ -209,7 +333,7 @@ $('.btn').on('click', function(event){
             }
         });
 
-        if (id <= 3) {
+        if (stepActiveId <= 3) {
             checkId = true
             toggleState('enable');
         } else {
@@ -261,7 +385,6 @@ $('#send-btn').on('click', function() {
 
     $('.widget-stepper').addClass('stepper-hidden');
     $('.book-appointment').removeClass('appointment-hidden');
-    console.log('click');
 })
 
 // function from libriary for calendar
@@ -297,7 +420,3 @@ $('.appointment-btn').on('click', function(){
     $('.book-appointment').addClass('appointment-hidden');
     $('#block-with-appointmennt').removeClass('success-hidden')
 })
-
-// steps.on('click', function(event) {
-//     console.log(event.target);
-// })
