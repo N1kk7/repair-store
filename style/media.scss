@@ -219,7 +219,7 @@
                     .change-list-map{
                         flex-direction: column-reverse;
                         position: absolute;
-                        bottom: 2vh;
+                        bottom: 1vh;
                         right: 0;
                     } 
                     .form-control {
@@ -297,6 +297,11 @@
   }
 
   @media screen and (max-width: 562px) {
+    .typeWrapper{
+        .list-map-btn img {
+            width: 5vw !important;
+        }
+    }
     .list-map{
         padding: 1vh !important;
         .row{
@@ -305,25 +310,35 @@
         .item-card{
             overflow: visible !important;
             flex-direction: unset !important;
-            .btn{
-                position: absolute;
-                margin: 0;
-                bottom: -2vh;
-                button{
-                    width: 25vw !important;
-                    height: 5vh !important; 
-                }
-            }
+            // .btn{
+            //     position: absolute;
+            //     margin: 0;
+            //     bottom: -2vh;
+            //     button{
+            //         width: 25vw !important;
+            //         height: 5vh !important; 
+            //     }
+            // }
             .store-img{
                 width: 30vw !important;
+                img{
+                    max-width: 20vw;
+                }
             }
         }
         .store-name{
-            padding: 0 2vw;
+            padding: 0 2vw !important;
+            h5{
+                margin: 0 !important;
+            }
+            h5{
+                font-size: 2.5vw !important;
+            }
         }
         .store-zip{
             p{
                 margin: 0;
+                font-size: 2vw;
             }
         }
     }
@@ -349,6 +364,10 @@
             }
             .typeWrapper{
                 padding: 3vh 2vw ;
+                .hidden-row{
+                    padding-right: 2vw;
+                    margin-right: -2vw;
+                }
                 .col-name{
                     span{
                         font-size: 4vw;
@@ -385,8 +404,17 @@
                         margin-bottom: 1vh;
                         width: 6vw;
                     }
+                    .zip-code{
+                        .input-zip-code{
+                            input{
+                                padding: 1vh 5px !important;
+                                font-size: 3vw;
+                            }
+                        }
+                    }
                     
                 }
+                
             }
         }
     }

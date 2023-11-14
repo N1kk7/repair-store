@@ -412,21 +412,6 @@
 .widget-wrapper .typeWrapper .container .row .button-map {
   margin: 15px 0 25px;
 }
-.widget-wrapper .typeWrapper .container .row .store-list-btn {
-  margin-bottom: 2vh;
-}
-.widget-wrapper .typeWrapper .container .row .store-list-btn button {
-  display: flex;
-  width: 153px;
-  height: 47px;
-  padding: 12px 28px;
-  justify-content: center;
-  align-items: center;
-  color: #FFF;
-  border-radius: 3px;
-  border: 1px solid #F60;
-  background: #F60;
-}
 .widget-wrapper .typeWrapper .container .quote-information {
   padding: 36px 0 27px;
 }
@@ -976,7 +961,7 @@
   .widget-stepper-wrapper .typeWrapper .container .item-card .change-list-map {
     flex-direction: column-reverse;
     position: absolute;
-    bottom: 2vh;
+    bottom: 1vh;
     right: 0;
   }
   .widget-stepper-wrapper .typeWrapper .container .item-card .form-control {
@@ -1041,6 +1026,9 @@
   }
 }
 @media screen and (max-width: 562px) {
+  .typeWrapper .list-map-btn img {
+    width: 5vw !important;
+  }
   .list-map {
     padding: 1vh !important;
   }
@@ -1051,23 +1039,24 @@
     overflow: visible !important;
     flex-direction: unset !important;
   }
-  .list-map .item-card .btn {
-    position: absolute;
-    margin: 0;
-    bottom: -2vh;
-  }
-  .list-map .item-card .btn button {
-    width: 25vw !important;
-    height: 5vh !important;
-  }
   .list-map .item-card .store-img {
     width: 30vw !important;
   }
+  .list-map .item-card .store-img img {
+    max-width: 20vw;
+  }
   .list-map .store-name {
-    padding: 0 2vw;
+    padding: 0 2vw !important;
+  }
+  .list-map .store-name h5 {
+    margin: 0 !important;
+  }
+  .list-map .store-name h5 {
+    font-size: 2.5vw !important;
   }
   .list-map .store-zip p {
     margin: 0;
+    font-size: 2vw;
   }
 }
 @media screen and (max-width: 425px) {
@@ -1089,6 +1078,10 @@
   }
   .widget-stepper .widget-stepper-wrapper .typeWrapper {
     padding: 3vh 2vw;
+  }
+  .widget-stepper .widget-stepper-wrapper .typeWrapper .hidden-row {
+    padding-right: 2vw;
+    margin-right: -2vw;
   }
   .widget-stepper .widget-stepper-wrapper .typeWrapper .col-name span {
     font-size: 4vw;
@@ -1116,6 +1109,10 @@
   .widget-stepper .widget-stepper-wrapper .typeWrapper .item-card .radio-btn {
     margin-bottom: 1vh;
     width: 6vw;
+  }
+  .widget-stepper .widget-stepper-wrapper .typeWrapper .item-card .zip-code .input-zip-code input {
+    padding: 1vh 5px !important;
+    font-size: 3vw;
   }
   .appointment .appointment-details {
     flex-direction: column-reverse;

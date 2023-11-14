@@ -1,5 +1,6 @@
 const steps = document.querySelectorAll('.stepper-item');
 const typeWrapper = document.querySelectorAll('.typeWrapper');
+
 let activePrimary = false;
 let togleMap = true;
 let checkId = true;
@@ -18,9 +19,7 @@ const listHtml = `<div class="row align-items-center row-cols-lg-3 g-lg-4 row-co
                         <div class="store-zip">
                             <p>8961 North Blackburn Ave.Milton, MA 02186</p>
                         </div>
-                        <div class="btn store-list-btn">
-                            <button type="button" class=" btn  px-4 py-2">View</button>
-                        </div>
+
                         </div>
                     </div>
                     <div class="col ">
@@ -34,9 +33,7 @@ const listHtml = `<div class="row align-items-center row-cols-lg-3 g-lg-4 row-co
                             <div class="store-zip">
                                 <p>8961 North Blackburn Ave.Milton, MA 02186</p>
                             </div>
-                            <div class="btn store-list-btn">
-                                <button type="button" class=" btn  px-4 py-2">View</button>
-                            </div>
+
                         </div>
                     </div>
                     <div class="col ">
@@ -50,9 +47,7 @@ const listHtml = `<div class="row align-items-center row-cols-lg-3 g-lg-4 row-co
                             <div class="store-zip">
                                 <p>8961 North Blackburn Ave.Milton, MA 02186</p>
                             </div>
-                            <div class="btn store-list-btn">
-                                <button type="button" class=" btn  px-4 py-2">View</button>
-                            </div>
+                       
                         </div>
                     </div>
                     <div class="col ">
@@ -66,9 +61,7 @@ const listHtml = `<div class="row align-items-center row-cols-lg-3 g-lg-4 row-co
                             <div class="store-zip">
                                 <p>8961 North Blackburn Ave.Milton, MA 02186</p>
                             </div>
-                            <div class="btn store-list-btn">
-                                <button type="button" class=" btn  px-4 py-2">View</button>
-                            </div>
+                           
                         </div>
                     </div>
                     <div class="col ">
@@ -82,9 +75,7 @@ const listHtml = `<div class="row align-items-center row-cols-lg-3 g-lg-4 row-co
                             <div class="store-zip">
                                 <p>8961 North Blackburn Ave.Milton, MA 02186</p>
                             </div>
-                            <div class="btn store-list-btn">
-                                <button type="button" class=" btn  px-4 py-2">View</button>
-                            </div>
+                         
                         </div>
                     </div>
                     <div class="col ">
@@ -98,9 +89,7 @@ const listHtml = `<div class="row align-items-center row-cols-lg-3 g-lg-4 row-co
                             <div class="store-zip">
                                 <p>8961 North Blackburn Ave.Milton, MA 02186</p>
                             </div>
-                            <div class="btn store-list-btn">
-                                <button type="button" class=" btn  px-4 py-2">View</button>
-                            </div>
+                          
                         </div>
                     </div>
                     <div class="col ">
@@ -114,9 +103,7 @@ const listHtml = `<div class="row align-items-center row-cols-lg-3 g-lg-4 row-co
                             <div class="store-zip">
                                 <p>8961 North Blackburn Ave.Milton, MA 02186</p>
                             </div>
-                            <div class="btn store-list-btn">
-                                <button type="button" class=" btn  px-4 py-2">View</button>
-                            </div>
+                          
                         </div>
                     </div>
                     <div class="col ">
@@ -130,9 +117,7 @@ const listHtml = `<div class="row align-items-center row-cols-lg-3 g-lg-4 row-co
                             <div class="store-zip">
                                 <p>8961 North Blackburn Ave.Milton, MA 02186</p>
                             </div>
-                            <div class="btn store-list-btn">
-                                <button type="button" class=" btn  px-4 py-2">View</button>
-                            </div>
+                          
                         </div>
                     </div>
                     </div>`
@@ -156,8 +141,10 @@ const toggleState = (param) => {
 
 // function for check window click and mark selected card
 $(window).on('click', function(event) {
+
     let clickElem = event.target.closest('.item-card');
     const itemCard = document.querySelectorAll('.item-card');
+    const stepperItem = event.target.closest('.stepper-item')
     if (checkId) {
         itemCard.forEach(element => {
             element.classList.remove('item-card-active');
@@ -171,12 +158,34 @@ $(window).on('click', function(event) {
     
         }
     }
+    if (stepperItem) {
+        steps.forEach((stepElement) => {
+
+            if(stepElement.id < stepperItem.id ) {
+                stepElement.classList.add('completed');
+            } else if(stepElement.id >= stepperItem.id ) {
+                stepElement.classList.remove('completed');
+                stepElement.classList.remove('step-active')
+            } 
+            if (stepperItem.id === stepElement.id){
+                $(`#${stepperItem.id}`).addClass('step-active');
+                typeWrapper.forEach(element => {
+                    if(Number(element.dataset.id) == Number(stepperItem.id)){
+                        element.classList.remove('type-wrapper-hidden');
+                    } else {
+                        element.classList.add('type-wrapper-hidden');
+                    }
+                });
+            } 
+        })
+    }
     return
 })
 
 
 // function for check primmary button click and toggle top steps and blocks
 $('.btn').on('click', function(event){
+
 
     let id;
 
@@ -288,3 +297,7 @@ $('.appointment-btn').on('click', function(){
     $('.book-appointment').addClass('appointment-hidden');
     $('#block-with-appointmennt').removeClass('success-hidden')
 })
+
+// steps.on('click', function(event) {
+//     console.log(event.target);
+// })
