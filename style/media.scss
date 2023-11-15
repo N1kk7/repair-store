@@ -347,6 +347,11 @@
   @media screen and (max-width: 425px) {
     .widget-stepper{
         // margin-top: 4vh ;
+        .stepper-item .back-button {
+            top: 8px;
+            padding: 0 2px;
+       
+        }
         .widget-stepper-wrapper{
             max-width: 95vw;
             margin-top: 4vh !important;

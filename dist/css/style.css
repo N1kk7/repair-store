@@ -6,15 +6,35 @@
 
 .stepper-item {
   position: relative;
+  cursor: pointer;
   display: flex;
   flex-direction: column;
   align-items: center;
   flex: 1;
 }
+.stepper-item .arrow-counter {
+  display: none;
+}
 @media (max-width: 768px) {
   .stepper-item {
     font-size: 12px;
   }
+}
+.stepper-item .back-button {
+  position: absolute;
+  top: 5px;
+  border-radius: 50%;
+  z-index: 0;
+  background-color: rgb(34, 148, 39);
+}
+.stepper-item .back-button .left-arrow {
+  width: 2vw;
+  height: 17px;
+  transform: rotate(180deg);
+}
+
+.completed .back-button {
+  z-index: 10;
 }
 
 .stepper-item::before {
@@ -37,7 +57,8 @@
   z-index: 3;
 }
 
-.stepper-item .step-counter {
+.stepper-item .step-counter,
+.stepper-item .arrow-counter {
   position: relative;
   z-index: 5;
   display: flex;
@@ -54,7 +75,8 @@
   font-weight: bold;
 }
 
-.stepper-item.completed .step-counter {
+.stepper-item.completed .step-counter,
+.stepper-item.completed .arrow-counter {
   background-color: #229427;
 }
 
@@ -1059,6 +1081,10 @@
   }
 }
 @media screen and (max-width: 425px) {
+  .widget-stepper .stepper-item .back-button {
+    top: 8px;
+    padding: 0 2px;
+  }
   .widget-stepper .widget-stepper-wrapper {
     max-width: 95vw;
     margin-top: 4vh !important;
