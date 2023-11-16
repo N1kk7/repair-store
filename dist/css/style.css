@@ -198,8 +198,6 @@
 }
 .widget-wrapper .typeWrapper .container .row .item-card .form-quote .row .message-form::placeholder {
   height: inherit;
-  position: absolute;
-  top: 10px;
 }
 .widget-wrapper .typeWrapper .container .row .item-card .form-quote .row .form-control {
   margin-bottom: 2vh;
@@ -1280,7 +1278,7 @@
   .selected-store .btn button {
     font-size: 3vw;
     width: 27vw !important;
-    height: 7vh !important;
+    height: 5vh !important;
   }
   .device-name span {
     font-size: 5vw;
