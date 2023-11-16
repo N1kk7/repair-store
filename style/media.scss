@@ -1,64 +1,62 @@
 @media screen and (max-width: 1024px) {
-    .widget-stepper{
-        .widget-stepper-wrapper{
-            max-width: 85vw;
-            margin-top: 7vh ;
-            margin-bottom: 5vh ;
-            .title-wrapper{
-                padding: 5vh 0 ;
-                .step-name{
-                    white-space: nowrap;
-                    font-size: 1.8vw;
+    .widget-stepper-wrapper{
+        max-width: 85vw;
+        margin-top: 7vh ;
+        margin-bottom: 5vh ;
+        .title-wrapper{
+            padding: 5vh 0 ;
+            .step-name{
+                white-space: nowrap;
+                font-size: 1.8vw;
+            }
+        }
+        .typeWrapper{
+            padding: 10vh 2vw ;
+            .hidden-row{
+                max-height: 45vh;
+            }
+            .list-map-btn{
+                img{
+                    width: 2vw;
                 }
             }
-            .typeWrapper{
-                padding: 3vh 2vw ;
-                .hidden-row{
-                    max-height: 45vh;
-                }
-                .list-map-btn{
-                    img{
-                        width: 2vw;
-                    }
-                }
-                .item-card{
-                    .details{
+            .item-card{
+                .details{
 
-                        .device-img{
+                    .device-img{
+                        img{
+                            width: 15vw ;
+                        }
+                    }
+                    .device-name{
+                        width: 12vw !important;
+                        font-size: 2vw ;
+                        padding-right: 2vw;
+                    }
+                    .store{
+                        .store-img{
                             img{
                                 width: 15vw ;
                             }
                         }
-                        .device-name{
-                            width: 12vw !important;
-                            font-size: 2vw ;
-                            padding-right: 2vw;
-                        }
-                        .store{
-                            .store-img{
-                                img{
-                                    width: 15vw ;
-                                }
-                            }
-                        }
                     }
-                    .zip-code{
-                        .input-zip-code{
-                            padding: 2vh 0;
-                            padding-left: 0vw ;
-                            input{
-                                width: 27vw !important;
-                            }
+                }
+                .zip-code{
+                    .input-zip-code{
+                        padding: 2vh 0;
+                        padding-left: 0vw ;
+                        input{
+                            width: 27vw !important;
                         }
                     }
                 }
             }
-            .button{
-                margin: 2vh 0 4vh ;
+        }
+        .button{
+            margin: 2vh 0 4vh ;
 
-                button{
-                    padding: 8px 24px ;
-                }
+            button{
+                padding: 8px 24px ;
             }
         }
     }
@@ -151,6 +149,8 @@
                     // min-width: 42vw;
                     .col-name{
                         padding: 0 5vw 0 5px ;
+                        min-width: 20vw;
+                        text-align: start;
                     }
                     position: relative;
                     .checkbox{
@@ -291,7 +291,7 @@
                 }
             }
             .appointment-store{
-                margin: 3vh 0;
+                margin: 3vh 1vw;
                 width: unset !important;
                 height: unset !important;
                 .selected-store{

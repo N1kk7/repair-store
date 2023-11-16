@@ -800,50 +800,61 @@
     width: 100%;
   }
 }
+.hidden-row::-webkit-scrollbar {
+  -webkit-appearance: none;
+  width: 7px;
+}
+
+.hidden-row::-webkit-scrollbar-thumb {
+  border-radius: 4px;
+  background-color: rgba(0, 0, 0, 0.5);
+  box-shadow: 0 0 1px rgba(255, 255, 255, 0.5);
+}
+
 @media screen and (max-width: 1024px) {
-  .widget-stepper .widget-stepper-wrapper {
+  .widget-stepper-wrapper {
     max-width: 85vw;
     margin-top: 7vh;
     margin-bottom: 5vh;
   }
-  .widget-stepper .widget-stepper-wrapper .title-wrapper {
+  .widget-stepper-wrapper .title-wrapper {
     padding: 5vh 0;
   }
-  .widget-stepper .widget-stepper-wrapper .title-wrapper .step-name {
+  .widget-stepper-wrapper .title-wrapper .step-name {
     white-space: nowrap;
     font-size: 1.8vw;
   }
-  .widget-stepper .widget-stepper-wrapper .typeWrapper {
-    padding: 3vh 2vw;
+  .widget-stepper-wrapper .typeWrapper {
+    padding: 10vh 2vw;
   }
-  .widget-stepper .widget-stepper-wrapper .typeWrapper .hidden-row {
+  .widget-stepper-wrapper .typeWrapper .hidden-row {
     max-height: 45vh;
   }
-  .widget-stepper .widget-stepper-wrapper .typeWrapper .list-map-btn img {
+  .widget-stepper-wrapper .typeWrapper .list-map-btn img {
     width: 2vw;
   }
-  .widget-stepper .widget-stepper-wrapper .typeWrapper .item-card .details .device-img img {
+  .widget-stepper-wrapper .typeWrapper .item-card .details .device-img img {
     width: 15vw;
   }
-  .widget-stepper .widget-stepper-wrapper .typeWrapper .item-card .details .device-name {
+  .widget-stepper-wrapper .typeWrapper .item-card .details .device-name {
     width: 12vw !important;
     font-size: 2vw;
     padding-right: 2vw;
   }
-  .widget-stepper .widget-stepper-wrapper .typeWrapper .item-card .details .store .store-img img {
+  .widget-stepper-wrapper .typeWrapper .item-card .details .store .store-img img {
     width: 15vw;
   }
-  .widget-stepper .widget-stepper-wrapper .typeWrapper .item-card .zip-code .input-zip-code {
+  .widget-stepper-wrapper .typeWrapper .item-card .zip-code .input-zip-code {
     padding: 2vh 0;
     padding-left: 0vw;
   }
-  .widget-stepper .widget-stepper-wrapper .typeWrapper .item-card .zip-code .input-zip-code input {
+  .widget-stepper-wrapper .typeWrapper .item-card .zip-code .input-zip-code input {
     width: 27vw !important;
   }
-  .widget-stepper .widget-stepper-wrapper .button {
+  .widget-stepper-wrapper .button {
     margin: 2vh 0 4vh;
   }
-  .widget-stepper .widget-stepper-wrapper .button button {
+  .widget-stepper-wrapper .button button {
     padding: 8px 24px;
   }
   .book-appointment {
@@ -920,6 +931,8 @@
   }
   .widget-stepper-wrapper .typeWrapper .container .item-card .col-name {
     padding: 0 5vw 0 5px;
+    min-width: 20vw;
+    text-align: start;
   }
   .widget-stepper-wrapper .typeWrapper .container .item-card .checkbox {
     padding: 1vh 4vw !important;
@@ -1041,7 +1054,7 @@
     padding-top: 3vh;
   }
   .book-appointment .appointment-details .appointment-store {
-    margin: 3vh 0;
+    margin: 3vh 1vw;
     width: unset !important;
     height: unset !important;
   }
