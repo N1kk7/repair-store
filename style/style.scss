@@ -213,7 +213,7 @@
             .item-card{
               border: 1px solid #E8E8ED !important;
               box-shadow: 0px 1px 11px 0px rgba(0, 0, 0, 0.07);
-              min-width: 60vw;
+              // min-width: 60vw;
               cursor: pointer;
                 .col-name{
                   // padding-left: 10px;
@@ -470,7 +470,11 @@
             .input-list-wrapper{
               box-shadow: unset;
               border: none !important;
+              .zip-code{
+                text-align: start;
+              }
             }
+
             .item-card-active{
               border: 1px solid #F60 !important;
             }
@@ -535,6 +539,8 @@
         }
         .list-map{
           padding: 3vh !important;
+    //       height: 40vh;
+    // overflow: auto;
           .store-img{
             width: -webkit-fill-available;
             img{

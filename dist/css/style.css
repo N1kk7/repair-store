@@ -176,7 +176,6 @@
 .widget-wrapper .typeWrapper .container .row .item-card {
   border: 1px solid #E8E8ED !important;
   box-shadow: 0px 1px 11px 0px rgba(0, 0, 0, 0.07);
-  min-width: 60vw;
   cursor: pointer;
 }
 .widget-wrapper .typeWrapper .container .row .item-card .col-name {
@@ -406,6 +405,9 @@
 .widget-wrapper .typeWrapper .container .row .input-list-wrapper {
   box-shadow: unset;
   border: none !important;
+}
+.widget-wrapper .typeWrapper .container .row .input-list-wrapper .zip-code {
+  text-align: start;
 }
 .widget-wrapper .typeWrapper .container .row .item-card-active {
   border: 1px solid #F60 !important;
@@ -811,7 +813,7 @@
   }
   .widget-stepper .widget-stepper-wrapper .title-wrapper .step-name {
     white-space: nowrap;
-    font-size: 1.5vw;
+    font-size: 1.8vw;
   }
   .widget-stepper .widget-stepper-wrapper .typeWrapper {
     padding: 3vh 2vw;
@@ -826,12 +828,19 @@
     width: 15vw;
   }
   .widget-stepper .widget-stepper-wrapper .typeWrapper .item-card .details .device-name {
-    width: 10vw;
+    width: 12vw !important;
     font-size: 2vw;
     padding-right: 2vw;
   }
   .widget-stepper .widget-stepper-wrapper .typeWrapper .item-card .details .store .store-img img {
     width: 15vw;
+  }
+  .widget-stepper .widget-stepper-wrapper .typeWrapper .item-card .zip-code .input-zip-code {
+    padding: 2vh 0;
+    padding-left: 0vw;
+  }
+  .widget-stepper .widget-stepper-wrapper .typeWrapper .item-card .zip-code .input-zip-code input {
+    width: 27vw !important;
   }
   .widget-stepper .widget-stepper-wrapper .button {
     margin: 2vh 0 4vh;
@@ -912,7 +921,7 @@
     position: relative;
   }
   .widget-stepper-wrapper .typeWrapper .container .item-card .col-name {
-    padding: 0 8vw;
+    padding: 0 5vw 0 5px;
   }
   .widget-stepper-wrapper .typeWrapper .container .item-card .checkbox {
     padding: 1vh 4vw !important;
@@ -921,13 +930,6 @@
     display: flex;
     flex-direction: column;
     align-items: start;
-  }
-  .widget-stepper-wrapper .typeWrapper .container .item-card .zip-code .input-zip-code {
-    padding: 2vh 0;
-    padding-left: 0vw;
-  }
-  .widget-stepper-wrapper .typeWrapper .container .item-card .zip-code .input-zip-code input {
-    width: 27vw !important;
   }
   .widget-stepper-wrapper .typeWrapper .container .item-card .details {
     flex-direction: column-reverse;
@@ -984,6 +986,9 @@
     padding: 0 2vw 10px !important;
   }
   .widget-stepper-wrapper .typeWrapper .container .item-card .radio .radio-btn {
+    margin: 0 auto 1vh !important;
+    position: relative;
+    right: 1vw;
     width: 30px;
   }
   .widget-stepper-wrapper .typeWrapper .container .item-card .change-list-map {
@@ -1004,11 +1009,20 @@
     padding: 1vh 4vw;
     top: unset;
   }
+  .widget-stepper-wrapper .typeWrapper .container .row .list-map .item-card {
+    min-width: auto;
+  }
   .widget-stepper-wrapper .button {
     margin: 2vh 0 !important;
   }
   .book-appointment {
     top: 5vh !important;
+  }
+  .book-appointment .typeWrapper {
+    padding: 0 !important;
+  }
+  .book-appointment .typeWrapper .selected-store-tittle {
+    padding: 2vw;
   }
   .book-appointment .appointment-details {
     flex-direction: column-reverse;
@@ -1023,7 +1037,7 @@
     width: 65vw !important;
   }
   .book-appointment .appointment-details .appointment-date .time-wrapper {
-    width: 65vw !important;
+    width: auto !important;
   }
   .book-appointment .appointment-details .appointment-date h6 {
     padding-top: 3vh;
@@ -1039,8 +1053,14 @@
     justify-content: space-between;
     height: inherit;
   }
+  .book-appointment .appointment-details .appointment-store .selected-store .store-name {
+    padding: 0 2vw;
+  }
   .book-appointment .appointment-details .appointment-store .selected-store .store-zip p {
     width: 25vw;
+  }
+  .book-appointment .appointment-details .appointment-store .selected-store .btn {
+    padding-bottom: 2vh;
   }
   .widget-wrapper .book-appointment .book-appointment-btn {
     padding: 0 28px 43px;
@@ -1057,7 +1077,7 @@
     flex-direction: column;
   }
 }
-@media screen and (max-width: 562px) {
+@media screen and (max-width: 575px) {
   .typeWrapper .list-map-btn img {
     width: 5vw !important;
   }
@@ -1070,6 +1090,7 @@
   .list-map .item-card {
     overflow: visible !important;
     flex-direction: unset !important;
+    height: 18vh;
   }
   .list-map .item-card .store-img {
     width: 30vw !important;
@@ -1079,16 +1100,25 @@
   }
   .list-map .store-name {
     padding: 0 2vw !important;
+    position: absolute;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    width: -webkit-fill-available;
+    margin: 1vh 0;
   }
   .list-map .store-name h5 {
     margin: 0 !important;
   }
   .list-map .store-name h5 {
-    font-size: 2.5vw !important;
+    font-size: 3.5vw !important;
+  }
+  .list-map .store-zip {
+    width: inherit;
   }
   .list-map .store-zip p {
     margin: 0;
-    font-size: 2vw;
+    font-size: 3.5vw;
   }
   .widget-wrapper .book-appointment .typeWrapper .appointment-details .appointment-store .selected-store .store-zip p {
     width: 35vw;
@@ -1097,6 +1127,9 @@
 @media screen and (max-width: 430px) {
   #send-quote-button {
     text-align: center;
+  }
+  .quote-information {
+    padding: 4vh 0 2vh !important;
   }
   .widget-stepper .stepper-item .back-button {
     top: 8px;
@@ -1107,7 +1140,7 @@
     margin-top: 4vh !important;
   }
   .widget-stepper .widget-stepper-wrapper .title-wrapper {
-    padding: 2vh 0 5vh;
+    padding: 2vh 0 7vh;
   }
   .widget-stepper .widget-stepper-wrapper .title-wrapper .step-name {
     white-space: unset;
@@ -1122,14 +1155,26 @@
     padding-right: 2vw;
     margin-right: -2vw;
   }
+  .widget-stepper .widget-stepper-wrapper .typeWrapper .col-name {
+    padding: 0 0 0 10px !important;
+  }
   .widget-stepper .widget-stepper-wrapper .typeWrapper .col-name span {
     font-size: 4vw;
+  }
+  .widget-stepper .widget-stepper-wrapper .typeWrapper .item-card .col-img .view-list-img, .widget-stepper .widget-stepper-wrapper .typeWrapper .item-card .col-img .view-map-img {
+    width: 5vw !important;
+    height: 5vw !important;
+  }
+  .widget-stepper .widget-stepper-wrapper .typeWrapper .item-card .col-img img {
+    width: 20vw;
+    height: 20vw;
   }
   .widget-stepper .widget-stepper-wrapper .typeWrapper .item-card .quote-delivery-title {
     padding: 1vh 0 !important;
   }
   .widget-stepper .widget-stepper-wrapper .typeWrapper .item-card .quote-delivery-title h6 {
-    font-size: 3.5vw !important;
+    font-size: 5vw !important;
+    font-weight: 500 !important;
   }
   .widget-stepper .widget-stepper-wrapper .typeWrapper .item-card .form-quote {
     padding-top: 1vh !important;
@@ -1153,7 +1198,7 @@
     padding: 1vh 0;
   }
   .widget-stepper .widget-stepper-wrapper .typeWrapper .item-card .zip-code .map-title span {
-    font-size: 2.8vw;
+    font-size: 5vw;
   }
   .widget-stepper .widget-stepper-wrapper .typeWrapper .item-card .zip-code .input-zip-code input {
     padding: 1vh 5px !important;
@@ -1174,7 +1219,7 @@
   }
   .widget-stepper .widget-stepper-wrapper .typeWrapper .item-card .details .store .store-wrapper .store-details .store-zip {
     width: 100% !important;
-    font-size: 3vw !important;
+    font-size: 3.3vw !important;
   }
   .widget-stepper .widget-stepper-wrapper .typeWrapper .item-card .problem .problem-wrapper .problem-card .item-card .option h5, .widget-stepper .widget-stepper-wrapper .typeWrapper .item-card .problem .problem-wrapper .problem-card .item-card .option span {
     font-size: 2.5vw;
@@ -1183,13 +1228,13 @@
     width: 13vw !important;
   }
   .widget-stepper .widget-stepper-wrapper .typeWrapper .item-card .problem .problem-wrapper .problem-card .problem-type .col-name span {
-    font-size: 2.5vw !important;
+    font-size: 2.8vw !important;
   }
   .widget-stepper .widget-stepper-wrapper .typeWrapper .store-list-wrapper {
     --bs-gutter-y: 1vh;
   }
   .widget-stepper .widget-stepper-wrapper .typeWrapper .store-list-wrapper .store-list-card {
-    height: 10vh;
+    height: 12vh;
   }
   .widget-stepper .appointment .appointment-details {
     flex-direction: column-reverse;
@@ -1217,11 +1262,120 @@
   .widget-stepper .radio-button-wrapper .radio .radio-btn {
     margin: 0 auto 1vh;
   }
+  .widget-stepper .store-list-card .store-zip {
+    padding: 3vh 0 0;
+  }
+  .book-appointment .title-wrapper .tittle h2 {
+    font-size: 4vw;
+  }
 }
 @media screen and (max-width: 430px) and (max-width: 375px) {
   .widget-wrapper .typeWrapper .list-map-btn {
     width: 30px;
     height: 33px;
+  }
+  .appointment-btn .btn, .no-btn .btn {
+    font-size: 3vw !important;
+  }
+  .selected-store .btn button {
+    font-size: 3vw;
+    width: 27vw !important;
+    height: 7vh !important;
+  }
+  .device-name span {
+    font-size: 5vw;
+  }
+}
+@media screen and (max-width: 320px) {
+  .widget-wrapper .typeWrapper .container .row .item-card {
+    padding: 1vh 3vw !important;
+  }
+  .widget-wrapper .typeWrapper .container .row .item-card .col-name {
+    white-space: unset;
+    text-align: start;
+  }
+  .widget-wrapper .typeWrapper .container .row .item-card .col-name span {
+    font-size: 5vw;
+  }
+  .widget-stepper-wrapper .title-wrapper .step-name {
+    font-size: 3vw !important;
+  }
+  .widget-stepper-wrapper .typeWrapper .input-list-wrapper {
+    padding: 0 !important;
+  }
+  .widget-stepper-wrapper .typeWrapper .item-card .col-img img {
+    width: 15vw !important;
+    height: 15vw !important;
+  }
+  .widget-stepper-wrapper .typeWrapper .item-card .zip-code .map-title {
+    padding: 0 0 2vh !important;
+  }
+  .widget-stepper-wrapper .typeWrapper .item-card .map-title span {
+    font-size: 3vw;
+  }
+  .widget-stepper-wrapper .typeWrapper .item-card .change-list-map span {
+    font-size: 3vw !important;
+  }
+  .widget-stepper-wrapper .typeWrapper .item-card .details .device-img img {
+    width: 35vw !important;
+  }
+  .widget-stepper-wrapper .typeWrapper .item-card .details .device-name span {
+    font-size: 5vw !important;
+  }
+  .widget-stepper-wrapper .type-map {
+    padding-top: 2vh !important;
+  }
+  .widget-stepper-wrapper .list-map .store-zip p {
+    font-size: 3.5vw;
+  }
+  .widget-stepper-wrapper .list-map .store-name h5 {
+    font-size: 3.5vw !important;
+  }
+  .problem-wrapper {
+    flex-wrap: unset !important;
+  }
+  .problem-wrapper .option h5, .problem-wrapper .option span {
+    font-size: 3vw !important;
+  }
+  .book-appointment .title-wrapper {
+    padding: 2vh 2vw !important;
+  }
+  .book-appointment .title-wrapper .tittle h2 {
+    font-size: 5vw;
+  }
+  .book-appointment .selected-store-tittle h4 {
+    font-size: 5vw;
+  }
+  .book-appointment .type-appointment {
+    padding: 1vh 5vw !important;
+  }
+  .book-appointment .appointment-details .appointment-date {
+    padding: 10px !important;
+  }
+  .book-appointment .appointment-details .appointment-date .time-of-appointment .title h6 {
+    padding-bottom: 10px !important;
+  }
+  .book-appointment .book-appointment-btn .no-btn {
+    margin: 0 10px !important;
+    padding: 5px 15px !important;
+  }
+  .success-block .success-block-wrapper .main-img img {
+    width: 30vw !important;
+  }
+  .success-block .success-block-wrapper .success-title h1 {
+    padding-top: 12px !important;
+  }
+  .success-block .success-block-wrapper .message {
+    width: 75vw !important;
+  }
+  .success-block .success-block-wrapper .message p {
+    font-size: 5vw !important;
+  }
+  .success-block .success-block-wrapper .appointment-details h4 {
+    font-size: 4vw !important;
+  }
+  .success-block .success-block-wrapper .date h3 {
+    font-size: 4vw !important;
   }
 }
 

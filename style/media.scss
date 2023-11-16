@@ -8,7 +8,7 @@
                 padding: 5vh 0 ;
                 .step-name{
                     white-space: nowrap;
-                    font-size: 1.5vw;
+                    font-size: 1.8vw;
                 }
             }
             .typeWrapper{
@@ -23,13 +23,14 @@
                 }
                 .item-card{
                     .details{
+
                         .device-img{
                             img{
                                 width: 15vw ;
                             }
                         }
                         .device-name{
-                            width: 10vw ;
+                            width: 12vw !important;
                             font-size: 2vw ;
                             padding-right: 2vw;
                         }
@@ -38,6 +39,15 @@
                                 img{
                                     width: 15vw ;
                                 }
+                            }
+                        }
+                    }
+                    .zip-code{
+                        .input-zip-code{
+                            padding: 2vh 0;
+                            padding-left: 0vw ;
+                            input{
+                                width: 27vw !important;
                             }
                         }
                     }
@@ -126,6 +136,7 @@
         width: 90vw !important;
         max-width: unset !important;
         margin: 7vh auto 5vh !important;
+
         .back-button{
             top: 8px;
         }
@@ -137,8 +148,9 @@
             padding: 2vh 2vw ;
             .container{
                 .item-card{
+                    // min-width: 42vw;
                     .col-name{
-                        padding: 0 8vw;
+                        padding: 0 5vw 0 5px ;
                     }
                     position: relative;
                     .checkbox{
@@ -148,13 +160,7 @@
                         display: flex;
                         flex-direction: column;
                         align-items: start;
-                        .input-zip-code{
-                            padding: 2vh 0;
-                            padding-left: 0vw ;
-                            input{
-                                width: 27vw !important;
-                            }
-                        }
+                        
                     }
                     .details{
                         flex-direction: column-reverse;
@@ -216,6 +222,9 @@
                     .radio{
                         padding: 0 2vw 10px !important;
                         .radio-btn{
+                            margin: 0 auto 1vh !important;
+                            position: relative;
+                            right: 1vw;
                             width: 30px ;
                         }
                     }
@@ -241,6 +250,11 @@
                             top: unset;
                         }
                     }
+                    .list-map{
+                        .item-card{
+                            min-width: auto;
+                        }
+                    }
                 }
 
             }  
@@ -251,6 +265,13 @@
     }
     .book-appointment{
         top: 5vh !important;
+        .typeWrapper{
+            padding: 0 !important;
+            .selected-store-tittle{
+                padding: 2vw;
+            }
+        }
+        
         .appointment-details{
             flex-direction: column-reverse;
             align-items: center;
@@ -262,7 +283,8 @@
                     width: 65vw !important;
                 }
                 .time-wrapper{
-                    width: 65vw !important;
+                    // width: 65vw !important;
+                    width: auto !important;
                 }
                 h6{
                     padding-top: 3vh;
@@ -277,10 +299,16 @@
                     align-items: center;
                     justify-content: space-between;
                     height: inherit;
+                    .store-name{
+                        padding: 0 2vw;
+                    }
                     .store-zip{
                         p{
                             width: 25vw;
                         }
+                    }
+                    .btn{
+                        padding-bottom: 2vh;
                     }
                 }
             }
@@ -303,7 +331,7 @@
     }
   }
 
-  @media screen and (max-width: 562px) {
+  @media screen and (max-width: 575px) {
     .typeWrapper{
         .list-map-btn img {
             width: 5vw !important;
@@ -317,6 +345,7 @@
         .item-card{
             overflow: visible !important;
             flex-direction: unset !important;
+            height: 18vh;
             .store-img{
                 width: 30vw !important;
                 img{
@@ -326,17 +355,24 @@
         }
         .store-name{
             padding: 0 2vw !important;
+            position: absolute;
+            top: 0;
+            display: flex;
+            justify-content: center;
+            width: -webkit-fill-available;
+            margin: 1vh 0;
             h5{
                 margin: 0 !important;
             }
             h5{
-                font-size: 2.5vw !important;
+                font-size: 3.5vw !important;
             }
         }
         .store-zip{
+            width: inherit;
             p{
                 margin: 0;
-                font-size: 2vw;
+                font-size: 3.5vw;
             }
         }
     }
@@ -349,6 +385,9 @@
     #send-quote-button{
         text-align: center;
     }
+    .quote-information {
+        padding: 4vh 0 2vh !important;
+    }
     .widget-stepper{
         // margin-top: 4vh ;
         .stepper-item .back-button {
@@ -360,7 +399,7 @@
             max-width: 95vw;
             margin-top: 4vh !important;
             .title-wrapper{
-                padding: 2vh 0 5vh;
+                padding: 2vh 0 7vh;
                 .step-name{
                     white-space: unset;
                     font-size: 2.5vw;
@@ -378,16 +417,30 @@
                     margin-right: -2vw;
                 }
                 .col-name{
+                    padding: 0 0 0 10px !important;
                     span{
                         font-size: 4vw;
 
                     }
                 }
                 .item-card{
+                    .col-img{
+                        .view-list-img, .view-map-img{
+                            width: 5vw !important;
+                            height: 5vw !important;
+                        }
+                        img{
+                            width: 20vw;
+                        height: 20vw;
+                        }
+                        
+                    }
                     .quote-delivery-title{
                         padding: 1vh 0 !important;
                         h6{
-                            font-size: 3.5vw !important;
+                            // font-size: 3.5vw !important;
+                            font-size: 5vw !important;
+                            font-weight: 500 !important;
 
                         }
                     }
@@ -417,7 +470,7 @@
                         .map-title{
                             padding: 1vh 0;
                             span{
-                                font-size: 2.8vw;
+                                font-size: 5vw;
                             }
                         }
                         .input-zip-code{
@@ -442,7 +495,7 @@
                                     }
                                     .store-zip{
                                         width: 100% !important;
-                                        font-size: 3vw !important;
+                                        font-size: 3.3vw !important;
                                     }
                                     
                                 }
@@ -462,7 +515,7 @@
                         }
                         .col-name{
                             span{
-                                font-size: 2.5vw !important;
+                                font-size: 2.8vw !important;
                             }
                         }
                     }
@@ -471,7 +524,7 @@
                 .store-list-wrapper{
                     --bs-gutter-y: 1vh;
                     .store-list-card {
-                    height: 10vh;
+                    height: 12vh;
                 }
                 
             }
@@ -513,24 +566,200 @@
                 }
         }
     }
-    
+    .store-list-card{
+        .store-zip{
+            padding: 3vh 0 0;
 
+        }
+    }
+    
+    
+    
     
   }
-  @media screen and (max-width: 375px) {
-   .widget-wrapper .typeWrapper .list-map-btn {
-    width: 30px;
-    height: 33px;
-
-    }   
-    
-        
+  .book-appointment .title-wrapper .tittle h2 {
+    font-size: 4vw;
 }
+@media screen and (max-width: 375px) {
+   .widget-wrapper .typeWrapper .list-map-btn {
+        width: 30px;
+        height: 33px;
+
+        }   
+        .appointment-btn, .no-btn{
+            .btn{
+                font-size: 3vw !important;
+            }
+        }
+        .selected-store{
+            .btn{
+                button{
+                    font-size: 3vw;
+                    width: 27vw !important;
+                    height: 7vh !important;
+                }
+            }
+            
+        }
+        .device-name{
+            span{
+                font-size: 5vw;
+            }
+        }
+    }
     
 }
 
   @media screen and (max-width: 320px) {
-    article {
-
+    // .type-form{
+    //     .item-card-form{
+    //         padding: 1vh 3vw !important;
+    //     }
+    // }
+    .widget-wrapper .typeWrapper .container .row .item-card {
+        padding: 1vh 3vw !important;
+        .col-name {
+            white-space: unset;
+            text-align: start;
+            span{
+                font-size: 5vw;
+            }
+        }
     }
+    .widget-stepper-wrapper{
+        .title-wrapper{
+            .step-name{
+                font-size: 3vw !important;
+            }
+        }
+        .typeWrapper{
+            .input-list-wrapper{
+                padding: 0 !important;
+            }
+            .item-card{
+                .col-img{
+                    img{
+                        width: 15vw !important;
+                        height: 15vw !important;
+                    }
+                    
+                }
+                .zip-code{
+                    .map-title{
+                        padding: 0 0 2vh !important;
+                    }
+                }
+                .map-title{
+                    span{
+                        font-size: 3vw;
+                    }
+                }
+                .change-list-map{
+                    span{
+                        font-size: 3vw !important;
+                    }
+                }
+                .details{
+                    .device-img{
+                        img{
+                            width: 35vw !important;
+                        }
+                    }
+                    .device-name{
+                        span{
+                            font-size: 5vw !important;
+                        }
+                    }
+                }
+            }
+        }
+        .type-map{
+            padding-top: 2vh !important;
+        }
+        
+        .list-map {
+            .store-zip p {
+                font-size: 3.5vw;
+            }
+            .store-name h5 {
+                font-size: 3.5vw !important;
+            }
+
+        }
+    }
+    .problem-wrapper{
+        flex-wrap: unset !important;
+        .option{
+            h5,span{
+                font-size: 3vw !important;
+            }
+        }
+    }
+    .book-appointment{
+        .title-wrapper {
+            padding: 2vh 2vw !important;
+            .tittle h2 {
+                font-size: 5vw;
+            }
+        }
+        .selected-store-tittle{
+            h4{
+                font-size: 5vw;
+
+            }
+        }
+    
+        .type-appointment{
+            padding: 1vh 5vw !important;
+        }
+        .appointment-details{
+            .appointment-date{
+                padding: 10px !important;
+                .time-of-appointment{
+                    .title{
+                        h6{
+                            padding-bottom: 10px !important;
+                        }
+                    }
+                }
+            }
+        }
+        .book-appointment-btn{
+            .no-btn{
+                margin: 0 10px !important;
+                padding: 5px 15px !important; 
+            }
+        }
+        
+    }
+    .success-block .success-block-wrapper {
+        .main-img{
+            img{
+                width: 30vw !important;
+            }
+        }
+        .success-title{
+            h1{
+                padding-top: 12px !important;
+            }
+        }
+        .message {
+            width: 75vw !important;
+            p{
+                font-size: 5vw !important;
+            }
+        }
+        .appointment-details{
+            h4{
+                font-size: 4vw !important;
+            }
+        }
+        .date{
+            h3{
+                font-size: 4vw !important;
+            }
+        }
+    }
+
+    
   }
