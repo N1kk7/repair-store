@@ -1086,7 +1086,7 @@
     font-size: 2vw;
   }
 }
-@media screen and (max-width: 425px) {
+@media screen and (max-width: 430px) {
   .widget-stepper .stepper-item .back-button {
     top: 8px;
     padding: 0 2px;
@@ -1181,7 +1181,7 @@
     --bs-gutter-y: 1vh;
   }
   .widget-stepper .widget-stepper-wrapper .typeWrapper .store-list-wrapper .store-list-card {
-    height: 8vh;
+    height: 10vh;
   }
   .widget-stepper .appointment .appointment-details {
     flex-direction: column-reverse;
@@ -1200,7 +1200,7 @@
     font-size: 5vw !important;
   }
 }
-@media screen and (max-width: 425px) and (max-width: 375px) {
+@media screen and (max-width: 430px) and (max-width: 375px) {
   .widget-wrapper .typeWrapper .list-map-btn {
     width: 30px;
     height: 33px;

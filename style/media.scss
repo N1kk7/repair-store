@@ -347,7 +347,7 @@
     }
   }
 
-  @media screen and (max-width: 425px) {
+  @media screen and (max-width: 430px) {
     .widget-stepper{
         // margin-top: 4vh ;
         .stepper-item .back-button {
@@ -470,7 +470,7 @@
                 .store-list-wrapper{
                     --bs-gutter-y: 1vh;
                     .store-list-card {
-                    height: 8vh;
+                    height: 10vh;
                 }
                 
             }
