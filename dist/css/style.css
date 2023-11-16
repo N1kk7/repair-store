@@ -176,6 +176,7 @@
 .widget-wrapper .typeWrapper .container .row .item-card {
   border: 1px solid #E8E8ED !important;
   box-shadow: 0px 1px 11px 0px rgba(0, 0, 0, 0.07);
+  min-width: 60vw;
   cursor: pointer;
 }
 .widget-wrapper .typeWrapper .container .row .item-card .col-name {
@@ -1039,7 +1040,11 @@
     height: inherit;
   }
   .book-appointment .appointment-details .appointment-store .selected-store .store-zip p {
-    width: 20vw;
+    width: 25vw;
+  }
+  .widget-wrapper .book-appointment .book-appointment-btn {
+    padding: 0 28px 43px;
+    justify-content: center !important;
   }
 }
 @media screen and (max-width: 688px) {
@@ -1085,8 +1090,14 @@
     margin: 0;
     font-size: 2vw;
   }
+  .widget-wrapper .book-appointment .typeWrapper .appointment-details .appointment-store .selected-store .store-zip p {
+    width: 35vw;
+  }
 }
 @media screen and (max-width: 430px) {
+  #send-quote-button {
+    text-align: center;
+  }
   .widget-stepper .stepper-item .back-button {
     top: 8px;
     padding: 0 2px;
@@ -1106,9 +1117,6 @@
     position: absolute;
     top: 45px;
     text-align: center;
-  }
-  .widget-stepper .widget-stepper-wrapper .typeWrapper {
-    padding: 1vh 2vw;
   }
   .widget-stepper .widget-stepper-wrapper .typeWrapper .hidden-row {
     padding-right: 2vw;
@@ -1199,21 +1207,21 @@
   .widget-stepper .success-block .success-block-wrapper .date h3 {
     font-size: 5vw !important;
   }
+  .widget-stepper .radio-button-wrapper {
+    justify-content: space-between;
+  }
+  .widget-stepper .radio-button-wrapper .radio {
+    text-align: center;
+    max-width: 17vw;
+  }
+  .widget-stepper .radio-button-wrapper .radio .radio-btn {
+    margin: 0 auto 1vh;
+  }
 }
 @media screen and (max-width: 430px) and (max-width: 375px) {
   .widget-wrapper .typeWrapper .list-map-btn {
     width: 30px;
     height: 33px;
-  }
-  .radio-button-wrapper {
-    justify-content: space-between;
-  }
-  .widget-wrapper .typeWrapper .container .row .item-card .radio {
-    text-align: center;
-    max-width: 17vw;
-  }
-  .widget-wrapper .typeWrapper .container .row .item-card .radio .radio-btn {
-    margin: 0 auto 1vh;
   }
 }
 
