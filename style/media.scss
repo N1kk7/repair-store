@@ -126,6 +126,9 @@
         width: 90vw !important;
         max-width: unset !important;
         margin: 7vh auto 5vh !important;
+        .back-button{
+            top: 8px;
+        }
         .typeWrapper{
             
             .hidden-row{
@@ -368,7 +371,7 @@
                 }
             }
             .typeWrapper{
-                padding: 3vh 2vw ;
+                padding: 1vh 2vw ;
                 .hidden-row{
                     padding-right: 2vw;
                     margin-right: -2vw;
@@ -410,6 +413,12 @@
                         width: 6vw;
                     }
                     .zip-code{
+                        .map-title{
+                            padding: 1vh 0;
+                            span{
+                                font-size: 2.8vw;
+                            }
+                        }
                         .input-zip-code{
                             input{
                                 padding: 1vh 5px !important;
@@ -417,7 +426,51 @@
                             }
                         }
                     }
+                    .change-list-map{
+                        bottom: 0;
+                    }
+                    .details{
+                        padding: 10px 10px 5px !important;
+                        .store{
+                            .store-wrapper{
+                                text-align: center;
+                                flex-direction: column;
+                                .store-details{
+                                    .change-store-btn{
+                                        display: none;
+                                    }
+                                    .store-zip{
+                                        width: 100% !important;
+                                        font-size: 3vw !important;
+                                    }
+                                    
+                                }
+                            }
+                            
+                        }
+                    }
+                    .problem .problem-wrapper .problem-card .item-card .option {
+                        h5, span {
+                            font-size: 2.5vw;
+                        } 
+                        
+                    }
+                    .problem .problem-wrapper .problem-card .problem-type {
+                        .col-img img {
+                            width: 13vw !important;
+                        }
+                        .col-name{
+                            span{
+                                font-size: 2.5vw !important;
+                            }
+                        }
+                    }
                     
+                }
+                .store-list-wrapper{
+                    --bs-gutter-y: 1vh;
+                    .store-list-card {
+                    height: 8vh;
                 }
                 
             }
@@ -450,11 +503,28 @@
     }
     
   }
-//   @media screen and (max-width: 375px) {
-//     article {
+  @media screen and (max-width: 375px) {
+   .widget-wrapper .typeWrapper .list-map-btn {
+    width: 30px;
+    height: 33px;
 
-//     }
-//   }
+    }   
+    .radio-button-wrapper{
+        justify-content: space-between;
+    }
+
+    .widget-wrapper .typeWrapper .container .row .item-card .radio{
+        text-align: center;
+        max-width: 17vw;
+        .radio-btn {
+            margin: 0 auto 1vh;
+            // padding-bottom: 2vh;
+        }
+        
+}
+    
+}
+}
 //   @media screen and (max-width: 320px) {
 //     article {
 

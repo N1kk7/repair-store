@@ -1,3 +1,5 @@
+// @import './nanoscroller.scss';
+
 .title-wrapper {
     margin-top: auto;
     display: flex;
@@ -5,7 +7,7 @@
   }
   .stepper-item {
     position: relative;
-    cursor: pointer;
+    cursor: not-allowed;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -139,6 +141,7 @@
     }
   }
   .completed{
+    cursor: pointer;
     // .step-counter{
     //   display: none;
     // }
@@ -212,7 +215,8 @@
               box-shadow: 0px 1px 11px 0px rgba(0, 0, 0, 0.07);
               cursor: pointer;
                 .col-name{
-                  padding-left: 10px;
+                  // padding-left: 10px;
+                  padding: 0 7px;
                   white-space: nowrap;
                   .span{
                     color: #000;
@@ -236,6 +240,7 @@
                   }
                   .form-control{
                     margin-bottom: 2vh;
+                    
                   }
                 }
               }
@@ -278,7 +283,8 @@
                       .btn{
                         border-radius: 3px;
                           background: #F60;
-                          padding: 12px 35px;
+                          // padding: 12px 35px;
+                          padding: 6px 25px;
                           justify-content: center;
                           color: #FFF;
                           align-items: center;
@@ -919,16 +925,22 @@
     }
   }
 
-  ::-webkit-scrollbar {
-    -webkit-appearance: none;
-    width: 7px;
-}
+//   ::-webkit-scrollbar {
+//     -webkit-appearance: none;
+//     width: 7px;
+// }
 
-::-webkit-scrollbar-thumb {
-    border-radius: 4px;
-    background-color: rgba(0,0,0,.5);
-    -webkit-box-shadow: 0 0 1px rgba(255,255,255,.5);
-}
+// ::-webkit-scrollbar-thumb {
+//     border-radius: 4px;
+//     background-color: rgba(0,0,0,.5);
+//     -webkit-box-shadow: 0 0 1px rgba(255,255,255,.5);
+// }
+
+// .nano { background: #bba; width: 500px; height: 500px; }
+// .nano .nano-content { padding: 10px; }
+// .nano .nano-pane   { background: #888; }
+// .nano .nano-slider { background: #111; }
+// .nano-pane { display: block !important; }
 
 
 @import './media.scss';

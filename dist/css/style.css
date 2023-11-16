@@ -6,7 +6,7 @@
 
 .stepper-item {
   position: relative;
-  cursor: pointer;
+  cursor: not-allowed;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -117,6 +117,9 @@
   font-size: 14px;
 }
 
+.completed {
+  cursor: pointer;
+}
 .completed .step-name {
   color: #229427;
 }
@@ -176,7 +179,7 @@
   cursor: pointer;
 }
 .widget-wrapper .typeWrapper .container .row .item-card .col-name {
-  padding-left: 10px;
+  padding: 0 7px;
   white-space: nowrap;
 }
 .widget-wrapper .typeWrapper .container .row .item-card .col-name .span {
@@ -236,7 +239,7 @@
 .widget-wrapper .typeWrapper .container .row .item-card .details .store .store-wrapper .store-details .btn {
   border-radius: 3px;
   background: #F60;
-  padding: 12px 35px;
+  padding: 6px 25px;
   justify-content: center;
   color: #FFF;
   align-items: center;
@@ -796,17 +799,6 @@
     width: 100%;
   }
 }
-::-webkit-scrollbar {
-  -webkit-appearance: none;
-  width: 7px;
-}
-
-::-webkit-scrollbar-thumb {
-  border-radius: 4px;
-  background-color: rgba(0, 0, 0, 0.5);
-  -webkit-box-shadow: 0 0 1px rgba(255, 255, 255, 0.5);
-}
-
 @media screen and (max-width: 1024px) {
   .widget-stepper .widget-stepper-wrapper {
     max-width: 85vw;
@@ -905,6 +897,9 @@
     width: 90vw !important;
     max-width: unset !important;
     margin: 7vh auto 5vh !important;
+  }
+  .widget-stepper-wrapper .back-button {
+    top: 8px;
   }
   .widget-stepper-wrapper .typeWrapper {
     padding: 2vh 2vw;
@@ -1113,7 +1108,7 @@
     text-align: center;
   }
   .widget-stepper .widget-stepper-wrapper .typeWrapper {
-    padding: 3vh 2vw;
+    padding: 1vh 2vw;
   }
   .widget-stepper .widget-stepper-wrapper .typeWrapper .hidden-row {
     padding-right: 2vw;
@@ -1146,25 +1141,79 @@
     margin-bottom: 1vh;
     width: 6vw;
   }
+  .widget-stepper .widget-stepper-wrapper .typeWrapper .item-card .zip-code .map-title {
+    padding: 1vh 0;
+  }
+  .widget-stepper .widget-stepper-wrapper .typeWrapper .item-card .zip-code .map-title span {
+    font-size: 2.8vw;
+  }
   .widget-stepper .widget-stepper-wrapper .typeWrapper .item-card .zip-code .input-zip-code input {
     padding: 1vh 5px !important;
     font-size: 3vw;
   }
-  .appointment .appointment-details {
+  .widget-stepper .widget-stepper-wrapper .typeWrapper .item-card .change-list-map {
+    bottom: 0;
+  }
+  .widget-stepper .widget-stepper-wrapper .typeWrapper .item-card .details {
+    padding: 10px 10px 5px !important;
+  }
+  .widget-stepper .widget-stepper-wrapper .typeWrapper .item-card .details .store .store-wrapper {
+    text-align: center;
+    flex-direction: column;
+  }
+  .widget-stepper .widget-stepper-wrapper .typeWrapper .item-card .details .store .store-wrapper .store-details .change-store-btn {
+    display: none;
+  }
+  .widget-stepper .widget-stepper-wrapper .typeWrapper .item-card .details .store .store-wrapper .store-details .store-zip {
+    width: 100% !important;
+    font-size: 3vw !important;
+  }
+  .widget-stepper .widget-stepper-wrapper .typeWrapper .item-card .problem .problem-wrapper .problem-card .item-card .option h5, .widget-stepper .widget-stepper-wrapper .typeWrapper .item-card .problem .problem-wrapper .problem-card .item-card .option span {
+    font-size: 2.5vw;
+  }
+  .widget-stepper .widget-stepper-wrapper .typeWrapper .item-card .problem .problem-wrapper .problem-card .problem-type .col-img img {
+    width: 13vw !important;
+  }
+  .widget-stepper .widget-stepper-wrapper .typeWrapper .item-card .problem .problem-wrapper .problem-card .problem-type .col-name span {
+    font-size: 2.5vw !important;
+  }
+  .widget-stepper .widget-stepper-wrapper .typeWrapper .store-list-wrapper {
+    --bs-gutter-y: 1vh;
+  }
+  .widget-stepper .widget-stepper-wrapper .typeWrapper .store-list-wrapper .store-list-card {
+    height: 8vh;
+  }
+  .widget-stepper .appointment .appointment-details {
     flex-direction: column-reverse;
     align-items: center;
   }
-  .success-block .success-block-wrapper {
+  .widget-stepper .success-block .success-block-wrapper {
     padding: 5vh 0 2vh !important;
   }
-  .success-block .success-block-wrapper .main-img img {
+  .widget-stepper .success-block .success-block-wrapper .main-img img {
     width: 50vw !important;
   }
-  .success-block .success-block-wrapper .message {
+  .widget-stepper .success-block .success-block-wrapper .message {
     width: 60vw !important;
   }
-  .success-block .success-block-wrapper .date h3 {
+  .widget-stepper .success-block .success-block-wrapper .date h3 {
     font-size: 5vw !important;
+  }
+}
+@media screen and (max-width: 425px) and (max-width: 375px) {
+  .widget-wrapper .typeWrapper .list-map-btn {
+    width: 30px;
+    height: 33px;
+  }
+  .radio-button-wrapper {
+    justify-content: space-between;
+  }
+  .widget-wrapper .typeWrapper .container .row .item-card .radio {
+    text-align: center;
+    max-width: 17vw;
+  }
+  .widget-wrapper .typeWrapper .container .row .item-card .radio .radio-btn {
+    margin: 0 auto 1vh;
   }
 }
 
