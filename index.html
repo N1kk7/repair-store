@@ -8,6 +8,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600&family=Pacifico&family=Yanone+Kaffeesatz:wght@200;600&display=swap" rel="stylesheet">
     <link href="./dist/css/zabuto_calendar.min.css" rel="stylesheet">
+    <link type="text/css" href="./dist/css/OverlayScrollbars.min.css" rel="stylesheet"/>
     <link rel="stylesheet" type="text/css" href="./dist/css/style.css">
 
     <title>Repairstore</title>
@@ -78,80 +79,84 @@
                     </div>
                     <div class="typeWrapper " data-id="1">
                         <div class="container  text-center  ">
-                            <div class="row hidden-row align-items-center row-cols-lg-3 g-lg-4 row-cols-md-2 row-cols-1 g-md-4 g-sm-3 g-2">
-                              <div class="col ">
-                                <div class="item-card p-2 px-3 border col-wrapper rounded  d-flex justify-content-lg-start align-items-center">
-                                    <div class="col-img">
-                                        <img src="./assets/images/device/android.png" alt="android" width="74" height="74">
+                            <div class="hidden-row-wrapper">
+                                <div class="row hidden-row align-items-center row-cols-lg-3 g-lg-4 row-cols-md-2 row-cols-1 g-md-4 g-sm-3 g-2">
+                                    <div class="col ">
+                                      <div class="item-card p-2 px-3 border col-wrapper rounded  d-flex justify-content-lg-start align-items-center">
+                                          <div class="col-img">
+                                              <img src="./assets/images/device/android.png" alt="android" width="74" height="74">
+                                          </div>
+                                          <div class="col-name">
+                                              <span>
+                                                  Android Phone
+                                              </span>
+                                          </div>
+                                      </div>
                                     </div>
-                                    <div class="col-name">
-                                        <span>
-                                            Android Phone
-                                        </span>
+                                    <div class="col">
+                                      <div class="item-card p-2 px-3 border col-wrapper rounded  d-flex justify-content-lg-start align-items-center">
+                                          <div class="col-img">
+                                              <img src="./assets/images/device/iphone.png" alt="iphone" width="74" height="74">
+                                          </div>
+                                          <div class="col-name">
+                                              <span>
+                                                  iPhone
+                                              </span>
+                                          </div>
+                                      </div>
                                     </div>
-                                </div>
-                              </div>
-                              <div class="col">
-                                <div class="item-card p-2 px-3 border col-wrapper rounded  d-flex justify-content-lg-start align-items-center">
-                                    <div class="col-img">
-                                        <img src="./assets/images/device/iphone.png" alt="iphone" width="74" height="74">
+                                    <div class="col">
+                                      <div class="item-card p-2 px-3 border col-wrapper rounded d-flex justify-content-lg-start align-items-center">
+                                          <div class="col-img">
+                                              <img src="./assets/images/device/tablet.png" alt="tablet" width="74" height="74">
+                                          </div>
+                                          <div class="col-name">
+                                              <span>
+                                                  Tablet
+                                              </span>
+                                          </div>
+                                      </div>
                                     </div>
-                                    <div class="col-name">
-                                        <span>
-                                            iPhone
-                                        </span>
+                                    <div class="col">
+                                      <div class="item-card p-2 px-3 border col-wrapper rounded d-flex justify-content-lg-start align-items-center">
+                                          <div class="col-img">
+                                              <img src="./assets/images/device/computer.png" alt="computer" width="74" height="74">
+                                          </div>
+                                          <div class="col-name">
+                                              <span>
+                                                  Computer
+                                              </span>
+                                          </div>
+                                      </div>
                                     </div>
-                                </div>
-                              </div>
-                              <div class="col">
-                                <div class="item-card p-2 px-3 border col-wrapper rounded d-flex justify-content-lg-start align-items-center">
-                                    <div class="col-img">
-                                        <img src="./assets/images/device/tablet.png" alt="tablet" width="74" height="74">
+                                    <div class="col">
+                                      <div class="item-card p-2 px-3 border col-wrapper rounded d-flex justify-content-lg-start align-items-center">
+                                          <div class="col-img">
+                                              <img src="./assets/images/device/game-console.png" alt="game-console" width="74" height="74">
+                                          </div>
+                                          <div class="col-name">
+                                              <span>
+                                                  Game Console
+                                              </span>
+                                          </div>
+                                      </div>
                                     </div>
-                                    <div class="col-name">
-                                        <span>
-                                            Tablet
-                                        </span>
+                                    <div class="col">
+                                      <div class="item-card p-2 px-3 border rounded d-flex justify-content-lg-start align-items-center">
+                                          <div class="col-img">
+                                              <img src="./assets/images/device/apple-watch.png" alt="apple-watch" width="74" height="74">
+                                          </div>
+                                          <div class="col-name">
+                                              <span>
+                                                  Apple Watch
+                                              </span>
+                                          </div>
+                                      </div>
                                     </div>
-                                </div>
-                              </div>
-                              <div class="col">
-                                <div class="item-card p-2 px-3 border col-wrapper rounded d-flex justify-content-lg-start align-items-center">
-                                    <div class="col-img">
-                                        <img src="./assets/images/device/computer.png" alt="computer" width="74" height="74">
-                                    </div>
-                                    <div class="col-name">
-                                        <span>
-                                            Computer
-                                        </span>
-                                    </div>
-                                </div>
-                              </div>
-                              <div class="col">
-                                <div class="item-card p-2 px-3 border col-wrapper rounded d-flex justify-content-lg-start align-items-center">
-                                    <div class="col-img">
-                                        <img src="./assets/images/device/game-console.png" alt="game-console" width="74" height="74">
-                                    </div>
-                                    <div class="col-name">
-                                        <span>
-                                            Game Console
-                                        </span>
-                                    </div>
-                                </div>
-                              </div>
-                              <div class="col">
-                                <div class="item-card p-2 px-3 border rounded d-flex justify-content-lg-start align-items-center">
-                                    <div class="col-img">
-                                        <img src="./assets/images/device/apple-watch.png" alt="apple-watch" width="74" height="74">
-                                    </div>
-                                    <div class="col-name">
-                                        <span>
-                                            Apple Watch
-                                        </span>
-                                    </div>
-                                </div>
-                              </div>
+                                  </div>
+
                             </div>
+                            
                             <div class="row text-end">
                                 <div class="col">
                                     <div class="button my-5">
@@ -167,103 +172,105 @@
                     </div>
                     <div class="typeWrapper type-wrapper-hidden" data-id="2">
                         <div class="container  text-center animated-block">
-                            <div class="row hidden-row align-items-center row-cols-lg-3 g-lg-4 row-cols-md-2 row-cols-1 g-md-4 g-sm-3 g-2">
-                              <div class="col ">
-                                <div class="item-card p-2 px-3 border col-wrapper rounded  d-flex justify-content-lg-start align-items-center">
-                                    <div class="col-img">
-                                        <img src="./assets/images/brand/samsung.png" alt="samsung" width="74" height="74">
+                            <div class="hidden-row-wrapper">
+                                <div class="row hidden-row align-items-center row-cols-lg-3 g-lg-4 row-cols-md-2 row-cols-1 g-md-4 g-sm-3 g-2">
+                                    <div class="col ">
+                                      <div class="item-card p-2 px-3 border col-wrapper rounded  d-flex justify-content-lg-start align-items-center">
+                                          <div class="col-img">
+                                              <img src="./assets/images/brand/samsung.png" alt="samsung" width="74" height="74">
+                                          </div>
+                                          <div class="col-name">
+                                              <span>
+                                                  Samsung
+                                              </span>
+                                          </div>
+                                      </div>
                                     </div>
-                                    <div class="col-name">
-                                        <span>
-                                            Samsung
-                                        </span>
+                                    <div class="col">
+                                      <div class="item-card p-2 px-3 border col-wrapper rounded  d-flex justify-content-lg-start align-items-center">
+                                          <div class="col-img">
+                                              <img src="./assets/images/brand/lg.png" alt="lg" width="74" height="74">
+                                          </div>
+                                          <div class="col-name">
+                                              <span>
+                                                  LG
+                                              </span>
+                                          </div>
+                                      </div>
                                     </div>
-                                </div>
-                              </div>
-                              <div class="col">
-                                <div class="item-card p-2 px-3 border col-wrapper rounded  d-flex justify-content-lg-start align-items-center">
-                                    <div class="col-img">
-                                        <img src="./assets/images/brand/lg.png" alt="lg" width="74" height="74">
+                                    <div class="col">
+                                      <div class="item-card p-2 px-3 border col-wrapper rounded d-flex justify-content-lg-start align-items-center">
+                                          <div class="col-img">
+                                              <img src="./assets/images/brand/google.png" alt="google" width="74" height="74">
+                                          </div>
+                                          <div class="col-name">
+                                              <span>
+                                                  Google Pixel
+                                              </span>
+                                          </div>
+                                      </div>
                                     </div>
-                                    <div class="col-name">
-                                        <span>
-                                            LG
-                                        </span>
+                                    <div class="col">
+                                      <div class="item-card p-2 px-3 border col-wrapper rounded d-flex justify-content-lg-start align-items-center">
+                                          <div class="col-img">
+                                              <img src="./assets/images/brand/motorola.png" alt="motorola" width="74" height="74">
+                                          </div>
+                                          <div class="col-name">
+                                              <span>
+                                                  Motorola
+                                              </span>
+                                          </div>
+                                      </div>
                                     </div>
-                                </div>
-                              </div>
-                              <div class="col">
-                                <div class="item-card p-2 px-3 border col-wrapper rounded d-flex justify-content-lg-start align-items-center">
-                                    <div class="col-img">
-                                        <img src="./assets/images/brand/google.png" alt="google" width="74" height="74">
+                                    <div class="col">
+                                      <div class="item-card p-2 px-3 border col-wrapper rounded d-flex justify-content-lg-start align-items-center">
+                                          <div class="col-img">
+                                              <img src="./assets/images/brand/one-plus.png" alt="one-plus" width="74" height="74">
+                                          </div>
+                                          <div class="col-name">
+                                              <span>
+                                                  One Plus
+                                              </span>
+                                          </div>
+                                      </div>
                                     </div>
-                                    <div class="col-name">
-                                        <span>
-                                            Google Pixel
-                                        </span>
+                                    <div class="col">
+                                      <div class="item-card p-2 px-3 border rounded d-flex justify-content-lg-start align-items-center">
+                                          <div class="col-img">
+                                              <img src="./assets/images/brand/htc.png" alt="htc" width="74" height="74">
+                                          </div>
+                                          <div class="col-name">
+                                              <span>
+                                                  HTC
+                                              </span>
+                                          </div>
+                                      </div>
                                     </div>
-                                </div>
-                              </div>
-                              <div class="col">
-                                <div class="item-card p-2 px-3 border col-wrapper rounded d-flex justify-content-lg-start align-items-center">
-                                    <div class="col-img">
-                                        <img src="./assets/images/brand/motorola.png" alt="motorola" width="74" height="74">
+                                    <div class="col">
+                                      <div class="item-card p-2 px-3 border rounded d-flex justify-content-lg-start align-items-center">
+                                          <div class="col-img">
+                                              <img src="./assets/images/brand/huawei.png" alt="huawei" width="74" height="74">
+                                          </div>
+                                          <div class="col-name">
+                                              <span>
+                                                  Huawei
+                                              </span>
+                                          </div>
+                                      </div>
                                     </div>
-                                    <div class="col-name">
-                                        <span>
-                                            Motorola
-                                        </span>
+                                    <div class="col">
+                                      <div class="item-card p-2 px-3 border rounded d-flex justify-content-lg-start align-items-center">
+                                          <div class="col-img">
+                                              <img src="./assets/images/brand/others.png" alt="others" width="74" height="74">
+                                          </div>
+                                          <div class="col-name">
+                                              <span>
+                                                  Others
+                                              </span>
+                                          </div>
+                                      </div>
                                     </div>
-                                </div>
-                              </div>
-                              <div class="col">
-                                <div class="item-card p-2 px-3 border col-wrapper rounded d-flex justify-content-lg-start align-items-center">
-                                    <div class="col-img">
-                                        <img src="./assets/images/brand/one-plus.png" alt="one-plus" width="74" height="74">
-                                    </div>
-                                    <div class="col-name">
-                                        <span>
-                                            One Plus
-                                        </span>
-                                    </div>
-                                </div>
-                              </div>
-                              <div class="col">
-                                <div class="item-card p-2 px-3 border rounded d-flex justify-content-lg-start align-items-center">
-                                    <div class="col-img">
-                                        <img src="./assets/images/brand/htc.png" alt="htc" width="74" height="74">
-                                    </div>
-                                    <div class="col-name">
-                                        <span>
-                                            HTC
-                                        </span>
-                                    </div>
-                                </div>
-                              </div>
-                              <div class="col">
-                                <div class="item-card p-2 px-3 border rounded d-flex justify-content-lg-start align-items-center">
-                                    <div class="col-img">
-                                        <img src="./assets/images/brand/huawei.png" alt="huawei" width="74" height="74">
-                                    </div>
-                                    <div class="col-name">
-                                        <span>
-                                            Huawei
-                                        </span>
-                                    </div>
-                                </div>
-                              </div>
-                              <div class="col">
-                                <div class="item-card p-2 px-3 border rounded d-flex justify-content-lg-start align-items-center">
-                                    <div class="col-img">
-                                        <img src="./assets/images/brand/others.png" alt="others" width="74" height="74">
-                                    </div>
-                                    <div class="col-name">
-                                        <span>
-                                            Others
-                                        </span>
-                                    </div>
-                                </div>
-                              </div>
+                                  </div>
                             </div>
                             <div class="row text-end">
                                 <div class="col">
@@ -277,152 +284,154 @@
                     </div>
                     <div class="typeWrapper type-wrapper-hidden" data-id="3">
                         <div class="container  text-center animated-block">
-                              <div class="row  hidden-row align-items-center row-cols-lg-3 g-lg-4 row-cols-md-2 row-cols-sm-1 g-md-4 g-sm-3 g-2">
-                                <div class="col ">
-                                    <div class="item-card p-2 px-3 border col-wrapper rounded  d-flex justify-content-lg-start align-items-center">
-                                        <div class="col-img">
-                                            <img src="./assets/images/model/a80.png" alt="a80" width="74" height="74">
+                            <div class="hidden-row-wrapper">
+                                <div class="row  hidden-row align-items-center row-cols-lg-3 g-lg-4 row-cols-md-2 row-cols-sm-1 g-md-4 g-sm-3 g-2">
+                                    <div class="col ">
+                                        <div class="item-card p-2 px-3 border col-wrapper rounded  d-flex justify-content-lg-start align-items-center" data-model="a80">
+                                            <div class="col-img">
+                                                <img src="./assets/images/model/a80.png" alt="a80" width="74" height="74">
+                                            </div>
+                                            <div class="col-name">
+                                                <span>
+                                                    Samsung Galaxy A80
+                                                </span>
+                                            </div>
                                         </div>
-                                        <div class="col-name">
-                                            <span>
-                                                Samsung Galaxy A80
-                                            </span>
+                                      </div>
+                                      <div class="col">
+                                        <div class="item-card p-2 px-3 border col-wrapper rounded  d-flex justify-content-lg-start align-items-center" data-model="a10">
+                                            <div class="col-img">
+                                                <img src="./assets/images/model/a10.png" alt="a10" width="74" height="74">
+                                            </div>
+                                            <div class="col-name">
+                                                <span>
+                                                    Samsung Galaxy A10
+                                                </span>
+                                            </div>
                                         </div>
-                                    </div>
+                                      </div>
+                                      <div class="col">
+                                        <div class="item-card p-2 px-3 border col-wrapper rounded d-flex justify-content-lg-start align-items-center" data-model="a20">
+                                            <div class="col-img">
+                                                <img src="./assets/images/model/a20.png" alt="a20" width="74" height="74">
+                                            </div>
+                                            <div class="col-name">
+                                                <span>
+                                                    Samsung Galaxy A20
+                                                </span>
+                                            </div>
+                                        </div>
+                                      </div>
+                                      <div class="col">
+                                        <div class="item-card p-2 px-3 border col-wrapper rounded d-flex justify-content-lg-start align-items-center" data-model="a30">
+                                            <div class="col-img">
+                                                <img src="./assets/images/model/a30.png" alt="a30" width="74" height="74">
+                                            </div>
+                                            <div class="col-name">
+                                                <span>
+                                                    Samsung Galaxy A30
+                                                </span>
+                                            </div>
+                                        </div>
+                                      </div>
+                                      <div class="col">
+                                        <div class="item-card p-2 px-3 border col-wrapper rounded d-flex justify-content-lg-start align-items-center" data-model="a40">
+                                            <div class="col-img">
+                                                <img src="./assets/images/model/a40.png" alt="a40" width="74" height="74">
+                                            </div>
+                                            <div class="col-name">
+                                                <span>
+                                                    Samsung Galaxy A40
+                                                </span>
+                                            </div>
+                                        </div>
+                                      </div>
+                                      <div class="col">
+                                        <div class="item-card p-2 px-3 border rounded d-flex justify-content-lg-start align-items-center" data-model="a5">
+                                            <div class="col-img">
+                                                <img src="./assets/images/model/a5.png" alt="a5" width="74" height="74">
+                                            </div>
+                                            <div class="col-name">
+                                                <span>
+                                                    Samsung Galaxy A5
+                                                </span>
+                                            </div>
+                                        </div>
+                                      </div>
+                                      <div class="col">
+                                        <div class="item-card p-2 px-3 border rounded d-flex justify-content-lg-start align-items-center" data-model="a50">
+                                            <div class="col-img">
+                                                <img src="./assets/images/model/a50.png" alt="a50" width="74" height="74">
+                                            </div>
+                                            <div class="col-name">
+                                                <span>
+                                                    Samsung Galaxy A50
+                                                </span>
+                                            </div>
+                                        </div>
+                                      </div>
+                                      <div class="col">
+                                        <div class="item-card p-2 px-3 border rounded d-flex justify-content-lg-start align-items-center" data-model="a51">
+                                            <div class="col-img">
+                                                <img src="./assets/images/model/a51.png" alt="a51" width="74" height="74">
+                                            </div>
+                                            <div class="col-name">
+                                                <span>
+                                                    Samsung Galaxy A51
+                                                </span>
+                                            </div>
+                                        </div>
+                                      </div>
+                                      <div class="col">
+                                        <div class="item-card p-2 px-3 border rounded d-flex justify-content-lg-start align-items-center" data-model="a6">
+                                            <div class="col-img">
+                                                <img src="./assets/images/model/a6.png" alt="a6" width="74" height="74">
+                                            </div>
+                                            <div class="col-name">
+                                                <span>
+                                                    Samsung Galaxy A6
+                                                </span>
+                                            </div>
+                                        </div>
+                                      </div>
+                                      <div class="col">
+                                        <div class="item-card p-2 px-3 border rounded d-flex justify-content-lg-start align-items-center" data-model="a70">
+                                            <div class="col-img">
+                                                <img src="./assets/images/model/a70.png" alt="a70" width="74" height="74">
+                                            </div>
+                                            <div class="col-name">
+                                                <span>
+                                                    Samsung Galaxy A70
+                                                </span>
+                                            </div>
+                                        </div>
+                                      </div>
+                                      <div class="col">
+                                        <div class="item-card p-2 px-3 border rounded d-flex justify-content-lg-start align-items-center" data-model="a71">
+                                            <div class="col-img">
+                                                <img src="./assets/images/model/a71.png" alt="a71" width="74" height="74">
+                                            </div>
+                                            <div class="col-name">
+                                                <span>
+                                                    Samsung Galaxy A71
+                                                </span>
+                                            </div>
+                                        </div>
+                                      </div>
+                                      <div class="col">
+                                        <div class="item-card p-2 px-3 border rounded d-flex justify-content-lg-start align-items-center" data-model="a8">
+                                            <div class="col-img">
+                                                <img src="./assets/images/model/a8.png" alt="a8" width="74" height="74">
+                                            </div>
+                                            <div class="col-name">
+                                                <span>
+                                                    Samsung Galaxy A8
+                                                </span>
+                                            </div>
+                                        </div>
+                                      </div>
                                   </div>
-                                  <div class="col">
-                                    <div class="item-card p-2 px-3 border col-wrapper rounded  d-flex justify-content-lg-start align-items-center">
-                                        <div class="col-img">
-                                            <img src="./assets/images/model/a10.png" alt="a10" width="74" height="74">
-                                        </div>
-                                        <div class="col-name">
-                                            <span>
-                                                Samsung Galaxy A10
-                                            </span>
-                                        </div>
-                                    </div>
-                                  </div>
-                                  <div class="col">
-                                    <div class="item-card p-2 px-3 border col-wrapper rounded d-flex justify-content-lg-start align-items-center">
-                                        <div class="col-img">
-                                            <img src="./assets/images/model/a20.png" alt="a20" width="74" height="74">
-                                        </div>
-                                        <div class="col-name">
-                                            <span>
-                                                Samsung Galaxy A20
-                                            </span>
-                                        </div>
-                                    </div>
-                                  </div>
-                                  <div class="col">
-                                    <div class="item-card p-2 px-3 border col-wrapper rounded d-flex justify-content-lg-start align-items-center">
-                                        <div class="col-img">
-                                            <img src="./assets/images/model/a30.png" alt="a30" width="74" height="74">
-                                        </div>
-                                        <div class="col-name">
-                                            <span>
-                                                Samsung Galaxy A30
-                                            </span>
-                                        </div>
-                                    </div>
-                                  </div>
-                                  <div class="col">
-                                    <div class="item-card p-2 px-3 border col-wrapper rounded d-flex justify-content-lg-start align-items-center">
-                                        <div class="col-img">
-                                            <img src="./assets/images/model/a40.png" alt="a40" width="74" height="74">
-                                        </div>
-                                        <div class="col-name">
-                                            <span>
-                                                Samsung Galaxy A40
-                                            </span>
-                                        </div>
-                                    </div>
-                                  </div>
-                                  <div class="col">
-                                    <div class="item-card p-2 px-3 border rounded d-flex justify-content-lg-start align-items-center">
-                                        <div class="col-img">
-                                            <img src="./assets/images/model/a5.png" alt="a5" width="74" height="74">
-                                        </div>
-                                        <div class="col-name">
-                                            <span>
-                                                Samsung Galaxy A5
-                                            </span>
-                                        </div>
-                                    </div>
-                                  </div>
-                                  <div class="col">
-                                    <div class="item-card p-2 px-3 border rounded d-flex justify-content-lg-start align-items-center">
-                                        <div class="col-img">
-                                            <img src="./assets/images/model/a50.png" alt="a50" width="74" height="74">
-                                        </div>
-                                        <div class="col-name">
-                                            <span>
-                                                Samsung Galaxy A50
-                                            </span>
-                                        </div>
-                                    </div>
-                                  </div>
-                                  <div class="col">
-                                    <div class="item-card p-2 px-3 border rounded d-flex justify-content-lg-start align-items-center">
-                                        <div class="col-img">
-                                            <img src="./assets/images/model/a51.png" alt="a51" width="74" height="74">
-                                        </div>
-                                        <div class="col-name">
-                                            <span>
-                                                Samsung Galaxy A51
-                                            </span>
-                                        </div>
-                                    </div>
-                                  </div>
-                                  <div class="col">
-                                    <div class="item-card p-2 px-3 border rounded d-flex justify-content-lg-start align-items-center">
-                                        <div class="col-img">
-                                            <img src="./assets/images/model/a6.png" alt="a6" width="74" height="74">
-                                        </div>
-                                        <div class="col-name">
-                                            <span>
-                                                Samsung Galaxy A6
-                                            </span>
-                                        </div>
-                                    </div>
-                                  </div>
-                                  <div class="col">
-                                    <div class="item-card p-2 px-3 border rounded d-flex justify-content-lg-start align-items-center">
-                                        <div class="col-img">
-                                            <img src="./assets/images/model/a70.png" alt="a70" width="74" height="74">
-                                        </div>
-                                        <div class="col-name">
-                                            <span>
-                                                Samsung Galaxy A70
-                                            </span>
-                                        </div>
-                                    </div>
-                                  </div>
-                                  <div class="col">
-                                    <div class="item-card p-2 px-3 border rounded d-flex justify-content-lg-start align-items-center">
-                                        <div class="col-img">
-                                            <img src="./assets/images/model/a71.png" alt="a71" width="74" height="74">
-                                        </div>
-                                        <div class="col-name">
-                                            <span>
-                                                Samsung Galaxy A71
-                                            </span>
-                                        </div>
-                                    </div>
-                                  </div>
-                                  <div class="col">
-                                    <div class="item-card p-2 px-3 border rounded d-flex justify-content-lg-start align-items-center">
-                                        <div class="col-img">
-                                            <img src="./assets/images/model/a8.png" alt="a8" width="74" height="74">
-                                        </div>
-                                        <div class="col-name">
-                                            <span>
-                                                Samsung Galaxy A8
-                                            </span>
-                                        </div>
-                                    </div>
-                                  </div>
-                              </div>
+                            </div>
                             <div class="row text-end">
                                 <div class="col">
                                     <div class="button my-5">
@@ -435,200 +444,202 @@
                     </div>
                     <div class="typeWrapper type-problem  type-wrapper-hidden" data-id="4">
                         <div class="container  text-center animated-block">
-                            <div class="row hidden-row align-items-center row-cols-lg-3 g-lg-4 row-cols-md-2 row-cols-sm-1 g-md-4 g-sm-3 g-2">
-                              <div class="col ">
-                                <div class="item-card border rounded  d-flex justify-content-lg-start align-items-center">
-                                    <label class="checkbox">
-                                        <input type="checkbox" name="repair">
-                                        <span class="checkmark"></span>
-                                        <div class="col-img">
-                                            <img src="./assets/images/repairs/back-glass.png" alt="back-glass" width="74" height="74">
-                                        </div>
-                                        <div class="col-name">
-                                            <span>
-                                                Back Glass
-                                            </span>
-                                        </div>
-                                    </label>  
-                                </div>
-                              </div>
-                              <div class="col">
-                                <div class="item-card border rounded  d-flex justify-content-lg-start align-items-center">
-                                    <label class="checkbox">
-                                        <input type="checkbox" name="repair">
-                                        <span class="checkmark"></span>
-                                        <div class="col-img">
-                                            <img src="./assets/images/repairs/display.png" alt="screen" width="74" height="74">
-                                        </div>
-                                        <div class="col-name">
-                                            <span>
-                                                Screen
-                                            </span>
-                                        </div>
-                                    </label>  
-                                </div>
-                              </div>
-                              <div class="col">
-                                <div class="item-card border rounded d-flex justify-content-lg-start align-items-center">
-                                    <label class="checkbox">
-                                        <input type="checkbox" name="repair">
-                                        <span class="checkmark"></span>
-                                        <div class="col-img">
-                                            <img src="./assets/images/repairs/camera.png" alt="camera" width="74" height="74">
-                                        </div>
-                                        <div class="col-name">
-                                            <span>
-                                                Camera Front
-                                            </span>
-                                        </div>
-                                    </label>     
-                                </div>
-                              </div>
-                              <div class="col">
-                                <div class="item-card border rounded d-flex justify-content-lg-start align-items-center">
-                                    <label class="checkbox">
-                                        <input type="checkbox" name="repair">
-                                        <span class="checkmark"></span>
-                                        <div class="col-img">
-                                            <img src="./assets/images/repairs/speaker.png" alt="speaker" width="74" height="74">
-                                        </div>
-                                        <div class="col-name">
-                                            <span>
-                                                Speaker
-                                            </span>
-                                        </div>
-                                    </label>
-                                </div>
-                              </div>
-                              <div class="col">
-                                <div class="item-card border rounded d-flex justify-content-lg-start align-items-center">
-                                    <label class="checkbox">
-                                        <input type="checkbox" name="repair">
-                                        <span class="checkmark"></span>
-                                        <div class="col-img">
-                                            <img src="./assets/images/repairs/battery.png" alt="battery" width="74" height="74">
-                                        </div>
-                                        <div class="col-name">
-                                            <span>
-                                                Battery
-                                            </span>
-                                        </div>
-                                    </label>
-                                </div>
-                              </div>
-                              <div class="col">
-                                <div class="item-card border rounded d-flex justify-content-lg-start align-items-center">
-                                    <label class="checkbox">
-                                        <input type="checkbox" name="repair">
-                                        <span class="checkmark"></span>
-                                        <div class="col-img">
-                                            <img src="./assets/images/repairs/water-damage.png" alt="water-damage" width="74" height="74">
-                                        </div>
-                                        <div class="col-name">
-                                            <span>
-                                               Water Damage
-                                            </span>
-                                        </div>
-                                    </label>
-                                </div>
-                              </div>
-                              <div class="col">
-                                <div class="item-card border rounded d-flex justify-content-lg-start align-items-center">
-                                    <label class="checkbox">
-                                        <input type="checkbox" name="repair">
-                                        <span class="checkmark"></span>
-                                        <div class="col-img">
-                                            <img src="./assets/images/repairs/camera.png" alt="camera" width="74" height="74">
-        
-                                        </div>
-                                        <div class="col-name">
-                                            <span>
-                                                Camera Back
-                                            </span>
-                                        </div>
-                                    </label>
-                                </div>
-                              </div>
-                              <div class="col">
-                                <div class="item-card border rounded d-flex justify-content-lg-start align-items-center">
-                                    <label class="checkbox">
-                                        <input type="checkbox" name="repair">
-                                        <span class="checkmark"></span>
-                                        <div class="col-img">
-                                            <img src="./assets/images/repairs/diagnostic.png" alt="diagnostic" width="74" height="74">
-                                        </div>
-                                        <div class="col-name">
-                                            <span>
-                                                Diagnostic
-                                            </span>
-                                        </div>
-                                    </label>
-                                </div>
-                              </div>
-                              <div class="col">
-                                <div class="item-card border rounded d-flex justify-content-lg-start align-items-center">
-                                    <label class="checkbox">
-                                        <input type="checkbox" name="repair">
-                                        <span class="checkmark"></span>
-                                        <div class="col-img">
-                                            <img src="./assets/images/repairs/charging-port.png" alt="charging-port" width="74" height="74">
-                                        </div>
-                                        <div class="col-name">
-                                            <span>
-                                                Charging Port
-                                            </span>
-                                        </div>
-                                    </label>
-                                </div>
-                              </div>
-                              <div class="col">
-                                <div class="item-card border rounded d-flex justify-content-lg-start align-items-center">
-                                    <label class="checkbox">
-                                        <input type="checkbox" name="repair">
-                                        <span class="checkmark"></span>
-                                        <div class="col-img">
-                                            <img src="./assets/images/repairs/recovery.png" alt="recovery" width="74" height="74">
-                                        </div>
-                                        <div class="col-name">
-                                            <span>
-                                                Data Recovery
-                                            </span>
-                                        </div>
-                                    </label>
-                                </div>
-                              </div>
-                              <div class="col">
-                                <div class="item-card border rounded d-flex justify-content-lg-start align-items-center">
-                                    <label class="checkbox">
-                                        <input type="checkbox" name="repair">
-                                        <span class="checkmark"></span>
-                                        <div class="col-img">
-                                            <img src="./assets/images/repairs/earpiece.png" alt="earpiece" width="74" height="74">
-                                        </div>
-                                        <div class="col-name">
-                                            <span>
-                                                Earpiece
-                                            </span>
-                                        </div>
-                                    </label>
-                                </div>
-                              </div>
-                              <div class="col">
-                                <div class="item-card border rounded d-flex justify-content-lg-start align-items-center">
-                                    <label class="checkbox">
-                                        <input type="checkbox" name="repair">
-                                        <span class="checkmark"></span>
-                                        <div class="col-img">
-                                            <img src="./assets/images/repairs/boot.png" alt="boot" width="74" height="74">
-                                        </div>
-                                        <div class="col-name">
-                                            <span>
-                                                Does not boot
-                                            </span>
-                                        </div>
-                                    </label>
-                                </div>
-                              </div>
+                            <div class="hidden-row-wrapper">
+                                <div class="row hidden-row align-items-center row-cols-lg-3 g-lg-4 row-cols-md-2 row-cols-sm-1 g-md-4 g-sm-3 g-2">
+                                    <div class="col ">
+                                      <div class="item-card border rounded  d-flex justify-content-lg-start align-items-center" >
+                                          <label class="checkbox" >
+                                              <input type="checkbox" name="repair" data-problem="Back Glass" data-problemImg="back-glass" data-problemId="1">
+                                              <span class="checkmark"></span>
+                                              <div class="col-img">
+                                                  <img src="./assets/images/repairs/back-glass.png" alt="back-glass" width="74" height="74">
+                                              </div>
+                                              <div class="col-name">
+                                                  <span>
+                                                      Back Glass
+                                                  </span>
+                                              </div>
+                                          </label>  
+                                      </div>
+                                    </div>
+                                    <div class="col">
+                                      <div class="item-card border rounded  d-flex justify-content-lg-start align-items-center">
+                                          <label class="checkbox">
+                                              <input type="checkbox" name="repair" data-problem="Screen" data-problemImg="screen" data-problemId="2">
+                                              <span class="checkmark"></span>
+                                              <div class="col-img">
+                                                  <img src="./assets/images/repairs/display.png" alt="screen" width="74" height="74">
+                                              </div>
+                                              <div class="col-name">
+                                                  <span>
+                                                      Screen
+                                                  </span>
+                                              </div>
+                                          </label>  
+                                      </div>
+                                    </div>
+                                    <div class="col">
+                                      <div class="item-card border rounded d-flex justify-content-lg-start align-items-center">
+                                          <label class="checkbox">
+                                              <input type="checkbox" name="repair" data-problem="Camera Front" data-problemImg="camera" data-problemId="2">
+                                              <span class="checkmark"></span>
+                                              <div class="col-img">
+                                                  <img src="./assets/images/repairs/camera.png" alt="camera" width="74" height="74">
+                                              </div>
+                                              <div class="col-name">
+                                                  <span>
+                                                      Camera Front
+                                                  </span>
+                                              </div>
+                                          </label>     
+                                      </div>
+                                    </div>
+                                    <div class="col">
+                                      <div class="item-card border rounded d-flex justify-content-lg-start align-items-center">
+                                          <label class="checkbox">
+                                              <input type="checkbox" name="repair" data-problem="Speaker" data-problemImg="speaker" data-problemId="3">
+                                              <span class="checkmark"></span>
+                                              <div class="col-img">
+                                                  <img src="./assets/images/repairs/speaker.png" alt="speaker" width="74" height="74">
+                                              </div>
+                                              <div class="col-name">
+                                                  <span>
+                                                      Speaker
+                                                  </span>
+                                              </div>
+                                          </label>
+                                      </div>
+                                    </div>
+                                    <div class="col">
+                                      <div class="item-card border rounded d-flex justify-content-lg-start align-items-center">
+                                          <label class="checkbox">
+                                              <input type="checkbox" name="repair" data-problem="Battery" data-problemImg="battery" data-problemId="4">
+                                              <span class="checkmark"></span>
+                                              <div class="col-img">
+                                                  <img src="./assets/images/repairs/battery.png" alt="battery" width="74" height="74">
+                                              </div>
+                                              <div class="col-name">
+                                                  <span>
+                                                      Battery
+                                                  </span>
+                                              </div>
+                                          </label>
+                                      </div>
+                                    </div>
+                                    <div class="col">
+                                      <div class="item-card border rounded d-flex justify-content-lg-start align-items-center">
+                                          <label class="checkbox">
+                                              <input type="checkbox" name="repair" data-problem="Water Damage" data-problemImg="water-damage" data-problemId="5">
+                                              <span class="checkmark"></span>
+                                              <div class="col-img">
+                                                  <img src="./assets/images/repairs/water-damage.png" alt="water-damage" width="74" height="74">
+                                              </div>
+                                              <div class="col-name">
+                                                  <span>
+                                                     Water Damage
+                                                  </span>
+                                              </div>
+                                          </label>
+                                      </div>
+                                    </div>
+                                    <div class="col">
+                                      <div class="item-card border rounded d-flex justify-content-lg-start align-items-center">
+                                          <label class="checkbox">
+                                              <input type="checkbox" name="repair" data-problem="Camera Back" data-problemImg="camera" data-problemId="6">
+                                              <span class="checkmark"></span>
+                                              <div class="col-img">
+                                                  <img src="./assets/images/repairs/camera.png" alt="camera" width="74" height="74">
+              
+                                              </div>
+                                              <div class="col-name">
+                                                  <span>
+                                                      Camera Back
+                                                  </span>
+                                              </div>
+                                          </label>
+                                      </div>
+                                    </div>
+                                    <div class="col">
+                                      <div class="item-card border rounded d-flex justify-content-lg-start align-items-center">
+                                          <label class="checkbox">
+                                              <input type="checkbox" name="repair" data-problem="Diagnostic" data-problemImg="diagnostic" data-problemId="7">
+                                              <span class="checkmark"></span>
+                                              <div class="col-img">
+                                                  <img src="./assets/images/repairs/diagnostic.png" alt="diagnostic" width="74" height="74">
+                                              </div>
+                                              <div class="col-name">
+                                                  <span>
+                                                      Diagnostic
+                                                  </span>
+                                              </div>
+                                          </label>
+                                      </div>
+                                    </div>
+                                    <div class="col">
+                                      <div class="item-card border rounded d-flex justify-content-lg-start align-items-center">
+                                          <label class="checkbox">
+                                              <input type="checkbox" name="repair" data-problem="Charging Port" data-problemImg="charging-port" data-problemId="8">
+                                              <span class="checkmark"></span>
+                                              <div class="col-img">
+                                                  <img src="./assets/images/repairs/charging-port.png" alt="charging-port" width="74" height="74">
+                                              </div>
+                                              <div class="col-name">
+                                                  <span>
+                                                      Charging Port
+                                                  </span>
+                                              </div>
+                                          </label>
+                                      </div>
+                                    </div>
+                                    <div class="col">
+                                      <div class="item-card border rounded d-flex justify-content-lg-start align-items-center">
+                                          <label class="checkbox">
+                                              <input type="checkbox" name="repair" data-problem="Data Recovery" data-problemImg="recovery" data-problemId="9">
+                                              <span class="checkmark"></span>
+                                              <div class="col-img">
+                                                  <img src="./assets/images/repairs/recovery.png" alt="recovery" width="74" height="74">
+                                              </div>
+                                              <div class="col-name">
+                                                  <span>
+                                                      Data Recovery
+                                                  </span>
+                                              </div>
+                                          </label>
+                                      </div>
+                                    </div>
+                                    <div class="col">
+                                      <div class="item-card border rounded d-flex justify-content-lg-start align-items-center">
+                                          <label class="checkbox">
+                                              <input type="checkbox" name="repair" data-problem="Earpiece" data-problemImg="earpiece" data-problemId="10">
+                                              <span class="checkmark"></span>
+                                              <div class="col-img">
+                                                  <img src="./assets/images/repairs/earpiece.png" alt="earpiece" width="74" height="74">
+                                              </div>
+                                              <div class="col-name">
+                                                  <span>
+                                                      Earpiece
+                                                  </span>
+                                              </div>
+                                          </label>
+                                      </div>
+                                    </div>
+                                    <div class="col">
+                                      <div class="item-card border rounded d-flex justify-content-lg-start align-items-center">
+                                          <label class="checkbox">
+                                              <input type="checkbox" name="repair" data-problem="Boot" data-problemImg="boot" data-problemId="11">
+                                              <span class="checkmark"></span>
+                                              <div class="col-img">
+                                                  <img src="./assets/images/repairs/boot.png" alt="boot" width="74" height="74">
+                                              </div>
+                                              <div class="col-name">
+                                                  <span>
+                                                      Does not boot
+                                                  </span>
+                                              </div>
+                                          </label>
+                                      </div>
+                                    </div>
+                                  </div>
                             </div>
                             <div class="row text-end">
                                 <div class="col">
@@ -686,7 +697,7 @@
                         </div>
                        
                     </div>
-                    <div class="typeWrapper  type-wrapper-hidden type-form " data-id="6">
+                    <div class="typeWrapper type-wrapper-hidden  type-form " data-id="6">
                         <div class="container  text-justify animated-block">
                             <div class="row align-items-center row-cols-lg-1 g-lg-4">
                                 <div class="col ">
@@ -758,7 +769,7 @@
                                             <div class="row text-end">
                                                 <div class="col">
                                                     <div class="button mb-5" id="send-quote-button">
-                                                        <button id="send-btn" type="button" class="btn btn-primary active-btn px-4 py-2">Send me the quote</button>
+                                                        <button  type="button" class="btn btn-primary active-btn px-4 py-2">Send me the quote</button>
                     
                                                     </div>
                                                     
@@ -775,18 +786,22 @@
                             </div>
                             <div class="row align-items-center row-cols-lg-1 g-lg-4">
                                 <div class="col ">
-                                    <div class="item-card pt-2 pb-4 px-3 border rounded ">
+                                    <div class="item-card quote-card pt-2 pb-4 px-3 border rounded ">
                                        <div class="details d-flex justify-content-lg-between">
                                             <div class="device">
                                                 <div class="device-tittle">
                                                     <h6>Device:</h6>
                                                 </div>
                                                 <div class="device-wrapper d-flex align-items-center">
-                                                    <div class="device-img">
-                                                        <img src="./assets/images/model/a80.png" alt="device">
+                                                    <div class="device-img" id="append-device-img">
+
+                                                        <!-- APPEND IMAGE -->
+                                                        
                                                     </div>
-                                                    <div class="device-name">
-                                                        <span>Samsung Galaxy A80</span>
+                                                    <div class="device-name" id="append-device-name">
+
+                                                        <!-- APPEND DEVICE NAME -->
+                                                        
                                                     </div>
                                                 </div>
                                             </div>
@@ -805,8 +820,8 @@
                                                         <div class="store-zip">
                                                             <p >8961 North Blackburn Ave.Milton, MA 02186</p>
                                                         </div>
-                                                        <div class="button change-store-btn m-0"></div>
-                                                            <button type="button" class=" btn ">Change</button>
+                                                        <div class="button change-store-btn m-0" ></div>
+                                                            <button id="change-store-btn" type="button" class=" btn " >Change</button>
                                                             <!-- <h1>Samsung Galaxy A80</h1> -->
                                                     </div>
                                                 </div>
@@ -819,7 +834,7 @@
                                             <div class="problem-wrapper d-flex justify-content-start flex-wrap">
                                                 
                                                     <div class="problem-card p-2 ">
-                                                        <div class="item-card p-2 px-3 border rounded d-flex justify-content-lg-start align-items-center flex-column">
+                                                        <div class="item-card  p-2 px-3 border rounded d-flex justify-content-lg-start align-items-center flex-column">
                                                             <div class="problem-type d-block w-100">
                                                                 <div class="col-img d-inline-block">
                                                                     <img src="./assets/images/repairs/back-glass.png" alt="back-glass">
@@ -920,8 +935,8 @@
                                    <div class="store-zip">
                                        <p>8961 North Blackburn Ave.Milton, MA 02186</p>
                                    </div>
-                                   <div class="btn">
-                                       <button type="button" class=" btn px-4 py-2">Change</button>
+                                   <div class=" change-appointment-btn btn" >
+                                       <button  type="button" class=" btn px-4 py-2" id="change-appointment-store">Change</button>
                                    </div>
                             </div>
                         </div>
@@ -1073,7 +1088,7 @@
     
                     </div>
                     <div class="date">
-                        <h3>30-May, 2023 </h3>
+                        <h3>May 30, 2023 </h3>
                         <h3>10:30 AM - 11:00 AM</h3>
                     </div>
                     <div class="store-detail text-center">
@@ -1098,7 +1113,12 @@
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script type="text/javascript" src="./dist/js/jquery.min.js"></script>
+    <script type="text/javascript" src="./dist/js/jquery.overlayScrollbars.min.js"></script>
     <script src="./dist/js/zabuto_calendar.min.js"></script>
+
+
+
     <script src="index.js"></script>
 </body>
 </html>

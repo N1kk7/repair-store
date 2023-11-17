@@ -1,5 +1,3 @@
-// @import './nanoscroller.scss';
-
 .title-wrapper {
     margin-top: auto;
     display: flex;
@@ -36,12 +34,6 @@
   .completed{
     .back-button{
       z-index: 10;
-      // position: absolute;
-      // left: 2vw;
-      // .left-arrow{
-      //   width: 3vw;
-      //   transform: rotate(180deg);
-      // }
     }
   }
   
@@ -102,13 +94,6 @@
     left: 50%;
     z-index: 3;
   }
-  // .completed {
-  //   .step-name{
-  //     color: #229427;
-
-  //   }
-  // }
-
   .stepper-item{
     .step-counter{
       color: #FFFFFF;
@@ -130,9 +115,6 @@
     .step-counter{
       background-color: #229427;
     }
-    // .arrow-counter{
-    //   display: block;
-    // }
     .step-name{
       color: #229427;
       font-family: 'Open Sans';
@@ -142,12 +124,6 @@
   }
   .completed{
     cursor: pointer;
-    // .step-counter{
-    //   display: none;
-    // }
-    // .arrow-counter{
-    //   display: block;
-    // }
     .step-name{
       color: #229427;
       
@@ -192,16 +168,33 @@
         
         overflow: hidden;
         .animated-block{
-          animation-duration: 0.7s;
+          overscroll-behavior: none;
+          -webkit-animation-duration: 0.7s;
           animation-name: slidein;
           animation-timing-function: ease-in-out;
+          // animation-fill-mode:forwards; 
+
+-webkit-animation-fill-mode:forwards;
+
+// -moz-animation-fill-mode:forwards; 
+
+// -o-animation-fill-mode:forwards; 
+
+// -ms-animation-fill-mode:forwards; 
         }
         .container{
           overflow: hidden;
-          .hidden-row{
-            max-height: 30vh;
-            overflow: auto;
+          margin: 0 auto ;
+          .hidden-row-wrapper{
+            padding-right: 2vw;
+            height: 30vh;
+            .hidden-row{
+              // -webkit-overflow-scrolling: touch;
+              max-height: 35vh;
+              overflow: auto;
+            }
           }
+          
           
 
           .row{
@@ -219,7 +212,7 @@
                   // padding-left: 10px;
                   padding: 0 7px;
                   white-space: nowrap;
-                  .span{
+                  span{
                     color: #000;
                     font-family: Open Sans;
                     font-size: 14px;
@@ -234,11 +227,12 @@
                   .message-form{
                     height: 166px;
                   }
-                  .message-form::placeholder{
-                    height: inherit;
-                    // position: absolute;
-                    // top: 10px;
-                  }
+                    // .message-form::placeholder{
+                    //   // height: inherit;
+
+                    //   // position: absolute;
+                    //   // top: 10px;
+                    // }
                   .form-control{
                     margin-bottom: 2vh;
                     
@@ -250,6 +244,7 @@
                 .device-img {
                   img{
                     width: 147px;
+                    padding: 1vw;
                   }
                 }
                 .device-name{
@@ -339,7 +334,7 @@
                 padding: 20px 0 15px;
                 h6{
                   color: #000;
-                  // font-family: Open Sans;
+                  font-family: Open Sans;
                   font-size: 18px;
                   font-style: normal;
                   font-weight: 700;
@@ -509,21 +504,6 @@
             .button-map{
               margin: 15px 0 25px;
             }
-            // .store-list-btn{
-            //   margin-bottom: 2vh;
-            //   button{
-            //     display: flex;
-            //         width: 153px;
-            //         height: 47px;
-            //         padding: 12px 28px;
-            //         justify-content: center;
-            //         align-items: center;
-            //         color: #FFF;
-            //         border-radius: 3px;
-            //         border: 1px solid #F60;
-            //         background: #F60;
-            //   }
-            // }
           }
           .quote-information{
             padding: 36px 0 27px;
@@ -539,8 +519,6 @@
         }
         .list-map{
           padding: 3vh !important;
-    //       height: 40vh;
-    // overflow: auto;
           .store-img{
             width: -webkit-fill-available;
             img{
@@ -614,7 +592,7 @@
   
               border: 1px solid #E8E8ED;
               width: 189px;
-              height: 235px;
+              height: 250px;
               background: #FFF;
               .selected-store{
                 .store-name{
@@ -639,7 +617,7 @@
                       margin-bottom: auto;
                     }
                 }
-                .btn{
+                .change-appointment-btn{
                   button{
                     display: flex;
                     width: 153px;
@@ -708,9 +686,9 @@
                       color: #000;
                       text-align: center;
                       font-family: Open Sans;
-                      font-size: 14.53px;
+                      font-size: 16px;
                       font-style: normal;
-                      font-weight: 400;
+                      font-weight: 600;
                       line-height: 16.038px; /* 110.377% */
                     }
                   }
@@ -920,27 +898,27 @@
 
   @keyframes slidein {
     from {
-      margin-left: 100%;
+      margin-left: 80vw;
       // left: 120%;
       width: 300%;
     }
   
     to {
-      margin-left: 0%;
+      margin-left: 0;
       // left: 0%;
-      width: 100%;
+      width: 100%
     }
   }
 
-  .hidden-row::-webkit-scrollbar {
+  ::-webkit-scrollbar {
     -webkit-appearance: none;
-    width: 7px;
+    // width: 7px;
   }
   
-  .hidden-row::-webkit-scrollbar-thumb {
-    border-radius: 4px;
-    background-color: rgba(0, 0, 0, .5);
-    box-shadow: 0 0 1px rgba(255, 255, 255, .5);
-  }
+  // .hidden-row::-webkit-scrollbar-thumb {
+  //   border-radius: 4px;
+  //   background-color: rgba(0, 0, 0, .5);
+  //   box-shadow: 0 0 1px rgba(255, 255, 255, .5);
+  // }
 
 @import './media.scss';

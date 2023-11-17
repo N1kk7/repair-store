@@ -130,6 +130,10 @@
 }
 
   @media screen and (max-width: 768px) {
+    .animated-block{
+        animation-duration: 0.3s !important;
+         
+    }
     .widget-stepper-wrapper{
         width: 90vw !important;
         max-width: unset !important;
@@ -139,14 +143,15 @@
             top: 8px;
         }
         .typeWrapper{
-            
+            padding: 4vh 2vw ;
             .hidden-row{
                 max-height: 60vh !important;
             }
-            padding: 2vh 2vw ;
             .container{
+                
                 .item-card{
                     // min-width: 42vw;
+                    min-width: max-content;
                     .col-name{
                         padding: 0 5vw 0 5px ;
                         min-width: 20vw;
@@ -186,6 +191,7 @@
                                 .item-card{
                                     flex-direction: unset !important;
                                     justify-content: center ;
+                                    min-width: unset;
                                     .problem-type{
                                         .col-img{
                                            display: inline-block;
@@ -239,6 +245,9 @@
                     }
                     
                     
+                }
+                .input-list-wrapper, .item-card-form, .list-map, .quote-card{
+                    min-width: unset ;
                 }
                 .row{
                     .button{
@@ -307,7 +316,7 @@
                             width: 25vw;
                         }
                     }
-                    .btn{
+                    .change-appointment-btn{
                         padding-bottom: 2vh;
                     }
                 }
@@ -411,7 +420,14 @@
                 }
             }
             .typeWrapper{
-                // padding: 3vh 2vw !important;
+                padding: 2vh 2vw !important;
+                // .container{
+                //     .row{
+                //         .button{
+                //             text-align: center;
+                //         }
+                //     }
+                // }
                 .hidden-row{
                     padding-right: 2vw;
                     margin-right: -2vw;
@@ -592,11 +608,11 @@
             }
         }
         .selected-store{
-            .btn{
+            .change-appointment-btn{
                 button{
                     font-size: 3vw;
-                    width: 27vw !important;
-                    height: 5vh !important;
+                    width: 28vw !important;
+                    height: 3vh !important;
                 }
             }
             
