@@ -140,18 +140,18 @@ $(function() {
 	//The passed argument has to be at least a empty object or a object with your desired options
 	$(".hidden-row-wrapper").overlayScrollbars({
         // className       : "hidden-row-wrapper",
-        // resize          : "both",
+        resize          : "both",
         sizeAutoCapable : true,
         // paddingAbsolute : true,
         scrollbars : {
-            dragScrolling    : true,
+            // dragScrolling    : true,
             clickScrolling   : true,
             touchSupport     : true,
 	    } ,
-        overflowBehavior : {
-            x : "hidden",
-            y : "scroll"
-        },
+        // overflowBehavior : {
+        //     x : "hidden",
+        //     y : "scroll"
+        // },
 });
 });
 
