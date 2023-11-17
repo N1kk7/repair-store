@@ -138,7 +138,11 @@ let storeItem = {
 
 $(function() {
 	//The passed argument has to be at least a empty object or a object with your desired options
-	$(".hidden-row-wrapper").overlayScrollbars({ });
+    $(".hidden-row-wrapper").overlayScrollbars({overflowBehavior : {
+        x : "hidden",
+        y : "scroll"
+        
+    }});
 });
 
 
