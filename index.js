@@ -138,7 +138,12 @@ let storeItem = {
 
 $(function() {
 	//The passed argument has to be at least a empty object or a object with your desired options
-	$(".hidden-row-wrapper").overlayScrollbars({scrollbars : {
+	$(".hidden-row-wrapper").overlayScrollbars({
+        className       : "hidden-row-wrapper",
+        resize          : "both",
+        sizeAutoCapable : true,
+        paddingAbsolute : true,
+        scrollbars : {
 		clickScrolling : true
 	} });
 });
