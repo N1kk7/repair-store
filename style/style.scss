@@ -174,7 +174,7 @@
           animation-timing-function: ease-in-out;
           // animation-fill-mode:forwards; 
 
--webkit-animation-fill-mode:forwards;
+        -webkit-animation-fill-mode:forwards;
 
 // -moz-animation-fill-mode:forwards; 
 
@@ -184,11 +184,15 @@
         }
         .container{
           overflow: hidden;
-          margin: 0 auto ;
+          left: 50%;
+          // margin-right: -50%;
+          position: relative;
+          transform: translate(-50%, 0%);
           .hidden-row-wrapper{
-            
+            max-height: 225px;
             padding-right: 2vw;
-            height: 30vh;
+            height: 28vh;
+            margin-bottom: 2.5vh;
             .hidden-row{
               // -webkit-overflow-scrolling: touch;
               max-height: 35vh;
@@ -242,6 +246,7 @@
               }
               .details{
                 padding: 28px 25px 35px;
+                margin-right: 1vw;
                 .device-img {
                   img{
                     width: 147px;
@@ -261,19 +266,29 @@
                 .store{
                   width: 45%;
                   .store-wrapper{
-                    width: 310px;
+                    min-width: 330px;
+                    width: 25vw;
                     border: 1px solid #E8E8ED;
                     border-radius: 5px;
                     padding: 14px 29px;
                     box-shadow: 0px 1px 11px 0px rgba(0, 0, 0, 0.07);
                     .store-img{
                       img{
-                        width: 119px;
+                        // width: 119px;
+                        // width: 100%;
+                        // height: 100%;
+                        // object-fit: none;
+                        width: 100%;
+                        object-fit: fill;
+                        min-width: 10vw;
                       }
                     }
+
                     .store-details{
+                      position: relative;
+                      left: 0.8vw;
                       .store-zip{
-                        width: 147px;
+                        width: 12vw;
                         font-size: 12px;
                         
                       }
@@ -295,6 +310,8 @@
                 .problem-card{
                   width: 30%;
                   .problem-type{
+                    display: flex;
+                    align-items: center;
                     img{
                       width: 3.5vw;
                     }
@@ -401,7 +418,7 @@
                 display: flex;
                 align-items: center;
                 width: -webkit-fill-available;
-                padding: 1vw;
+                padding: 1vh;
                 cursor: pointer;
                 input{
                   display: none;
@@ -772,10 +789,11 @@
           }
           .appointment-btn{
             border-radius: 3px;
-            background: #F60;
+            background: #D9d9d9;
+            box-shadow: 0px 8px 11px 0px rgba(217, 217, 217, 0.26);
 
-            box-shadow: 0px 8px 11px 0px rgba(255, 102, 0, 0.26);
-            button{
+            .btn{
+              cursor: not-allowed;
               width: 100%;
               height: 100%;
               color: #FFF;
@@ -785,6 +803,16 @@
               font-weight: 700;
               line-height: normal;
             }
+          }
+          .active-appointment-btn{
+            background: #F60;
+            box-shadow: 0px 8px 11px 0px rgba(255, 102, 0, 0.26);
+            .btn{
+              cursor: pointer;
+
+            }
+
+
           }
         } 
       }

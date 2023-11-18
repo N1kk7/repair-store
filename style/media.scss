@@ -1,107 +1,137 @@
 @media screen and (max-width: 1024px) {
-    .widget-stepper-wrapper{
-        max-width: 85vw;
-        margin-top: 7vh ;
-        margin-bottom: 5vh ;
-        .title-wrapper{
-            padding: 5vh 0 ;
-            .step-name{
-                white-space: nowrap;
-                font-size: 1.8vw;
-            }
-        }
-        .typeWrapper{
-            padding: 10vh 2vw ;
-            .hidden-row{
-                max-height: 45vh;
-            }
-            .list-map-btn{
-                img{
-                    width: 2vw;
+    .widget-wrapper{
+        .widget-stepper-wrapper{
+            max-width: 85vw;
+            margin-top: 7vh ;
+            margin-bottom: 5vh ;
+            
+                .title-wrapper{
+                    padding: 5vh 0 ;
+                    .step-name{
+                        white-space: nowrap;
+                        font-size: 1.8vw;
+                    }
                 }
-            }
-            .item-card{
-                .details{
-
-                    .device-img{
-                        img{
-                            width: 15vw ;
-                        }
-                    }
-                    .device-name{
-                        width: 12vw !important;
-                        font-size: 2vw ;
-                        padding-right: 2vw;
-                    }
-                    .store{
-                        .store-img{
-                            img{
-                                width: 15vw ;
+                .typeWrapper{
+                    // padding: 10vh 2vw ;
+                    padding: 7vh 2vw 1vh;
+                    .container{
+                        .hidden-row-wrapper{
+                            height: 45vh;
+                            .hidden-row{
+                                max-height: 50vh;
                             }
                         }
+            
+                        .row{
+                            .item-card{
+                                .details{
+                
+                                    .device-img{
+                                        img{
+                                            width: 15vw ;
+                                        }
+                                    }
+                                    .device-name{
+                                        width: 12vw !important;
+                                        font-size: 2vw ;
+                                        padding-right: 2vw;
+                                    }
+                                    .store-wrapper{
+                                        .store{
+                                            .store-img{
+                                                img{
+                                                    // width: 15vw ;
+                                                    width: 125px;
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                                .zip-code{
+                                    .input-zip-code{
+                                        padding: 2vh 0;
+                                        padding-left: 0vw ;
+                                        input{
+                                            width: 27vw !important;
+                                        }
+                                    }
+                                }
+                                .col-name{
+                                    span{
+                                        font-size: 13px;
+                                    }
+                                }
+                            }
+                        }
+                        .list-map-btn{
+                            img{
+                                width: 2vw;
+                            }
+                        }
+                        
+    
+                    }
+                    
+                }
+                .type-map, .type-form{
+                    padding: 2vh 2vw 1vh;
+                }
+                .button{
+                    // margin: 2vh 0 4vh ;
+        
+                    button{
+                        padding: 8px 24px ;
                     }
                 }
-                .zip-code{
-                    .input-zip-code{
-                        padding: 2vh 0;
-                        padding-left: 0vw ;
-                        input{
-                            width: 27vw !important;
+    
+    
+            
+        }
+        .book-appointment{
+            width: 95vw !important;
+            margin: 0 auto 20vh !important;
+            .title-wrapper{
+                padding: 4vh 2vw ;
+                .tittle{
+                    h2{
+                        font-size: 3vw ;
+    
+                    }
+                }
+            }
+            .type-appointment{
+                padding: 3vh 2vw ;
+                .appointment-date{
+                    width: 60vw ;
+                    justify-content: space-evenly;
+                    padding: 2vh 0;
+                    .calendar{
+                        .zabuto-calendar{
+                            width: 25vw ;
+                            height: 40vh ;
                         }
                     }
                 }
-            }
-        }
-        .button{
-            margin: 2vh 0 4vh ;
-
-            button{
-                padding: 8px 24px ;
-            }
-        }
-    }
-    .book-appointment{
-        width: 95vw !important;
-        margin: 0 auto 20vh !important;
-        .title-wrapper{
-            padding: 4vh 2vw ;
-            .tittle{
-                h2{
-                    font-size: 3vw ;
-
-                }
-            }
-        }
-        .type-appointment{
-            padding: 3vh 2vw ;
-            .appointment-date{
-                width: 60vw ;
-                justify-content: space-evenly;
-                padding: 2vh 0;
-                .calendar{
-                    .zabuto-calendar{
+                .time-of-appointment{
+                    .time-wrapper{
                         width: 25vw ;
-                        height: 40vh ;
                     }
                 }
             }
-            .time-of-appointment{
-                .time-wrapper{
-                    width: 25vw ;
+            .book-appointment-btn{
+                .no-btn{
+                    padding: 0 2vw ;
                 }
+            } 
+        }
+        .success-block{
+            .success-block-wrapper{
+                width: 85vw !important;
             }
         }
-        .book-appointment-btn{
-            .no-btn{
-                padding: 0 2vw ;
-            }
-        } 
     }
-    .success-block{
-        .success-block-wrapper{
-            width: 85vw !important;
-        }
-    }
+    
   }
 
 @media screen and (max-width: 955px) {
@@ -130,197 +160,217 @@
 }
 
   @media screen and (max-width: 768px) {
+    .widget-stepper-wrapper .typeWrapper .container .hidden-row-wrapper {
+        height: 50vw;
+        max-height: unset;
+    }
     .animated-block{
         animation-duration: 0.3s !important;
          
     }
-    .widget-stepper-wrapper{
-        width: 90vw !important;
-        max-width: unset !important;
-        margin: 7vh auto 5vh !important;
 
-        .back-button{
-            top: 8px;
-        }
-        .typeWrapper{
-            padding: 4vh 2vw ;
-            .hidden-row{
-                max-height: 60vh !important;
-            }
-            .container{
-                
-                .item-card{
-                    // min-width: 42vw;
-                    min-width: max-content;
-                    .col-name{
-                        padding: 0 5vw 0 5px ;
-                        min-width: 20vw;
-                        text-align: start;
-                    }
-                    position: relative;
-                    .checkbox{
-                        padding: 1vh 4vw !important;
-                    }
-                    .zip-code{
-                        display: flex;
-                        flex-direction: column;
-                        align-items: start;
-                        
-                    }
-                    .details{
-                        flex-direction: column-reverse;
-                        .device{
-                            padding: 3vh 0;
-                            .device-wrapper{
-                                justify-content: center;
-                            }
-                        }
-                        .store{
-                            width: unset !important;
-                            .store-wrapper{
-                                justify-content: space-around;
-                                width: unset !important;
-                            }
-                        }
-                    }
-                    .problem{
-                        .problem-wrapper{
-                            flex-direction: column;
-                            .problem-card{
-                                width: unset !important;
-                                .item-card{
-                                    flex-direction: unset !important;
-                                    justify-content: center ;
-                                    min-width: unset;
-                                    .problem-type{
-                                        .col-img{
-                                           display: inline-block;
-                                           img{
-                                            width: 10vw;
-                                           }
+        .widget-stepper-wrapper{
+            width: 90vw !important;
+            max-width: unset !important;
+            margin: 7vh auto 5vh !important;
     
-                                        }
-                                        .col-name{
-                                            display: inline-block;
-                                            padding-left: 1vw ;
-                                            span{
-                                                font-size: 2vw;
-                                                white-space: nowrap;
-                                            }
-                                        }
-                                    }
-                                    .option{
-                                        text-align: center;
-                                        h5{
-                                            font-size: 1.8vw;
-                                            display: block ;
-                                        }
-                                        span{
-                                            display: block ;
-                                            font-size: 1.8vw;
-                                        }
+            .back-button{
+                top: 8px;
+            }
+            .typeWrapper{
+                padding: 4vh 2vw ;
+                .hidden-row{
+                    max-height: 60vh !important;
+                }
+                .container{
+                    // left: unset;
+                    // transform: unset;
+                
+                        .item-card{
+                            // min-width: 42vw;
+                            min-width: max-content;
+                            .col-name{
+                                padding: 0 5vw 0 5px ;
+                                min-width: 20vw;
+                                text-align: start;
+                            }
+                            position: relative;
+                            .checkbox{
+                                padding: 1vh 4vw !important;
+                            }
+                            .zip-code{
+                                display: flex;
+                                flex-direction: column;
+                                align-items: start;
+                                
+                            }
+                            .details{
+                                flex-direction: column-reverse;
+                                .device{
+                                    padding: 3vh 0;
+                                    .device-wrapper{
+                                        justify-content: center;
                                     }
                                 }
-    
+                                .store{
+                                    width: unset !important;
+                                    .store-wrapper{
+                                        justify-content: space-around;
+                                        width: unset !important;
+                                    }
+                                }
+                            }
+                            .problem{
+                                .problem-wrapper{
+                                    flex-direction: column;
+                                    .problem-card{
+                                        width: unset !important;
+                                        .item-card{
+                                            flex-direction: unset !important;
+                                            justify-content: center ;
+                                            min-width: unset;
+                                            .problem-type{
+                                                .col-img{
+                                                   display: inline-block;
+                                                   img{
+                                                    width: 10vw;
+                                                   }
+            
+                                                }
+                                                .col-name{
+                                                    display: inline-block;
+                                                    padding-left: 1vw ;
+                                                    span{
+                                                        font-size: 2vw;
+                                                        white-space: nowrap;
+                                                    }
+                                                }
+                                            }
+                                            .option{
+                                                text-align: center;
+                                                h5{
+                                                    font-size: 1.8vw;
+                                                    display: block ;
+                                                }
+                                                span{
+                                                    display: block ;
+                                                    font-size: 1.8vw;
+                                                }
+                                            }
+                                        }
+            
+                                    }
+                                }
+                            }
+                            .radio{
+                                padding: 0 2vw 10px !important;
+                                .radio-btn{
+                                    margin: 0 auto 1vh !important;
+                                    position: relative;
+                                    right: 1vw;
+                                    width: 30px ;
+                                }
+                            }
+                            .change-list-map{
+                                flex-direction: column-reverse;
+                                position: absolute;
+                                bottom: 1vh;
+                                right: 0;
+                            } 
+                            .form-control {
+                                margin-bottom: 1vh !important;
+                            }
+                            
+                            
+                        }
+                        .input-list-wrapper, .item-card-form, .list-map, .quote-card{
+                            min-width: unset ;
+                        }
+                        .row{
+                            .button{
+                                margin-bottom: 0 !important;
+                                padding-top: 2vh;
+                                .btn{
+                                    margin-bottom: 2vh;
+                                    padding: 1vh 4vw;
+                                    top: unset;
+                                }
+                            }
+                            .list-map{
+                                .item-card{
+                                    min-width: auto;
+                                }
+                                .store-zip{
+                                    padding: 0 1vw;
+                                }
+
                             }
                         }
-                    }
-                    .radio{
-                        padding: 0 2vw 10px !important;
-                        .radio-btn{
-                            margin: 0 auto 1vh !important;
-                            position: relative;
-                            right: 1vw;
-                            width: 30px ;
-                        }
-                    }
-                    .change-list-map{
-                        flex-direction: column-reverse;
-                        position: absolute;
-                        bottom: 1vh;
-                        right: 0;
-                    } 
-                    .form-control {
-                        margin-bottom: 1vh !important;
-                    }
-                    
-                    
-                }
-                .input-list-wrapper, .item-card-form, .list-map, .quote-card{
-                    min-width: unset ;
-                }
-                .row{
-                    .button{
-                        margin-bottom: 0 !important;
-                        padding-top: 2vh;
-                        .btn{
-                            margin-bottom: 2vh;
-                            padding: 1vh 4vw;
-                            top: unset;
-                        }
-                    }
-                    .list-map{
-                        .item-card{
-                            min-width: auto;
-                        }
-                    }
-                }
-
+    
+                }  
             }  
-        }  
-        .button{
-            margin: 2vh 0 !important;
+            // .button{
+                
+            // }
         }
-    }
-    .book-appointment{
-        top: 5vh !important;
-        .typeWrapper{
-            padding: 0 !important;
-            .selected-store-tittle{
-                padding: 2vw;
+        .book-appointment{
+            top: 5vh !important;
+            .typeWrapper{
+                padding: 0 !important;
+                .selected-store-tittle{
+                    padding: 2vw;
+                }
             }
-        }
-        
-        .appointment-details{
-            flex-direction: column-reverse;
-            align-items: center;
-            .appointment-date{
-                flex-direction: column;
-                justify-content: center;
+            
+            .appointment-details{
+                flex-direction: column-reverse;
                 align-items: center;
-                .zabuto-calendar{
-                    width: 65vw !important;
-                }
-                .time-wrapper{
-                    // width: 65vw !important;
-                    width: auto !important;
-                }
-                h6{
-                    padding-top: 3vh;
-                }
-            }
-            .appointment-store{
-                margin: 3vh 1vw;
-                width: unset !important;
-                height: unset !important;
-                .selected-store{
-                    display: flex;
+                .appointment-date{
+                    flex-direction: column;
+                    justify-content: center;
                     align-items: center;
-                    justify-content: space-between;
-                    height: inherit;
-                    .store-name{
-                        padding: 0 2vw;
+                    .zabuto-calendar{
+                        width: 65vw !important;
                     }
-                    .store-zip{
-                        p{
-                            width: 25vw;
+                    .time-wrapper{
+                        // width: 65vw !important;
+                        width: auto !important;
+                    }
+                    h6{
+                        padding-top: 3vh;
+                    }
+                }
+                .appointment-store{
+                    margin: 3vh 1vw;
+                    width: unset !important;
+                    height: unset !important;
+                    .selected-store{
+                        display: flex;
+                        align-items: center;
+                        justify-content: space-between;
+                        height: inherit;
+                        .store-name{
+                            padding: 0 2vw;
+                        }
+                        .store-zip{
+                            p{
+                                width: 25vw;
+                            }
+                        }
+                        .change-appointment-btn{
+                            padding-bottom: 2vh;
                         }
                     }
-                    .change-appointment-btn{
-                        padding-bottom: 2vh;
-                    }
                 }
             }
+        } 
+
+    .widget-wrapper .typeWrapper .container .row .button{
+        margin: 2vh 0 !important;
+        .btn{
+            top: 10px;
+            padding: 8px 20px;
+
         }
     } 
     .widget-wrapper .book-appointment .book-appointment-btn {
@@ -330,6 +380,22 @@
   }
 
   @media screen and (max-width: 688px) {
+    .widget-wrapper {
+        .widget-stepper-wrapper{
+            .typeWrapper{
+                .container{
+                    left: unset;
+                    transform: unset;
+                    .hidden-row-wrapper {
+                        height: 55vw;
+                        max-height: unset;
+                    }
+                }
+            }
+        }
+    }
+        
+        
     .appointment-store{
         display: flex;
         width: 30vw !important;
@@ -341,56 +407,77 @@
   }
 
   @media screen and (max-width: 575px) {
-    .typeWrapper{
-        .list-map-btn img {
-            width: 5vw !important;
-        }
-    }
-    .list-map{
-        padding: 1vh !important;
-        .row{
-            width: -webkit-fill-available !important;
-        }
-        .item-card{
-            overflow: visible !important;
-            flex-direction: unset !important;
-            height: 18vh;
-            .store-img{
-                width: 30vw !important;
-                img{
-                    max-width: 20vw;
+    .widget-wrapper{
+        .widget-stepper-wrapper{
+            .typeWrapper{
+                .container{
+                    .hidden-row-wrapper{
+                        height: 60vw;
+                        // max-height: 365px;
+                    }
+                    .list-map-btn img {
+                        width: 5vw !important;
+                    }
+                }
+                
+            }
+            .col{
+                position: relative;
+                .list-map{
+                    padding: 1vh !important;
+                    .row{
+                        width: -webkit-fill-available !important;
+                    }
+                    .item-card{
+                        overflow: visible !important;
+                        flex-direction: unset !important;
+                        height: 18vh;
+                        .store-img{
+                            width: 30vw !important;
+                            img{
+                                max-width: 20vw;
+                            }
+                        }
+                    }
+                    .store-name{
+                        padding: 0 2vw !important;
+                        position: absolute;
+                        top: 0;
+                        display: flex;
+                        justify-content: center;
+                        width: -webkit-fill-available;
+                        margin: 1vh 0;
+                        h5{
+                            margin: 0 !important;
+                        }
+                        h5{
+                            font-size: 3.5vw !important;
+                        }
+                    }
+                    .store-zip{
+                        width: 45vw;
+                        p{
+                            margin: 0;
+                            font-size: 3.5vw;
+                        }
+                    }
                 }
             }
-        }
-        .store-name{
-            padding: 0 2vw !important;
-            position: absolute;
-            top: 0;
-            display: flex;
-            justify-content: center;
-            width: -webkit-fill-available;
-            margin: 1vh 0;
-            h5{
-                margin: 0 !important;
             }
-            h5{
-                font-size: 3.5vw !important;
-            }
-        }
-        .store-zip{
-            width: inherit;
-            p{
-                margin: 0;
-                font-size: 3.5vw;
-            }
-        }
     }
     .widget-wrapper .book-appointment .typeWrapper .appointment-details .appointment-store .selected-store .store-zip p {
-        width: 35vw;
+        width: 45vw;
     }
   }
 
   @media screen and (max-width: 430px) {
+    .widget-stepper .widget-stepper-wrapper .typeWrapper .container .hidden-row-wrapper {
+        height: 92vw;
+    }
+    .widget-wrapper .typeWrapper .container .row .item-card .problem .problem-card .problem-type {
+        flex-direction: column;
+        align-items: flex-start;
+    }
     #send-quote-button{
         text-align: center;
     }
@@ -420,16 +507,16 @@
                 }
             }
             .typeWrapper{
-                padding: 2vh 2vw !important;
-                // .container{
-                //     .row{
-                //         .button{
-                //             text-align: center;
-                //         }
-                //     }
-                // }
+
+                .container{
+                    .hidden-row-wrapper{
+                        height: 92vw;
+                    }
+                    padding: 2vh 2vw !important;
+              
+                }
                 .hidden-row{
-                    padding-right: 2vw;
+                    padding-right: 0;
                     margin-right: -2vw;
                 }
                 .col-name{
@@ -505,6 +592,12 @@
                             .store-wrapper{
                                 text-align: center;
                                 flex-direction: column;
+                                min-width: unset !important;
+                                .store-img{
+                                    img{
+                                        width: 25vw !important;
+                                    }
+                                }
                                 .store-details{
                                     .change-store-btn{
                                         display: none;
@@ -514,9 +607,20 @@
                                         font-size: 3.3vw !important;
                                     }
                                     
+                                    
                                 }
+                                
                             }
                             
+                        }
+                        .device{
+                            .device-wrapper{
+                                .device-img{
+                                    img{
+                                        width: 25vw;
+                                    }
+                                }
+                            }
                         }
                     }
                     .problem .problem-wrapper .problem-card .item-card .option {
@@ -536,58 +640,62 @@
                         }
                     }
                     
-                }
+                    
+         
                 .store-list-wrapper{
+
                     --bs-gutter-y: 1vh;
                     .store-list-card {
                     height: 12vh;
+                }
+                }
+                .appointment{
+                    .appointment-details{
+                        flex-direction: column-reverse;
+                        align-items: center;
+                    }
+                }
+                .success-block{
+                    .success-block-wrapper{
+                        padding: 5vh 0 2vh !important;
+                        .main-img{
+                            img{
+                                width: 50vw !important;
+            
+                            }
+                        }
+                        .message{
+                            width: 60vw !important;
+                        }
+                        .date{
+                            h3{
+                                font-size: 5vw !important;
+                            }
+                        }
+                    }
+                }
+                .radio-button-wrapper{
+                    justify-content: space-between;
+                    .radio{
+                        text-align: center;
+                        max-width: 17vw;
+                            .radio-btn {
+                                margin: 0 auto 1vh;
+                                // padding-bottom: 2vh;
+                            }
+                    }
+                }
+                .store-list-card{
+                    .store-zip{
+                        padding: 3vh 0 0;
+            
+                    }
                 }
                 
             }
         }
     }
-    .appointment{
-        .appointment-details{
-            flex-direction: column-reverse;
-            align-items: center;
-        }
-    }
-    .success-block{
-        .success-block-wrapper{
-            padding: 5vh 0 2vh !important;
-            .main-img{
-                img{
-                    width: 50vw !important;
-
-                }
-            }
-            .message{
-                width: 60vw !important;
-            }
-            .date{
-                h3{
-                    font-size: 5vw !important;
-                }
-            }
-        }
-    }
-    .radio-button-wrapper{
-        justify-content: space-between;
-        .radio{
-            text-align: center;
-            max-width: 17vw;
-                .radio-btn {
-                    margin: 0 auto 1vh;
-                    // padding-bottom: 2vh;
-                }
-        }
-    }
-    .store-list-card{
-        .store-zip{
-            padding: 3vh 0 0;
-
-        }
-    }
+    
     
     
     
@@ -642,6 +750,9 @@
             }
         }
     }
+    .widget-stepper .widget-stepper-wrapper .typeWrapper .container .hidden-row-wrapper {
+        height: 100vw;
+    }
     .widget-stepper-wrapper{
         .title-wrapper{
             .step-name{
@@ -689,7 +800,7 @@
                 }
             }
         }
-        .type-map{
+        .type-map, .type-form{
             padding-top: 2vh !important;
         }
         
