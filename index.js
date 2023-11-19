@@ -28,7 +28,7 @@ const mapHtml = '<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m
 
 const listHtml = `<div class="row store-list-wrapper align-items-center row-cols-lg-3 g-lg-4 row-cols-md-2 row-cols-sm-2 g-md-4 g-sm-3 g-4">
                     <div class="col ">
-                        <div class="item-card store-list-card border rounded d-flex justify-content-lg-start align-items-center flex-column overflow-hidden" data-storeName="store name 1" data-storeImg="store1" data-storeZip="8961-1 North Blackburn Ave.Milton, MA 02186">
+                        <div class="item-card store-list-card border rounded d-flex justify-content-lg-start align-items-center flex-column overflow-hidden" data-storeName="Store name 1" data-storeImg="store1" data-storeZip="8961-1 North Blackburn Ave.Milton, MA 02186">
                             <div class="store-img">
                                 <img src="./assets/images/stores/store1.png" alt="store1">
                             </div>
@@ -42,7 +42,7 @@ const listHtml = `<div class="row store-list-wrapper align-items-center row-cols
                         </div>
                     </div>
                     <div class="col ">
-                        <div class="item-card store-list-card border rounded d-flex justify-content-lg-start align-items-center flex-column overflow-hidden" data-storeName="store name 2" data-storeImg="store2" data-storeZip="8961-2 North Blackburn Ave.Milton, MA 02186">
+                        <div class="item-card store-list-card border rounded d-flex justify-content-lg-start align-items-center flex-column overflow-hidden" data-storeName="Store name 2" data-storeImg="store2" data-storeZip="8961-2 North Blackburn Ave.Milton, MA 02186">
                             <div class="store-img">
                                 <img src="./assets/images/stores/store2.png" alt="store2">
                             </div>
@@ -56,7 +56,7 @@ const listHtml = `<div class="row store-list-wrapper align-items-center row-cols
                         </div>
                     </div>
                     <div class="col ">
-                        <div class="item-card store-list-card border rounded d-flex justify-content-lg-start align-items-center flex-column overflow-hidden" data-storeName="store name 3" data-storeImg="store3" data-storeZip="8961-3 North Blackburn Ave.Milton, MA 02186">
+                        <div class="item-card store-list-card border rounded d-flex justify-content-lg-start align-items-center flex-column overflow-hidden" data-storeName="Store name 3" data-storeImg="store3" data-storeZip="8961-3 North Blackburn Ave.Milton, MA 02186">
                             <div class="store-img">
                                 <img src="./assets/images/stores/store3.png" alt="store3">
                             </div>
@@ -70,7 +70,7 @@ const listHtml = `<div class="row store-list-wrapper align-items-center row-cols
                         </div>
                     </div>
                     <div class="col ">
-                        <div class="item-card store-list-card border rounded d-flex justify-content-lg-start align-items-center flex-column overflow-hidden" data-storeName="store name 4" data-storeImg="store4" data-storeZip="8961-4 North Blackburn Ave.Milton, MA 02186">
+                        <div class="item-card store-list-card border rounded d-flex justify-content-lg-start align-items-center flex-column overflow-hidden" data-storeName="Store name 4" data-storeImg="store4" data-storeZip="8961-4 North Blackburn Ave.Milton, MA 02186">
                             <div class="store-img">
                                 <img src="./assets/images/stores/store4.png" alt="store4">
                             </div>
@@ -84,7 +84,7 @@ const listHtml = `<div class="row store-list-wrapper align-items-center row-cols
                         </div>
                     </div>
                     <div class="col ">
-                        <div class="item-card store-list-card border rounded d-flex justify-content-lg-start align-items-center flex-column overflow-hidden" data-storeName="store name 5" data-storeImg="store5" data-storeZip="8961-5 North Blackburn Ave.Milton, MA 02186">
+                        <div class="item-card store-list-card border rounded d-flex justify-content-lg-start align-items-center flex-column overflow-hidden" data-storeName="Store name 5" data-storeImg="store5" data-storeZip="8961-5 North Blackburn Ave.Milton, MA 02186">
                         <div class="store-img">
                             <img src="./assets/images/stores/store5.png" alt="store5">
                         </div>
@@ -98,7 +98,7 @@ const listHtml = `<div class="row store-list-wrapper align-items-center row-cols
                         </div>
                     </div>
                     <div class="col ">
-                        <div class="item-card store-list-card border rounded d-flex justify-content-lg-start align-items-center flex-column overflow-hidden" data-storeName="store name 6" data-storeImg="store6" data-storeZip="8961-6 North Blackburn Ave.Milton, MA 02186">
+                        <div class="item-card store-list-card border rounded d-flex justify-content-lg-start align-items-center flex-column overflow-hidden" data-storeName="Store name 6" data-storeImg="store6" data-storeZip="8961-6 North Blackburn Ave.Milton, MA 02186">
                             <div class="store-img">
                                 <img src="./assets/images/stores/store6.png" alt="store6">
                             </div>
@@ -112,7 +112,7 @@ const listHtml = `<div class="row store-list-wrapper align-items-center row-cols
                         </div>
                     </div>
                     <div class="col ">
-                        <div class="item-card store-list-card border rounded d-flex justify-content-lg-start align-items-center flex-column overflow-hidden" data-storeName="store name 7" data-storeImg="store7" data-storeZip="8961-7 North Blackburn Ave.Milton, MA 02186">
+                        <div class="item-card store-list-card border rounded d-flex justify-content-lg-start align-items-center flex-column overflow-hidden" data-storeName="Store name 7" data-storeImg="store7" data-storeZip="8961-7 North Blackburn Ave.Milton, MA 02186">
                             <div class="store-img">
                                 <img src="./assets/images/stores/store7.png" alt="store7">
                             </div>
@@ -126,7 +126,7 @@ const listHtml = `<div class="row store-list-wrapper align-items-center row-cols
                         </div>
                     </div>
                     <div class="col ">
-                        <div class="item-card store-list-card border rounded d-flex justify-content-lg-start align-items-center flex-column overflow-hidden" data-storeName="store Name 8" data-storeImg="store8" data-storeZip="8961-8 North Blackburn Ave.Milton, MA 02186">
+                        <div class="item-card store-list-card border rounded d-flex justify-content-lg-start align-items-center flex-column overflow-hidden" data-storeName="Store name 8" data-storeImg="store8" data-storeZip="8961-8 North Blackburn Ave.Milton, MA 02186">
                             <div class="store-img">
                                 <img src="./assets/images/stores/store8.png" alt="store8">
                             </div>
@@ -290,9 +290,7 @@ function fillData(param) {
 
 }
 
-// function fillAppointment(){
 
-// }
 
 // FUNCTION FOR GET DATA FOR ADD ITEM INTO QUOTE INFORMATION
 function getData(event, clickElem) {

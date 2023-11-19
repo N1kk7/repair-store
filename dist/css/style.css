@@ -504,6 +504,7 @@ body {
   font-style: normal;
   font-weight: 400;
   line-height: normal;
+  padding: 0 1vw;
 }
 .widget-wrapper .typeWrapper .list-map-btn {
   display: flex;
@@ -868,7 +869,7 @@ body {
   }
   .widget-wrapper .widget-stepper-wrapper .typeWrapper .container .row .item-card .details .device-name {
     width: 12vw !important;
-    font-size: 2vw;
+    font-size: 3vw;
     padding-right: 2vw;
   }
   .widget-wrapper .widget-stepper-wrapper .typeWrapper .container .row .item-card .details .store-wrapper .store .store-img img {
@@ -924,6 +925,9 @@ body {
   .widget-wrapper .success-block .success-block-wrapper {
     width: 85vw !important;
   }
+  .widget-wrapper .typeWrapper .container .row .input-list-wrapper .zip-code .map-title span {
+    font-size: 1.7vw;
+  }
 }
 @media screen and (max-width: 955px) {
   .appointment-details {
@@ -946,12 +950,11 @@ body {
   .appointment-details .appointment-store .selected-store .store-zip p {
     width: 20vw;
   }
+  .widget-wrapper .typeWrapper .container .row .item-card .details .store .store-wrapper .store-details .store-zip {
+    width: 18vw;
+  }
 }
 @media screen and (max-width: 768px) {
-  .widget-stepper-wrapper .typeWrapper .container .hidden-row-wrapper {
-    height: 50vw;
-    max-height: unset;
-  }
   .animated-block {
     animation-duration: 0.3s !important;
   }
@@ -965,13 +968,13 @@ body {
   }
   .widget-wrapper .widget-stepper-wrapper .typeWrapper {
     padding: 20px 2vw 0;
-    min-height: 70vh;
+    min-height: 65vh;
   }
   .widget-wrapper .widget-stepper-wrapper .typeWrapper .hidden-row {
     max-height: 60vh !important;
   }
   .widget-wrapper .widget-stepper-wrapper .typeWrapper .container {
-    height: 70vh;
+    height: 58vh;
     overflow-y: scroll;
   }
   .widget-wrapper .widget-stepper-wrapper .typeWrapper .container .item-card {
@@ -1134,9 +1137,25 @@ body {
     top: 10px;
     padding: 8px 20px;
   }
+  .widget-wrapper .typeWrapper .container .row .input-list-wrapper .zip-code .map-title span {
+    font-size: 2.7vw;
+  }
+  .widget-wrapper .widget-stepper-wrapper .typeWrapper .container .hidden-row-wrapper {
+    height: 45vh;
+    max-height: unset;
+  }
   .widget-wrapper .book-appointment .book-appointment-btn {
     padding: 0 28px 43px;
     justify-content: center !important;
+  }
+  .widget-wrapper .typeWrapper .container .row .item-card .details .store .store-wrapper .store-img img {
+    min-width: 15vw;
+  }
+  .widget-wrapper .typeWrapper .container .row .item-card .details .store .store-wrapper .store-details .store-zip {
+    width: 25vw;
+  }
+  .widget-wrapper .typeWrapper .container .row .item-card .details .store .store-wrapper .store-details .button {
+    padding-top: 0;
   }
 }
 @media screen and (max-width: 688px) {
@@ -1205,11 +1224,16 @@ body {
   .widget-wrapper .book-appointment .typeWrapper .appointment-details .appointment-store .selected-store .store-zip p {
     width: 45vw;
   }
+  .widget-wrapper .widget-stepper-wrapper .typeWrapper .container .row .item-card .details .store .store-wrapper {
+    text-align: center;
+    flex-direction: column;
+    min-width: unset !important;
+  }
+  .widget-wrapper .widget-stepper-wrapper .typeWrapper .container .row .item-card .details .store .store-wrapper .store-zip {
+    width: auto;
+  }
 }
 @media screen and (max-width: 430px) {
-  .widget-stepper .widget-stepper-wrapper .typeWrapper .container .hidden-row-wrapper {
-    height: 92vw;
-  }
   #send-quote-button {
     text-align: center;
   }
@@ -1217,24 +1241,19 @@ body {
     padding: 4vh 0 2vh !important;
   }
   .widget-wrapper .widget-stepper-wrapper .typeWrapper {
-    padding: 15px 1vw 0;
-    min-height: 70vh;
+    padding: 15px 1vw 1vh;
+    min-height: 67vh;
   }
   .widget-wrapper .widget-stepper-wrapper .typeWrapper .container {
     padding: 0 0 0 2vw !important;
     height: 65vh;
   }
   .widget-wrapper .widget-stepper-wrapper .typeWrapper .container .hidden-row-wrapper {
-    height: 55vh;
+    height: 53vh;
     margin-bottom: 0;
   }
   .widget-wrapper .widget-stepper-wrapper .typeWrapper .container .row .item-card .details {
     padding: 10px 10px 5px !important;
-  }
-  .widget-wrapper .widget-stepper-wrapper .typeWrapper .container .row .item-card .details .store .store-wrapper {
-    text-align: center;
-    flex-direction: column;
-    min-width: unset !important;
   }
   .widget-wrapper .widget-stepper-wrapper .typeWrapper .container .row .item-card .details .store .store-wrapper .store-img img {
     width: 25vw !important;
@@ -1317,7 +1336,7 @@ body {
     padding: 1vh 0;
   }
   .widget-wrapper .widget-stepper-wrapper .typeWrapper .item-card .zip-code .map-title span {
-    font-size: 5vw;
+    font-size: 3vw !important;
   }
   .widget-wrapper .widget-stepper-wrapper .typeWrapper .item-card .zip-code .input-zip-code input {
     padding: 1vh 5px !important;
@@ -1405,6 +1424,15 @@ body {
   }
 }
 @media screen and (max-width: 375px) {
+  .widget-wrapper .widget-stepper-wrapper .typeWrapper .container .row .item-card .details .store .store-wrapper .store-details .btn {
+    font-size: 4vw;
+  }
+  .widget-wrapper .widget-stepper-wrapper .typeWrapper .item-card .form-quote .row .btn {
+    font-size: 4vw;
+  }
+  .widget-wrapper .widget-stepper-wrapper .typeWrapper .container .row .button .btn {
+    font-size: 4vw;
+  }
   .widget-wrapper .typeWrapper .list-map-btn {
     width: 30px;
     height: 33px;
@@ -1431,9 +1459,6 @@ body {
   }
   .widget-wrapper .typeWrapper .container .row .item-card .col-name span {
     font-size: 5vw;
-  }
-  .widget-stepper .widget-stepper-wrapper .typeWrapper .container .hidden-row-wrapper {
-    height: 100vw;
   }
   .widget-stepper-wrapper .title-wrapper .step-name {
     font-size: 3vw !important;
