@@ -169,6 +169,7 @@
          
     }
 
+       .widget-wrapper{
         .widget-stepper-wrapper{
             width: 90vw !important;
             max-width: unset !important;
@@ -178,13 +179,16 @@
                 top: 8px;
             }
             .typeWrapper{
-                padding: 4vh 2vw ;
+                padding: 20px 2vw 0;
+                min-height: 70vh;
                 .hidden-row{
                     max-height: 60vh !important;
                 }
                 .container{
                     // left: unset;
                     // transform: unset;
+                    height: 70vh;
+                    overflow: scroll;
                 
                         .item-card{
                             // min-width: 42vw;
@@ -268,7 +272,8 @@
                                     margin: 0 auto 1vh !important;
                                     position: relative;
                                     right: 1vw;
-                                    width: 30px ;
+                                    width: 25px ;
+                                    height: 25px;
                                 }
                             }
                             .change-list-map{
@@ -364,6 +369,7 @@
                 }
             }
         } 
+       }
 
     .widget-wrapper .typeWrapper .container .row .button{
         margin: 2vh 0 !important;
@@ -387,7 +393,7 @@
                     left: unset;
                     transform: unset;
                     .hidden-row-wrapper {
-                        height: 55vw;
+                        // height: 55vw;
                         max-height: unset;
                     }
                 }
@@ -412,7 +418,7 @@
             .typeWrapper{
                 .container{
                     .hidden-row-wrapper{
-                        height: 60vw;
+                        // height: 60vw;
                         // max-height: 365px;
                     }
                     .list-map-btn img {
@@ -451,14 +457,14 @@
                             margin: 0 !important;
                         }
                         h5{
-                            font-size: 3.5vw !important;
+                            font-size: 3vw !important;
                         }
                     }
                     .store-zip{
                         width: 45vw;
                         p{
                             margin: 0;
-                            font-size: 3.5vw;
+                            font-size: 2.7vw;
                         }
                     }
                 }
@@ -470,7 +476,7 @@
     }
   }
 
-  @media screen and (max-width: 430px) {
+@media screen and (max-width: 430px) {
     .widget-stepper .widget-stepper-wrapper .typeWrapper .container .hidden-row-wrapper {
         height: 92vw;
     }
@@ -478,6 +484,10 @@
         flex-direction: column;
         align-items: flex-start;
     }
+    // .widget-wrapper .widget-stepper-wrapper .typeWrapper .container .row .button {
+    //     // margin-bottom: 0 !important;
+    //     padding-top: unset;
+    // }
     #send-quote-button{
         text-align: center;
     }
@@ -506,13 +516,17 @@
                     text-align: center;
                 }
             }
+            
             .typeWrapper{
+                padding: 15px 1vw 0;
+                min-height: 75vh;
 
                 .container{
+                    padding: 0 0 0 2vw !important;
                     .hidden-row-wrapper{
-                        height: 92vw;
+                        height: 58vh;
+                        margin-bottom: 0;
                     }
-                    padding: 2vh 2vw !important;
               
                 }
                 .hidden-row{
@@ -655,25 +669,7 @@
                         align-items: center;
                     }
                 }
-                .success-block{
-                    .success-block-wrapper{
-                        padding: 5vh 0 2vh !important;
-                        .main-img{
-                            img{
-                                width: 50vw !important;
-            
-                            }
-                        }
-                        .message{
-                            width: 60vw !important;
-                        }
-                        .date{
-                            h3{
-                                font-size: 5vw !important;
-                            }
-                        }
-                    }
-                }
+                
                 .radio-button-wrapper{
                     justify-content: space-between;
                     .radio{
@@ -693,45 +689,75 @@
                 }
                 
             }
-        }
+            }
+            .type-map{
+                padding: 0 1vw;
+            }
     }
     
     
     
     
-    
-  }
-  .book-appointment .title-wrapper .tittle h2 {
-    font-size: 4vw;
 }
-@media screen and (max-width: 375px) {
-   .widget-wrapper .typeWrapper .list-map-btn {
-        width: 30px;
-        height: 33px;
+.widget-wrapper{
+    .success-block{
+        .success-block-wrapper{
+            padding: 5vh 0 2vh ;
+            .main-img{
+                img{
+                    width: 40vw ;
 
-        }   
-        .appointment-btn, .no-btn{
-            .btn{
-                font-size: 3vw !important;
-            }
-        }
-        .selected-store{
-            .change-appointment-btn{
-                button{
-                    font-size: 3vw;
-                    width: 28vw !important;
-                    height: 3vh !important;
                 }
             }
-            
-        }
-        .device-name{
-            span{
-                font-size: 5vw;
+            .message{
+                width: 60vw ;
+            }
+            .store-name{
+                padding-top: 1.5vh;
+            }
+            .date{
+                h3{
+                    font-size: 5vw ;
+                }
             }
         }
     }
+}
+
+.widget-wrapper .book-appointment .title-wrapper .tittle h2 {
+    font-size: 4vw ;
+  
+}
+ 
+
     
+}
+@media screen and (max-width: 375px) {
+    .widget-wrapper .typeWrapper .list-map-btn {
+         width: 30px;
+         height: 33px;
+ 
+         }   
+         .appointment-btn, .no-btn{
+             .btn{
+                 font-size: 3vw !important;
+             }
+         }
+         .selected-store{
+             .change-appointment-btn{
+                 button{
+                     font-size: 3vw;
+                     width: 28vw !important;
+                     height: 3vh !important;
+                 }
+             }
+             
+         }
+         .device-name{
+             span{
+                 font-size: 5vw;
+             }
+         }
 }
 
   @media screen and (max-width: 320px) {
