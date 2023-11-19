@@ -462,7 +462,9 @@ $('.btn').on('click', function(event){
             }
         });
 
-        if (stepActiveId <= 3 || stepActiveId == 5) {
+        // if (stepActiveId <= 3 || stepActiveId == 5) {
+        if (stepActiveId <= 5) {
+
             checkId = true
             toggleState('enable');
         } else {

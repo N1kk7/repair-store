@@ -188,7 +188,7 @@
                     // left: unset;
                     // transform: unset;
                     height: 70vh;
-                    overflow: scroll;
+                    overflow-y: scroll;
                 
                         .item-card{
                             // min-width: 42vw;
@@ -213,7 +213,7 @@
                                 .device{
                                     padding: 3vh 0;
                                     .device-wrapper{
-                                        justify-content: center;
+                                        justify-content: space-evenly;
                                     }
                                 }
                                 .store{
@@ -457,14 +457,14 @@
                             margin: 0 !important;
                         }
                         h5{
-                            font-size: 3vw !important;
+                            font-size: 3.5vw !important;
                         }
                     }
                     .store-zip{
                         width: 45vw;
                         p{
                             margin: 0;
-                            font-size: 2.7vw;
+                            font-size: 3.4vw;
                         }
                     }
                 }
@@ -480,53 +480,115 @@
     .widget-stepper .widget-stepper-wrapper .typeWrapper .container .hidden-row-wrapper {
         height: 92vw;
     }
-    .widget-wrapper .typeWrapper .container .row .item-card .problem .problem-card .problem-type {
-        flex-direction: column;
-        align-items: flex-start;
-    }
-    // .widget-wrapper .widget-stepper-wrapper .typeWrapper .container .row .button {
-    //     // margin-bottom: 0 !important;
-    //     padding-top: unset;
+    // .widget-wrapper .typeWrapper .container .row .item-card .problem .problem-card 
+    // .problem-type {
+                        
     // }
+    // // .widget-wrapper .widget-stepper-wrapper .typeWrapper .container .row .button {
+    // //     // margin-bottom: 0 !important;
+    // //     padding-top: unset;
+    // // }
     #send-quote-button{
         text-align: center;
     }
     .quote-information {
         padding: 4vh 0 2vh !important;
     }
-    .widget-stepper{
-        // margin-top: 4vh ;
-        .stepper-item .back-button {
-            top: 8px;
-            padding: 0 2px;
-       
-        }
+
+    .widget-wrapper {
         .widget-stepper-wrapper{
-            max-width: 95vw;
-            margin-top: 4vh !important;
-            .title-wrapper{
-                padding: 2vh 0 7vh;
-                .step-name{
-                    white-space: unset;
-                    font-size: 2.5vw;
-                    display: flex;
-                    justify-content: center;
-                    position: absolute;
-                    top: 45px;
-                    text-align: center;
-                }
-            }
-            
             .typeWrapper{
                 padding: 15px 1vw 0;
-                min-height: 75vh;
-
+                min-height: 70vh;
+    
                 .container{
                     padding: 0 0 0 2vw !important;
+                    height: 65vh;
                     .hidden-row-wrapper{
-                        height: 58vh;
+                        height: 55vh;
                         margin-bottom: 0;
                     }
+                    .row{
+                        .item-card{
+                            .details{
+                                padding: 10px 10px 5px !important;
+                                .store{
+                                    .store-wrapper{
+                                        text-align: center;
+                                        flex-direction: column;
+                                        min-width: unset !important;
+                                        .store-img{
+                                            img{
+                                                width: 25vw !important;
+                                            }
+                                        }
+                                        .store-details{
+                                            .change-store-btn{
+                                                display: none;
+                                            }
+                                            .store-zip{
+                                                width: 100% !important;
+                                                font-size: 3.3vw !important;
+                                            }
+                                            
+                                            .btn{
+                                                padding: 5px 20px;
+                                            }
+                                        }
+                                        
+                                    }
+                                    
+                                }
+                                .device{
+                                    .device-wrapper{
+                                        .device-img{
+                                            img{
+                                                width: 25vw;
+                                            }
+                                        }
+                                        .device-name{
+                                            font-size: 4vw;
+                                        }
+                                    }
+                                }
+                            }
+    
+                        }
+                    }
+                    .item-card{
+                        .problem .problem-wrapper .problem-card {
+                            .item-card{
+                                .problem-type {
+                                    flex-direction: column;
+                                    align-items: flex-start;
+                                    .col-img img {
+                                        width: 11vw !important;
+                                        object-fit: scale-down;
+                                        height: 5vh;
+                                    }
+                                    .col-name{
+                                        span{
+                                            font-size: 2.8vw !important;
+                                        }
+                                    }
+                                   
+                                }
+                                .option {
+                                    h5, span {
+                                        font-size: 2.5vw;
+                                    } 
+                                    
+                                }
+                            }
+                        }
+                        
+
+
+
+                    } 
+                    
+                    
+                    
               
                 }
                 .hidden-row{
@@ -537,7 +599,7 @@
                     padding: 0 0 0 10px !important;
                     span{
                         font-size: 4vw;
-
+    
                     }
                 }
                 .item-card{
@@ -548,7 +610,7 @@
                         }
                         img{
                             width: 20vw;
-                        height: 20vw;
+                            object-fit: scale-down;
                         }
                         
                     }
@@ -558,7 +620,7 @@
                             // font-size: 3.5vw !important;
                             font-size: 5vw !important;
                             font-weight: 500 !important;
-
+    
                         }
                     }
                     .form-quote{
@@ -570,7 +632,7 @@
                             }
                         }
                         
-
+    
                     }
                     .radio{
                         label{
@@ -600,75 +662,19 @@
                     .change-list-map{
                         bottom: 0;
                     }
-                    .details{
-                        padding: 10px 10px 5px !important;
-                        .store{
-                            .store-wrapper{
-                                text-align: center;
-                                flex-direction: column;
-                                min-width: unset !important;
-                                .store-img{
-                                    img{
-                                        width: 25vw !important;
-                                    }
-                                }
-                                .store-details{
-                                    .change-store-btn{
-                                        display: none;
-                                    }
-                                    .store-zip{
-                                        width: 100% !important;
-                                        font-size: 3.3vw !important;
-                                    }
-                                    
-                                    
-                                }
-                                
-                            }
-                            
-                        }
-                        .device{
-                            .device-wrapper{
-                                .device-img{
-                                    img{
-                                        width: 25vw;
-                                    }
-                                }
-                            }
-                        }
-                    }
-                    .problem .problem-wrapper .problem-card .item-card .option {
-                        h5, span {
-                            font-size: 2.5vw;
-                        } 
-                        
-                    }
-                    .problem .problem-wrapper .problem-card .problem-type {
-                        .col-img img {
-                            width: 13vw !important;
-                        }
-                        .col-name{
-                            span{
-                                font-size: 2.8vw !important;
-                            }
-                        }
-                    }
+                    
+                    
                     
                     
          
                 .store-list-wrapper{
-
+    
                     --bs-gutter-y: 1vh;
                     .store-list-card {
-                    height: 12vh;
+                    height: 14vh;
                 }
                 }
-                .appointment{
-                    .appointment-details{
-                        flex-direction: column-reverse;
-                        align-items: center;
-                    }
-                }
+                
                 
                 .radio-button-wrapper{
                     justify-content: space-between;
@@ -693,6 +699,45 @@
             .type-map{
                 padding: 0 1vw;
             }
+        }
+        .book-appointment{
+                .appointment-details{
+                    flex-direction: column-reverse;
+                    align-items: center;
+                }
+                .change-appointment-btn{
+                    .btn{
+                        width: 120px !important;
+                        height: 38px !important;
+                    }
+                }
+        }
+
+    }
+    .widget-stepper{
+        // margin-top: 4vh ;
+        .stepper-item .back-button {
+            top: 8px;
+            padding: 0 2px;
+       
+        }
+        .widget-stepper-wrapper{
+            max-width: 95vw;
+            // margin-top: 4vh !important;
+            .title-wrapper{
+                padding: 2vh 0 7vh;
+                .step-name{
+                    white-space: unset;
+                    font-size: 2.5vw;
+                    display: flex;
+                    justify-content: center;
+                    position: absolute;
+                    top: 45px;
+                    text-align: center;
+                }
+            }
+            
+            
     }
     
     
@@ -711,13 +756,27 @@
             }
             .message{
                 width: 60vw ;
+                p{
+                    font-size: 3vw;
+                }
+            }
+            .appointment-details{
+                h4{
+                    font-size: 3vw;
+                }
             }
             .store-name{
                 padding-top: 1.5vh;
             }
             .date{
                 h3{
-                    font-size: 5vw ;
+                    font-size: 3vw ;
+                    margin-bottom: 1vh;
+                }
+            }
+            .store-zip{
+                p{
+                    font-size: 3vw;
                 }
             }
         }

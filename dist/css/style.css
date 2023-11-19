@@ -1,3 +1,9 @@
+body {
+  width: 100%;
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
 .title-wrapper {
   margin-top: auto;
   display: flex;
@@ -750,6 +756,7 @@
   font-style: normal;
   font-weight: 700;
   line-height: normal;
+  color: #229427;
 }
 .widget-wrapper .success-block .success-block-wrapper .message {
   width: 285px;
@@ -965,7 +972,7 @@
   }
   .widget-wrapper .widget-stepper-wrapper .typeWrapper .container {
     height: 70vh;
-    overflow: scroll;
+    overflow-y: scroll;
   }
   .widget-wrapper .widget-stepper-wrapper .typeWrapper .container .item-card {
     min-width: max-content;
@@ -991,7 +998,7 @@
     padding: 3vh 0;
   }
   .widget-wrapper .widget-stepper-wrapper .typeWrapper .container .item-card .details .device .device-wrapper {
-    justify-content: center;
+    justify-content: space-evenly;
   }
   .widget-wrapper .widget-stepper-wrapper .typeWrapper .container .item-card .details .store {
     width: unset !important;
@@ -1186,14 +1193,14 @@
     margin: 0 !important;
   }
   .widget-wrapper .widget-stepper-wrapper .col .list-map .store-name h5 {
-    font-size: 3vw !important;
+    font-size: 3.5vw !important;
   }
   .widget-wrapper .widget-stepper-wrapper .col .list-map .store-zip {
     width: 45vw;
   }
   .widget-wrapper .widget-stepper-wrapper .col .list-map .store-zip p {
     margin: 0;
-    font-size: 2.7vw;
+    font-size: 3.4vw;
   }
   .widget-wrapper .book-appointment .typeWrapper .appointment-details .appointment-store .selected-store .store-zip p {
     width: 45vw;
@@ -1203,15 +1210,151 @@
   .widget-stepper .widget-stepper-wrapper .typeWrapper .container .hidden-row-wrapper {
     height: 92vw;
   }
-  .widget-wrapper .typeWrapper .container .row .item-card .problem .problem-card .problem-type {
-    flex-direction: column;
-    align-items: flex-start;
-  }
   #send-quote-button {
     text-align: center;
   }
   .quote-information {
     padding: 4vh 0 2vh !important;
+  }
+  .widget-wrapper .widget-stepper-wrapper .typeWrapper {
+    padding: 15px 1vw 0;
+    min-height: 70vh;
+  }
+  .widget-wrapper .widget-stepper-wrapper .typeWrapper .container {
+    padding: 0 0 0 2vw !important;
+    height: 65vh;
+  }
+  .widget-wrapper .widget-stepper-wrapper .typeWrapper .container .hidden-row-wrapper {
+    height: 55vh;
+    margin-bottom: 0;
+  }
+  .widget-wrapper .widget-stepper-wrapper .typeWrapper .container .row .item-card .details {
+    padding: 10px 10px 5px !important;
+  }
+  .widget-wrapper .widget-stepper-wrapper .typeWrapper .container .row .item-card .details .store .store-wrapper {
+    text-align: center;
+    flex-direction: column;
+    min-width: unset !important;
+  }
+  .widget-wrapper .widget-stepper-wrapper .typeWrapper .container .row .item-card .details .store .store-wrapper .store-img img {
+    width: 25vw !important;
+  }
+  .widget-wrapper .widget-stepper-wrapper .typeWrapper .container .row .item-card .details .store .store-wrapper .store-details .change-store-btn {
+    display: none;
+  }
+  .widget-wrapper .widget-stepper-wrapper .typeWrapper .container .row .item-card .details .store .store-wrapper .store-details .store-zip {
+    width: 100% !important;
+    font-size: 3.3vw !important;
+  }
+  .widget-wrapper .widget-stepper-wrapper .typeWrapper .container .row .item-card .details .store .store-wrapper .store-details .btn {
+    padding: 5px 20px;
+  }
+  .widget-wrapper .widget-stepper-wrapper .typeWrapper .container .row .item-card .details .device .device-wrapper .device-img img {
+    width: 25vw;
+  }
+  .widget-wrapper .widget-stepper-wrapper .typeWrapper .container .row .item-card .details .device .device-wrapper .device-name {
+    font-size: 4vw;
+  }
+  .widget-wrapper .widget-stepper-wrapper .typeWrapper .container .item-card .problem .problem-wrapper .problem-card .item-card .problem-type {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .widget-wrapper .widget-stepper-wrapper .typeWrapper .container .item-card .problem .problem-wrapper .problem-card .item-card .problem-type .col-img img {
+    width: 11vw !important;
+    object-fit: scale-down;
+    height: 5vh;
+  }
+  .widget-wrapper .widget-stepper-wrapper .typeWrapper .container .item-card .problem .problem-wrapper .problem-card .item-card .problem-type .col-name span {
+    font-size: 2.8vw !important;
+  }
+  .widget-wrapper .widget-stepper-wrapper .typeWrapper .container .item-card .problem .problem-wrapper .problem-card .item-card .option h5, .widget-wrapper .widget-stepper-wrapper .typeWrapper .container .item-card .problem .problem-wrapper .problem-card .item-card .option span {
+    font-size: 2.5vw;
+  }
+  .widget-wrapper .widget-stepper-wrapper .typeWrapper .hidden-row {
+    padding-right: 0;
+    margin-right: -2vw;
+  }
+  .widget-wrapper .widget-stepper-wrapper .typeWrapper .col-name {
+    padding: 0 0 0 10px !important;
+  }
+  .widget-wrapper .widget-stepper-wrapper .typeWrapper .col-name span {
+    font-size: 4vw;
+  }
+  .widget-wrapper .widget-stepper-wrapper .typeWrapper .item-card .col-img .view-list-img, .widget-wrapper .widget-stepper-wrapper .typeWrapper .item-card .col-img .view-map-img {
+    width: 5vw !important;
+    height: 5vw !important;
+  }
+  .widget-wrapper .widget-stepper-wrapper .typeWrapper .item-card .col-img img {
+    width: 20vw;
+    object-fit: scale-down;
+  }
+  .widget-wrapper .widget-stepper-wrapper .typeWrapper .item-card .quote-delivery-title {
+    padding: 1vh 0 !important;
+  }
+  .widget-wrapper .widget-stepper-wrapper .typeWrapper .item-card .quote-delivery-title h6 {
+    font-size: 5vw !important;
+    font-weight: 500 !important;
+  }
+  .widget-wrapper .widget-stepper-wrapper .typeWrapper .item-card .form-quote {
+    padding-top: 1vh !important;
+  }
+  .widget-wrapper .widget-stepper-wrapper .typeWrapper .item-card .form-quote .row {
+    margin-bottom: unset !important;
+  }
+  .widget-wrapper .widget-stepper-wrapper .typeWrapper .item-card .form-quote .row .btn {
+    top: unset;
+  }
+  .widget-wrapper .widget-stepper-wrapper .typeWrapper .item-card .radio label {
+    font-size: 3vw;
+    flex-direction: column;
+    align-items: center;
+  }
+  .widget-wrapper .widget-stepper-wrapper .typeWrapper .item-card .radio-btn {
+    margin-bottom: 1vh;
+    width: 6vw;
+  }
+  .widget-wrapper .widget-stepper-wrapper .typeWrapper .item-card .zip-code .map-title {
+    padding: 1vh 0;
+  }
+  .widget-wrapper .widget-stepper-wrapper .typeWrapper .item-card .zip-code .map-title span {
+    font-size: 5vw;
+  }
+  .widget-wrapper .widget-stepper-wrapper .typeWrapper .item-card .zip-code .input-zip-code input {
+    padding: 1vh 5px !important;
+    font-size: 3vw;
+  }
+  .widget-wrapper .widget-stepper-wrapper .typeWrapper .item-card .change-list-map {
+    bottom: 0;
+  }
+  .widget-wrapper .widget-stepper-wrapper .typeWrapper .item-card .store-list-wrapper {
+    --bs-gutter-y: 1vh;
+  }
+  .widget-wrapper .widget-stepper-wrapper .typeWrapper .item-card .store-list-wrapper .store-list-card {
+    height: 14vh;
+  }
+  .widget-wrapper .widget-stepper-wrapper .typeWrapper .item-card .radio-button-wrapper {
+    justify-content: space-between;
+  }
+  .widget-wrapper .widget-stepper-wrapper .typeWrapper .item-card .radio-button-wrapper .radio {
+    text-align: center;
+    max-width: 17vw;
+  }
+  .widget-wrapper .widget-stepper-wrapper .typeWrapper .item-card .radio-button-wrapper .radio .radio-btn {
+    margin: 0 auto 1vh;
+  }
+  .widget-wrapper .widget-stepper-wrapper .typeWrapper .item-card .store-list-card .store-zip {
+    padding: 3vh 0 0;
+  }
+  .widget-wrapper .widget-stepper-wrapper .type-map {
+    padding: 0 1vw;
+  }
+  .widget-wrapper .book-appointment .appointment-details {
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+  .widget-wrapper .book-appointment .change-appointment-btn .btn {
+    width: 120px !important;
+    height: 38px !important;
   }
   .widget-stepper .stepper-item .back-button {
     top: 8px;
@@ -1219,7 +1362,6 @@
   }
   .widget-stepper .widget-stepper-wrapper {
     max-width: 95vw;
-    margin-top: 4vh !important;
   }
   .widget-stepper .widget-stepper-wrapper .title-wrapper {
     padding: 2vh 0 7vh;
@@ -1233,129 +1375,6 @@
     top: 45px;
     text-align: center;
   }
-  .widget-stepper .widget-stepper-wrapper .typeWrapper {
-    padding: 15px 1vw 0;
-    min-height: 75vh;
-  }
-  .widget-stepper .widget-stepper-wrapper .typeWrapper .container {
-    padding: 0 0 0 2vw !important;
-  }
-  .widget-stepper .widget-stepper-wrapper .typeWrapper .container .hidden-row-wrapper {
-    height: 58vh;
-    margin-bottom: 0;
-  }
-  .widget-stepper .widget-stepper-wrapper .typeWrapper .hidden-row {
-    padding-right: 0;
-    margin-right: -2vw;
-  }
-  .widget-stepper .widget-stepper-wrapper .typeWrapper .col-name {
-    padding: 0 0 0 10px !important;
-  }
-  .widget-stepper .widget-stepper-wrapper .typeWrapper .col-name span {
-    font-size: 4vw;
-  }
-  .widget-stepper .widget-stepper-wrapper .typeWrapper .item-card .col-img .view-list-img, .widget-stepper .widget-stepper-wrapper .typeWrapper .item-card .col-img .view-map-img {
-    width: 5vw !important;
-    height: 5vw !important;
-  }
-  .widget-stepper .widget-stepper-wrapper .typeWrapper .item-card .col-img img {
-    width: 20vw;
-    height: 20vw;
-  }
-  .widget-stepper .widget-stepper-wrapper .typeWrapper .item-card .quote-delivery-title {
-    padding: 1vh 0 !important;
-  }
-  .widget-stepper .widget-stepper-wrapper .typeWrapper .item-card .quote-delivery-title h6 {
-    font-size: 5vw !important;
-    font-weight: 500 !important;
-  }
-  .widget-stepper .widget-stepper-wrapper .typeWrapper .item-card .form-quote {
-    padding-top: 1vh !important;
-  }
-  .widget-stepper .widget-stepper-wrapper .typeWrapper .item-card .form-quote .row {
-    margin-bottom: unset !important;
-  }
-  .widget-stepper .widget-stepper-wrapper .typeWrapper .item-card .form-quote .row .btn {
-    top: unset;
-  }
-  .widget-stepper .widget-stepper-wrapper .typeWrapper .item-card .radio label {
-    font-size: 3vw;
-    flex-direction: column;
-    align-items: center;
-  }
-  .widget-stepper .widget-stepper-wrapper .typeWrapper .item-card .radio-btn {
-    margin-bottom: 1vh;
-    width: 6vw;
-  }
-  .widget-stepper .widget-stepper-wrapper .typeWrapper .item-card .zip-code .map-title {
-    padding: 1vh 0;
-  }
-  .widget-stepper .widget-stepper-wrapper .typeWrapper .item-card .zip-code .map-title span {
-    font-size: 5vw;
-  }
-  .widget-stepper .widget-stepper-wrapper .typeWrapper .item-card .zip-code .input-zip-code input {
-    padding: 1vh 5px !important;
-    font-size: 3vw;
-  }
-  .widget-stepper .widget-stepper-wrapper .typeWrapper .item-card .change-list-map {
-    bottom: 0;
-  }
-  .widget-stepper .widget-stepper-wrapper .typeWrapper .item-card .details {
-    padding: 10px 10px 5px !important;
-  }
-  .widget-stepper .widget-stepper-wrapper .typeWrapper .item-card .details .store .store-wrapper {
-    text-align: center;
-    flex-direction: column;
-    min-width: unset !important;
-  }
-  .widget-stepper .widget-stepper-wrapper .typeWrapper .item-card .details .store .store-wrapper .store-img img {
-    width: 25vw !important;
-  }
-  .widget-stepper .widget-stepper-wrapper .typeWrapper .item-card .details .store .store-wrapper .store-details .change-store-btn {
-    display: none;
-  }
-  .widget-stepper .widget-stepper-wrapper .typeWrapper .item-card .details .store .store-wrapper .store-details .store-zip {
-    width: 100% !important;
-    font-size: 3.3vw !important;
-  }
-  .widget-stepper .widget-stepper-wrapper .typeWrapper .item-card .details .device .device-wrapper .device-img img {
-    width: 25vw;
-  }
-  .widget-stepper .widget-stepper-wrapper .typeWrapper .item-card .problem .problem-wrapper .problem-card .item-card .option h5, .widget-stepper .widget-stepper-wrapper .typeWrapper .item-card .problem .problem-wrapper .problem-card .item-card .option span {
-    font-size: 2.5vw;
-  }
-  .widget-stepper .widget-stepper-wrapper .typeWrapper .item-card .problem .problem-wrapper .problem-card .problem-type .col-img img {
-    width: 13vw !important;
-  }
-  .widget-stepper .widget-stepper-wrapper .typeWrapper .item-card .problem .problem-wrapper .problem-card .problem-type .col-name span {
-    font-size: 2.8vw !important;
-  }
-  .widget-stepper .widget-stepper-wrapper .typeWrapper .item-card .store-list-wrapper {
-    --bs-gutter-y: 1vh;
-  }
-  .widget-stepper .widget-stepper-wrapper .typeWrapper .item-card .store-list-wrapper .store-list-card {
-    height: 12vh;
-  }
-  .widget-stepper .widget-stepper-wrapper .typeWrapper .item-card .appointment .appointment-details {
-    flex-direction: column-reverse;
-    align-items: center;
-  }
-  .widget-stepper .widget-stepper-wrapper .typeWrapper .item-card .radio-button-wrapper {
-    justify-content: space-between;
-  }
-  .widget-stepper .widget-stepper-wrapper .typeWrapper .item-card .radio-button-wrapper .radio {
-    text-align: center;
-    max-width: 17vw;
-  }
-  .widget-stepper .widget-stepper-wrapper .typeWrapper .item-card .radio-button-wrapper .radio .radio-btn {
-    margin: 0 auto 1vh;
-  }
-  .widget-stepper .widget-stepper-wrapper .typeWrapper .item-card .store-list-card .store-zip {
-    padding: 3vh 0 0;
-  }
-  .widget-stepper .widget-stepper-wrapper .type-map {
-    padding: 0 1vw;
-  }
   .widget-wrapper .success-block .success-block-wrapper {
     padding: 5vh 0 2vh;
   }
@@ -1365,11 +1384,21 @@
   .widget-wrapper .success-block .success-block-wrapper .message {
     width: 60vw;
   }
+  .widget-wrapper .success-block .success-block-wrapper .message p {
+    font-size: 3vw;
+  }
+  .widget-wrapper .success-block .success-block-wrapper .appointment-details h4 {
+    font-size: 3vw;
+  }
   .widget-wrapper .success-block .success-block-wrapper .store-name {
     padding-top: 1.5vh;
   }
   .widget-wrapper .success-block .success-block-wrapper .date h3 {
-    font-size: 5vw;
+    font-size: 3vw;
+    margin-bottom: 1vh;
+  }
+  .widget-wrapper .success-block .success-block-wrapper .store-zip p {
+    font-size: 3vw;
   }
   .widget-wrapper .book-appointment .title-wrapper .tittle h2 {
     font-size: 4vw;
