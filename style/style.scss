@@ -201,8 +201,9 @@ body{
             margin-bottom: 2.5vh;
             .hidden-row{
               // -webkit-overflow-scrolling: touch;
+              min-height: -webkit-fit-content;
               max-height: 35vh;
-              overflow: hidden;
+              overflow: auto;
             }
           }
           

@@ -183,8 +183,9 @@ body {
   margin-bottom: 2.5vh;
 }
 .widget-wrapper .typeWrapper .container .hidden-row-wrapper .hidden-row {
+  min-height: -webkit-fit-content;
   max-height: 35vh;
-  overflow: hidden;
+  overflow: auto;
 }
 .widget-wrapper .typeWrapper .container .row {
   position: relative;
