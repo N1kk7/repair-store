@@ -210,7 +210,6 @@ $('.stepper-item').on('click', function(event) {
             })
         }
         if (stepperItem.id == 5) {
-            console.log('step 5');
             wipeData();
             checkId = true;
         }
@@ -412,7 +411,6 @@ $(window).on('click', function(event) {
             stateBookAppointmentBtn = false;
             $('.appointment-btn').removeClass('active-appointment-btn');
 
-            // console.log('could not be unlock btn');
         }
     }
 
@@ -422,7 +420,6 @@ $(window).on('click', function(event) {
 // function for check primmary button click and toggle top steps and blocks
 $('.btn').on('click', function(event){
 
-    // console.log(event);
     if (event.target.id === 'change-store-btn') {
        wipeData();
         goToLocation();
@@ -605,8 +602,6 @@ $('#demo-calendar-apppearance').on('zabuto:calendar:goto', function (event) {
 
     }
 
-    console.log(monthAppointment, yearAppointment);
-
 
 });
 
@@ -617,23 +612,11 @@ $('.no-btn').on('click', function(){
     $('#block-without-appointmennt').removeClass('success-hidden')
 })
 
-// function fillSuccesData () {
-
-//     let successTime = ``;
-//     let successDay = ``;
-//     let successMonth = ``;
-//     let successYear = ``;
-
-//     let successStoreName = ``;
-//     let successStoreZip = ``;
-//     let successStoreImg = ``;
-// }
 
 $('.appointment-btn').on('click', function(){
     if (stateBookAppointmentBtn) {
         $('.book-appointment').addClass('appointment-hidden');
         $('#block-with-appointmennt').removeClass('success-hidden')
-        // console.log('filldata');
         fillData('success');
     }
     

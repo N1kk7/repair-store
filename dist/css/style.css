@@ -1251,6 +1251,7 @@ body {
   .widget-wrapper .widget-stepper-wrapper .typeWrapper .container .hidden-row-wrapper {
     height: 53vh;
     margin-bottom: 0;
+    padding-right: 5vw;
   }
   .widget-wrapper .widget-stepper-wrapper .typeWrapper .container .row .item-card .details {
     padding: 10px 10px 5px !important;
@@ -1341,9 +1342,11 @@ body {
   .widget-wrapper .widget-stepper-wrapper .typeWrapper .item-card .zip-code .input-zip-code input {
     padding: 1vh 5px !important;
     font-size: 3vw;
+    position: relative;
+    bottom: 5px;
   }
   .widget-wrapper .widget-stepper-wrapper .typeWrapper .item-card .change-list-map {
-    bottom: 0;
+    bottom: 0 !important;
   }
   .widget-wrapper .widget-stepper-wrapper .typeWrapper .item-card .store-list-wrapper {
     --bs-gutter-y: 1vh;
@@ -1471,7 +1474,8 @@ body {
     height: 15vw !important;
   }
   .widget-stepper-wrapper .typeWrapper .item-card .zip-code .map-title {
-    padding: 0 0 2vh !important;
+    margin: 0 0 2vh !important;
+    padding: 0 !important;
   }
   .widget-stepper-wrapper .typeWrapper .item-card .map-title span {
     font-size: 3vw;
