@@ -838,7 +838,8 @@ body {
     width: 100%;
   }
 }
-.hidden-row::-webkit-scrollbar {
+.hidden-row ::-webkit-scrollbar {
+  display: none;
   -webkit-appearance: none;
   width: 0;
   height: 0;
