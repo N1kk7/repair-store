@@ -184,7 +184,7 @@ body {
 }
 .widget-wrapper .typeWrapper .container .hidden-row-wrapper .hidden-row {
   max-height: 35vh;
-  overflow: auto;
+  overflow: hidden;
 }
 .widget-wrapper .typeWrapper .container .row {
   position: relative;
