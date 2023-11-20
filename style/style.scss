@@ -951,7 +951,8 @@ body{
   .hidden-row::-webkit-scrollbar {
     -webkit-appearance: none;
     width: 0;
-  }
+    height: 0;
+}
   
   // .hidden-row::-webkit-scrollbar-thumb {
   //   border-radius: 4px;
