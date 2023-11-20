@@ -948,9 +948,9 @@ body{
     }
   }
 
-  ::-webkit-scrollbar {
+  .hidden-row::-webkit-scrollbar {
     -webkit-appearance: none;
-    // width: 7px;
+    width: 0;
   }
   
   // .hidden-row::-webkit-scrollbar-thumb {
