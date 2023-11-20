@@ -949,11 +949,11 @@ body{
     }
   }
 
-  .hidden-row ::-webkit-scrollbar {
+  ::-webkit-scrollbar {
     display: none;
     -webkit-appearance: none;
-    width: 0;
-    height: 0;
+    // width: 0;
+    // height: 0;
 }
   
   // .hidden-row::-webkit-scrollbar-thumb {

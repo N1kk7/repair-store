@@ -839,11 +839,9 @@ body {
     width: 100%;
   }
 }
-.hidden-row ::-webkit-scrollbar {
+::-webkit-scrollbar {
   display: none;
   -webkit-appearance: none;
-  width: 0;
-  height: 0;
 }
 
 @media screen and (max-width: 1024px) {
