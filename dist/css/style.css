@@ -1076,6 +1076,7 @@ body {
   }
   .widget-wrapper .widget-stepper-wrapper .typeWrapper .container .row .button .btn {
     margin-bottom: 2vh;
+    margin-right: 4vw;
     padding: 1vh 4vw;
     top: unset;
   }
