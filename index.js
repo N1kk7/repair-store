@@ -386,7 +386,6 @@ function goToLocation(){
 
 // function for check window click and mark selected card
 $(window).on('click', function(event) {
-
     let clickElem = event.target.closest('.item-card');
     const itemCard = document.querySelectorAll('.item-card');
     if (checkId) {
@@ -420,6 +419,14 @@ $(window).on('click', function(event) {
 // function for check primmary button click and toggle top steps and blocks
 $('.btn').on('click', function(event){
 
+    if (event.target.id === 'send-appointment-btn') {
+        if (stateBookAppointmentBtn) {
+            $('.book-appointment').addClass('appointment-hidden');
+            $('#block-with-appointmennt').removeClass('success-hidden')
+            fillData('success');
+        } 
+        return false
+    }
     if (event.target.id === 'change-store-btn') {
        wipeData();
         goToLocation();
@@ -539,27 +546,22 @@ $(function () {
   });
 
   $('#demo-calendar-apppearance').on('zabuto:calendar:day', function (event) {
+    const now = new Date();
 
     $('.zabuto-calendar__day').removeClass('click-day')
     $('.zabuto-calendar__day--today').removeClass('click-day')
 
 
-
-
-    
-    $(event.target).addClass('click-day');
-
-    
-    if (event.target.innerHTML <= 9) {
-
-        dateAppointment = `0${event.target.innerHTML}`;
-
+    if (event.today || event.date.getTime() > now.getTime()) {
+        dateAppointment = event.value.substring(event.value.length -2)
+        $(event.target).addClass('click-day');
     } else {
-        // timeAppointment = `0${event.target.innerHTML}`;
-        dateAppointment = event.target.innerHTML;
+        dateAppointment = '';
     }
+
 });
 $('#demo-calendar-apppearance').on('zabuto:calendar:goto', function (event) {
+
     yearAppointment = event.year.toString();
 
     switch (event.month) {
@@ -612,14 +614,5 @@ $('.no-btn').on('click', function(){
     $('#block-without-appointmennt').removeClass('success-hidden')
 })
 
-
-$('.appointment-btn').on('click', function(){
-    if (stateBookAppointmentBtn) {
-        $('.book-appointment').addClass('appointment-hidden');
-        $('#block-with-appointmennt').removeClass('success-hidden')
-        fillData('success');
-    }
-    
-})
 
 
